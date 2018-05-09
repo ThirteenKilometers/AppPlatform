@@ -1,0 +1,2334 @@
+[
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_remember_check.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\remember_check.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_login_title.jpg.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_login_title.jpg"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_welcome.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\welcome.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_right_in.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\activity_right_in.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_busy.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\busy.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_page_indicator.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\page_indicator.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_arrow_left.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_left.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_forward_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\forward_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_slider.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\slider.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_exit.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_green_normal.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_green_normal.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_top_home_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\top_home_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_item_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-ldpi\\item_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_outline_entry.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\outline_entry.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_write_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\write_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_dialog_hint.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\layout_dialog_hint.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_login_dialog.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_login_dialog.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_content_include.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_checked.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\checked.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_dialog_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\dialog_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ppt.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ppt.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_select_dialog_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_write_select_h.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\mail_write_select_h.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rounded_password_text.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\rounded_password_text.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_new_showtxt.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\new_showtxt.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_check_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_cebx_view.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\cebx_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wpt.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\wpt.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_list.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_list.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_link_back.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_link_back.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xxhdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_logout_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_logout_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_right_out.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\activity_right_out.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_attachment.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\attachment.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_background.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_background.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_full_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_search.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_search.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reply_all_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\reply_all_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_long_btn_bg_hover.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\long_btn_bg_hover.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_dialog_title_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_vpnuserset.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_vpnuserset.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reply_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\reply_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_btn_reset_h.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_btn_reset_h.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_showpic.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\showpic.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_contact_list_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_contact_list_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_back_image.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\back_image.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_application_bg_welcome.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\application_bg_welcome.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_icon.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_interpolator_cycle.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\interpolator_cycle.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_rating_star_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_title_send.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\title_send.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_cancel_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_cancel_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cancel_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\cancel_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_special_normal.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_special_normal.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ceb.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ceb.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_write_select.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\mail_write_select.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_tester.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\bg_tester.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contacts_arrow.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\contacts_arrow.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_welcome_alpha.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\welcome_alpha.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_picker_entry.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\picker_entry.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_text.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\main_text.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_green_disable.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_green_disable.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_confirm_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\confirm_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_login_select1.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\login_select1.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_foot_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\foot_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_rating_star_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-hdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_shake_y.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\shake_y.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_support_simple_spinner_dropdown_item.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_uc_web.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_uc_web.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_login_password.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_login_password.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_dialog_fork.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\dialog_fork.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_welcome.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_title_home.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\title_home.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_page_indicator_left.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\page_indicator_left.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_alert_dialog.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\alert_dialog.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_contact_hover.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_contact_hover.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_linkman_dialog.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_linkman_dialog.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_dropdown_item_icons_2line.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contacts_top.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\contacts_top.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_default_mtrl_shape.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_contact_person_search.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\contact_person_search.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_popup_enter.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setting.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_red_pressed.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_red_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_set.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_set.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_edit_text_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_uninstall_icom.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\uninstall_icom.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_login_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\login_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_multichoice_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setclock.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_setclock.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_app_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\app_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_logout_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_logout_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_login_account.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_login_account.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_barup.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\barup.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_top_back_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\top_back_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_content_input.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\content_input.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_title_item.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_shape_line.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\shape_line.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_divider_line.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\divider_line.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_darkdenim3.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\darkdenim3.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_text.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\search_text.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_write_mail_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\write_mail_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rounded_username_edittext.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\rounded_username_edittext.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_button_pressed.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_button_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_session_menu_touch_pointer.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\session_menu_touch_pointer.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_card_avatar.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\card_avatar.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contacts_line.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\contacts_line.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_list.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_list.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_scrollbar_handle_vertical.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\scrollbar_handle_vertical.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_btn_back.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_btn_back.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_progress_drawable.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable\\shape_progress_drawable.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_haveread.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\haveread.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_receive_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\mail_receive_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bardown.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\bardown.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_pattern_selected.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_pattern_selected.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_rating_star_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_btn_colored_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_link_ok.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_link_ok.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_red_disabled.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_red_disabled.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_ucweb.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_ucweb.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_keyboardold.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\keyboardold.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_toolbarview.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\toolbarview.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-mdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_in_top.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_logout_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_logout_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_slide_out_top.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_shape_bg_gray.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\shape_bg_gray.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_forward_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\forward_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_rar.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\rar.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_validate.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_validate.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_float_bar.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\float_bar.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_dialog_wait.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\dialog_wait.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_btn_reset.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_btn_reset.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_img_main_top.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\img_main_top.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_session_menu_sys_keyboard.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\session_menu_sys_keyboard.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_pic.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\pic.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_colored_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_going.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_going.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_checkbox.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_text.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_text.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_style_alert_dialog_button.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\btn_style_alert_dialog_button.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_session_menu_ext_keyboard.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\session_menu_ext_keyboard.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_button_normal.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_button_normal.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_custom_dialog_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\custom_dialog_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_color_highlight_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_lines.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_skin_color_button.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\skin_color_button.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_left_in.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\activity_left_in.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_linkman_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\linkman_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_long_button_press_state.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\long_button_press_state.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_pdf.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\pdf.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rounded_password_edittext.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\rounded_password_edittext.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_stroke_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-ldpi\\stroke_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_dialog_base.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\layout_dialog_base.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_view_list_nav_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_small_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_up1028.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\up1028.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_dialog_material_background_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_title_cancel.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\title_cancel.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_unknow.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\unknow.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_magnifying_glass.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_magnifying_glass.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_btn_red.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\common_btn_red.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_guide_pic.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_guide_pic.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_session_menu_disconnect.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\session_menu_disconnect.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_shuiyin.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\shuiyin.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_attach_list_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\attach_list_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_input.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_input.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_background_transition_holo_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_login_default_avatar.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\login_default_avatar.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_toolbar.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_cancel_normal.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_cancel_normal.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_activity_left_out.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\activity_left_out.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_internal_bg.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_top_back_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\top_back_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_grow_fade_in_from_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cancel_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\cancel_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_shake.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\shake.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_common_btn_green.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\common_btn_green.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_btn_login.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_btn_login.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_login_btn_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-ldpi\\login_btn_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_button_press_state.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\button_press_state.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_cancel.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_cancel.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_clear.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\clear.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_contact_person.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\contact_person.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_shake_x.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\anim\\shake_x.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_arrow_right.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\arrow_right.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reply_all_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\reply_all_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_bar.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_password_login.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_password_login.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_buttons.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\buttons.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_bg_hover.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_bg_hover.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_moreoverflow_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_company_login.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_company_login.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_list_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_list_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reply_all_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\reply_all_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_dialog_material_background_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_arrow_right.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_arrow_right.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\send_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_contacts_title.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\contacts_title.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_welcome_bg.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\welcome_bg.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_pattern_item_bg.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_pattern_item_bg.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_write_mail_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\write_mail_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_login_select2.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\login_select2.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_text_background.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable\\edit_text_background.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_voice_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_shape_bg_white.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-ldpi\\shape_bg_white.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_red_unpressed.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_red_unpressed.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_logo.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_rating_star_on_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_rating_star_on_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_title.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\title.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_btn_style_alert_dialog_cancel.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\btn_style_alert_dialog_cancel.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_selector_holo_dark.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_mode_close_item_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mouse.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\mouse.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_send_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\send_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_wps.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\wps.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_create_grid_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_create_grid_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\contact_icon.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_confirm_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\confirm_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_name_login.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_name_login.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_skin_common_btn_green_pressed.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\skin_common_btn_green_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_webapp.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_webapp.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_screen_simple_overlay_action_mode.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_zip.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\zip.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_rounded_username_text.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\rounded_username_text.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_close.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\close.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_btn_login_h.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_btn_login_h.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ett.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ett.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_select_left.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\select_left.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_search_url_text.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_action_bar_item_background_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_btn_style_alert_dialog_special_pressed.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\btn_style_alert_dialog_special_pressed.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_top_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_page_indicator_right.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\page_indicator_right.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_email_write.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\email_write.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_unlock.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_unlock.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_title_receive.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\title_receive.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_doc.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\doc.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_shape_sure_button_background.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable\\shape_sure_button_background.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_reply_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\reply_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_bg_special_disease_circle.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\bg_special_disease_circle.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_test.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_create_grid_selected.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_create_grid_selected.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_title_back.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\title_back.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\menu_float_bar.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\menu\\float_bar.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_unread.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\unread.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_version_img.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\version_img.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_login_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_login_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_page_indicator_focused.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\page_indicator_focused.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_top.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_top.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_top_home_n.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\top_home_n.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_longpressed_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_out.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_company.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\main_company.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_email_line.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\email_line.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_forward_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\forward_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_secondary_text_material_light.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_cursor_color.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable\\edit_cursor_color.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_app.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\list_item_app.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_contact_selected.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\contact_selected.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_reply_press.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\reply_press.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_phone_login.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_phone_login.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_tiled_background.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\tiled_background.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\xml_adminpolicy.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\xml\\adminpolicy.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_long_btn_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\long_btn_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_go_search_api_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_go_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login_new.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_login_new.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_page_num.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-mdpi\\page_num.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_input_bg.9.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\input_bg.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_xls.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\xls.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_mail_receive_s.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\mail_receive_s.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_changepw.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_changepw.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_dialog_setclock.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\layout_dialog_setclock.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_main_logo_1.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\main_logo_1.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_zip_list_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\zip_list_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_gesture_pattern_selected_wrong.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\gesture_pattern_selected_wrong.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_cebx.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\cebx.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_titlebar.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\titlebar.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_lock.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-xhdpi\\ic_lock.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setapp.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_setapp.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_progress_bg.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\progress_bg.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_waiting.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\dialog_waiting.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_rating_star_off_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_btn_rating_star_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_webapp_login_dialog.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\webapp_login_dialog.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_activity_chooser_view_list_item.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_showzip.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\showzip.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_borderless_material.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable_selector_default_item_background.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable\\selector_default_item_background.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_menu_item_layout.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_select_right.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\select_right.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xxhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_line_dot.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\line_dot.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_contactpage1_item.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\contactpage1_item.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_applocker.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\activity_applocker.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_txt.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\txt.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_logout.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\logout.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-xhdpi-v4\\abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_search_button.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\search_button.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_layout_dialog_hint_test.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\layout_dialog_hint_test.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\267d82aa28ead0bb5ab2a7f11246bcfd\\res\\drawable-hdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_default_icon.png.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\drawable-hdpi\\default_icon.png"
+    }
+]

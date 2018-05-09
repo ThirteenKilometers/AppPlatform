@@ -1,0 +1,11 @@
+// NetInterface.aidl
+package com.yw.platform.tools.nettyn;
+
+import com.yw.platform.tools.nettyn.SendBack;
+
+// Declare any non-default types here with import statements
+interface NetInterface {
+      void startWork();
+      boolean  send(String data,SendBack back);
+      int  getSate();
+}

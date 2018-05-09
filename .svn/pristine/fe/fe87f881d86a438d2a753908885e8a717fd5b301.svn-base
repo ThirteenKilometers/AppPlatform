@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/framelayout"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/maingrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:background="@drawable/img_main_top"
+            android:layout_height="154dp"/>
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#ffffff"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_logo_1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="bottom"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:src="@drawable/main_company"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:src="@drawable/main_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+        <RelativeLayout
+            android:id="@+id/myView"
+            android:background="@android:color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!--
+                 <com.ec.avirtualapp.view.ScrollLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mScrollLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="100dip"
+                android:layout_marginRight="100dip" />
+            -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"/>
+
+            <com.yw.platform.view.PageControlView
+                android:id="@+id/pageControl"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

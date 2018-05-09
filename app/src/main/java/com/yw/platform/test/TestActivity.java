@@ -1,0 +1,131 @@
+package com.yw.platform.test;
+
+import android.content.Context;
+import android.net.wifi.ScanResult;
+import android.net.wifi.WifiManager;
+import android.os.Bundle;
+import android.view.View;
+import com.yw.platform.R;
+import com.yw.platform.activity.AdminActivity;
+import com.yw.platform.tools.AdminUtil;
+import com.yw.platform.tools.SetInfo;
+import com.yw.platform.tools.guard.ServiceUtil;
+import com.yw.platform.utils.dialog.CommonHint;
+
+import java.util.List;
+
+public class TestActivity extends AdminActivity implements View.OnClickListener {
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_test);
+        findViewById(R.id.btn_1).setOnClickListener(this);
+        findViewById(R.id.btn_2).setOnClickListener(this);
+        findViewById(R.id.btn_3).setOnClickListener(this);
+        findViewById(R.id.btn_4).setOnClickListener(this);
+        findViewById(R.id.btn_5).setOnClickListener(this);
+        findViewById(R.id.btn_6).setOnClickListener(this);
+        findViewById(R.id.btn_7).setOnClickListener(this);
+        findViewById(R.id.btn_8).setOnClickListener(this);
+        findViewById(R.id.btn_9).setOnClickListener(this);
+        findViewById(R.id.btn_10).setOnClickListener(this);
+        findViewById(R.id.btn_11).setOnClickListener(this);
+        findViewById(R.id.btn_12).setOnClickListener(this);
+        init();
+        ServiceUtil.start(this);
+    }
+    private void init(){
+        WifiManager wifiManager = (WifiManager)getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        List<ScanResult> listb = wifiManager.getScanResults();
+        //数组初始化要注意
+        String[] listk=new String[listb.size()];
+        if(listb!=null){
+            for( int i=0;i<listb.size();i++){
+                ScanResult scanResult = listb.get(i);
+                int zm=scanResult.frequency;//主频率
+                int level=scanResult.level;//强度
+                listk[i]=scanResult.SSID;
+            }
+        }
+        new TaskIp(this).startTest();
+//      NetworkSniffTask tak=new NetworkSniffTask(this);
+//      tak.execute();
+//      DeviceSearcher task=new DeviceSearcher() {
+//            @Override
+//            public void onSearchStart() {
+//                Log.e("start","开始搜索");
+//            }
+//
+//            @Override
+//            public void onSearchFinish(Set deviceSet) {
+//                Log.e("start","搜索完成");
+//            }
+//        };
+//        task.start();
+//        new DeviceWaitingSearch(this, "日灯光", "客厅"){
+//            @Override
+//            public void onDeviceSearched(InetSocketAddress socketAddr) {
+//              //  pushMsgToMain("已上线，搜索主机：" + socketAddr.getAddress().getHostAddress() + ":" + socketAddr.getPort());
+//            }
+//        }.start();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_1:
+                deviceManager.lockDesktop();
+                break;
+            case R.id.btn_2:
+                deviceManager.clearPsd();
+                break;
+            case R.id.btn_3:
+                deviceManager.setPsd("123456");
+                break;
+            case R.id.btn_4:
+                deviceManager.setCameraDisabled(true);
+                break;
+            case R.id.btn_5:
+                deviceManager.setCameraDisabled(false);
+                break;
+            case R.id.btn_6:
+                CommonHint.bulidDialog1(this, "你确定继续操作吗，继续操作将删除你所联系人、消息等,请谨慎操作!", new CommonHint.TwoOnClickListener() {
+                    @Override
+                    public void onCancel() {
+
+                    }
+                    @Override
+                    public void onSure() {
+                        deviceManager.WipeData();
+                        //Toast.makeText(TestActivity.this, "代码被屏蔽", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                break;
+            case R.id.btn_7:
+                deviceManager.setStorageEncryption(true);
+                break;
+            case R.id.btn_8:
+                deviceManager.setStorageEncryption(false);
+                break;
+            case R.id.btn_9:
+               // AdminUtil.hiddenApp(devicePolicyManager,componentName,"com.example.sunny.text333");
+                break;
+            case R.id.btn_10:
+                SetInfo.getInstance().setBluetoothEable(false);
+                break;
+            case R.id.btn_11:
+                SetInfo.getInstance().setBluetoothEable(true);
+                break;
+            case R.id.btn_12:
+                AppsetActvitiy.start(this);
+                break;
+        }
+    }
+}

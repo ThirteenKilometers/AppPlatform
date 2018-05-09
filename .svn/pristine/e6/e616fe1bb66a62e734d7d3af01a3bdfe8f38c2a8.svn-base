@@ -1,0 +1,103 @@
+package com.yw.platform.notice;
+
+import android.util.Log;
+
+import com.yw.platform.yhtext.beans.MessageEvent;
+import com.yw.platform.yhtext.netty.client.Const;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+/**
+ * Created by cxb on 2018/4/25.
+ */
+
+public class ReceiveNotice {
+    private static ReceiveNotice receiveNotice;
+
+    private ReceiveNotice() {
+
+    }
+    public static synchronized ReceiveNotice getinReceiveNotice(){
+        if(receiveNotice==null){
+            receiveNotice=new ReceiveNotice();
+        }
+        return receiveNotice;
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MessageEvent event) {
+        switch (event.getCode()) {
+            case Const.ACCEPT_CODE:
+                try {
+                    JSONObject jsonContent = new JSONObject((String) event.getData());
+                    String noticeType = jsonContent.getString("noticeType");
+                    Log.e("通知消息:_",""+jsonContent);
+                    MessageEvent sendMsg = new MessageEvent<String>();
+                    sendMsg.setCode(-1);
+                    if ("strategy".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("策略");
+                    } else if ("appAdd".equals(noticeType)) {//应用新增
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("应用新增");
+                    } else if ("appRemove".equals(noticeType)) {//应用移除
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("应用移除");
+                    } else if ("appUpdate".equals(noticeType)) {//应用更新
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("应用更新");
+                    } else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
+                        sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
+                        sendMsg.setMsg("应用清除");
+                    } else if ("allDataErasure".equals(noticeType)) {//全部数据擦除
+                        sendMsg.setCode(Const.CONTROL_ALLDATA_DCREAL);
+                        sendMsg.setMsg("设备清除");
+                    } else if ("screenLock".equals(noticeType)) {//屏幕锁定
+                        sendMsg.setCode(Const.CONTROL_SCREEN_LOCK);
+                        sendMsg.setMsg("屏幕锁屏");
+                    } else if ("screenUnLock".equals(noticeType)) {//屏幕解锁
+                        sendMsg.setCode(Const.CONTROL_SCREEN_UNLOCK);
+                        sendMsg.setMsg("屏幕解锁");
+                    } else if ("equipmentPositioning".equals(noticeType)) {//设备定位
+
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("设备定位");
+                    } else if ("fileAdd".equals(noticeType)) {//文档新增
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档新增");
+                    } else if ("fileRemove".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档移除");
+                    } else if ("fileUpdate".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档更新");
+                    }
+                    if (sendMsg.getCode() > 0) {
+                        EventBus.getDefault().post(event);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+                break;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

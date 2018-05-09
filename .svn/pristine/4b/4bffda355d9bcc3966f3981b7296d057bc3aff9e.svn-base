@@ -1,0 +1,40 @@
+package com.yw.platform.yhtext.utils;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
+
+import com.yw.platform.R;
+
+import lzhs.com.library.Utils;
+import lzhs.com.library.utils.ToastUtils;
+import lzhs.com.library.wedgit.permission.PermissionHelper;
+
+public class HelloActivity extends AppCompatActivity  implements View.OnClickListener{
+        Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hello);
+        button=findViewById(R.id.permission);
+        button.setOnClickListener(this);
+        Utils.init(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+
+        PermissionHelper.requestCamera(new PermissionHelper.OnPermissionGrantedListener() {
+            @Override
+            public void onPermissionGranted() {
+                ToastUtils.showLong("成功");
+            }
+        }, new PermissionHelper.OnPermissionDeniedListener() {
+            @Override
+            public void onPermissionDenied() {
+                ToastUtils.showLong("失败");
+            }
+        });
+    }
+}

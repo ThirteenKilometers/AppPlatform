@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:minWidth="325dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/unit_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/c_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_fork"
+                android:gravity="center_vertical"
+                android:minHeight="50dp"
+                android:paddingLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="9dp"
+                android:src="@drawable/close"/>
+
+        </RelativeLayout>
+
+        <include layout="@layout/divider_line"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/c_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp">
+    </LinearLayout>
+
+    <include layout="@layout/divider_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_dialog_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/c_negativeButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#998282"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:background="#cccccc"/>
+
+        <TextView
+            android:id="@+id/c_positiveButton"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/default_text_color"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>

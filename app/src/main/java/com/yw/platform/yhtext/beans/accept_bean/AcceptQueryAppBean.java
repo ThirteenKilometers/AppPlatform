@@ -1,0 +1,61 @@
+package com.yw.platform.yhtext.beans.accept_bean;
+
+import com.yw.platform.yhtext.beans.commonbeans.AppBean;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * <br/>
+ * 作者：LZHS<br/>
+ * 时间： 2018/4/27 9:31<br/>
+ * 邮箱：1050629507@qq.com
+ */
+
+public class AcceptQueryAppBean {
+    private  String message;
+    private  boolean success;
+    private  String notification;
+    private  int code;
+    private List<AppBean> apps=new ArrayList<>();
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public String getNotification() {
+        return notification;
+    }
+
+    public void setNotification(String notification) {
+        this.notification = notification;
+    }
+
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public List<AppBean> getApps() {
+        return apps;
+    }
+
+    public void setApps(List<AppBean> apps) {
+        this.apps = apps;
+    }
+}

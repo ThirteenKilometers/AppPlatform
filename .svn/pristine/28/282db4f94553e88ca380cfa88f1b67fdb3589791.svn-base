@@ -1,0 +1,10 @@
+// SendBack.aidl
+package com.yw.platform.tools.nettyn;
+
+// Declare any non-default types here with import statements
+
+interface SendBack {
+     void onSusser();
+     void onFail(int code);
+     void onBack(String msg);
+}

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_bg_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@drawable/titlebar"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/edittext_magin_leftandright"
+            android:background="@drawable/button_press_state"
+            android:paddingBottom="@dimen/btn_padding_topandbottom"
+            android:paddingLeft="@dimen/btn_padding_leftandright"
+            android:paddingRight="@dimen/btn_padding_leftandright"
+            android:paddingTop="@dimen/btn_padding_topandbottom"
+            android:text="@string/back"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/versiontext_size" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@android:color/black"
+            android:textSize="23.0sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/edittext_magin_leftandright"
+            android:background="@drawable/button_press_state"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="@string/sure"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/versiontext_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/shape_line" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:layout_marginLeft="@dimen/edittext_magin_leftandright"
+        android:layout_marginRight="@dimen/edittext_magin_leftandright"
+        android:id="@+id/scrollview">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            android:paddingBottom="10.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/checkbox_magin_top"
+                android:text="@string/plat_setting"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edittext_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+            android:id="@+id/platip_ll"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="@dimen/checkbox_magin_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edittext_height"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ip"
+                android:textSize="@dimen/edittext_size"
+                android:background="@drawable/rounded_username_text"
+                android:maxLines="1"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:id="@+id/platip_et"
+                android:background="@drawable/rounded_username_edittext"
+                android:autoText="false"
+                android:textSize="@dimen/edittext_size"
+                android:maxLines="1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|left"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="@dimen/edittext_magin_leftandright"
+                android:layout_marginRight="@dimen/edittext_magin_leftandright"
+                android:src="#ffd4d4d4"
+                android:layout_below="@+id/userLl"
+                android:id="@+id/divideline_plat"></ImageView>
+            <LinearLayout
+                android:id="@+id/platport_ll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/divideline">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_height"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/port"
+                    android:textSize="@dimen/edittext_size"
+                    android:background="@drawable/rounded_password_text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:background="@drawable/rounded_password_edittext"
+                    android:autoText="false"
+                    android:textSize="@dimen/edittext_size"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/platport_et"
+                    android:textColor="@android:color/black"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/edittext_magin_top"
+                android:text="@string/vpn_setting"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/edittext_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/vpnip_ll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="@dimen/checkbox_magin_top">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_height"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/ip"
+                    android:id="@+id/textView"
+                    android:textSize="@dimen/edittext_size"
+                    android:background="@drawable/rounded_username_text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:id="@+id/vpnip_et"
+                    android:background="@drawable/rounded_username_edittext"
+                    android:autoText="false"
+                    android:textSize="@dimen/edittext_size"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|left"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_marginLeft="@dimen/edittext_magin_leftandright"
+                android:layout_marginRight="@dimen/edittext_magin_leftandright"
+                android:src="#ffd4d4d4"
+                android:layout_below="@+id/vpn_ll"
+                android:id="@+id/divideline"></ImageView>
+            <LinearLayout
+                android:id="@+id/vpnport_ll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:layout_below="@+id/divideline">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/edittext_height"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/port"
+                    android:textSize="@dimen/edittext_size"
+                    android:background="@drawable/rounded_password_text"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:background="@drawable/rounded_password_edittext"
+                    android:autoText="false"
+                    android:textSize="@dimen/edittext_size"
+                    android:maxLines="1"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical|left"
+                    android:id="@+id/vpnport_et"
+                    android:textColor="@android:color/black"
+                    android:phoneNumber="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

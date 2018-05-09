@@ -1,0 +1,109 @@
+package com.yw.platform.notice;
+
+import com.yw.platform.beans.ModelManger;
+import com.yw.platform.beans.base.ResponseBean;
+import com.yw.platform.beans.base.ResponseModel;
+import com.yw.platform.beans.recevice.ServiceNotice;
+import com.yw.platform.netApi.SuperSendApi;
+import com.yw.platform.yhtext.beans.MessageEvent;
+import com.yw.platform.yhtext.netty.client.Const;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.List;
+
+/**
+ * Created by cxb on 2018/4/25.
+ */
+
+public class ReceiveNotice {
+    private static ReceiveNotice receiveNotice;
+
+    private ReceiveNotice() {
+
+    }
+    public static synchronized ReceiveNotice getinReceiveNotice() {
+        if (receiveNotice == null) {
+            receiveNotice = new ReceiveNotice();
+        }
+        return receiveNotice;
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onMessageEvent(MessageEvent event) {
+        switch (event.getCode()) {
+            case Const.METHER_UPLOAD_DEVICE_INFO_CODE:
+                ResponseModel responseData=event.getResponseData();
+                responseData.setContentClass(ServiceNotice.class);
+                String requestId = responseData.getMethod();//
+                ServiceNotice contentData= (ServiceNotice) responseData.getContentData();
+                List<ServiceNotice.Notice> notices=contentData.getNotices();
+                for (ServiceNotice.Notice notice:notices) {
+                    handeItem(notice);
+                }
+                ResponseBean responseBean = ModelManger.getDefaultResponseBean("通知消息已接收", "324235");
+                responseBean.setNoticeId("noticePush");
+                SuperSendApi.responseMsg("响应服务请求", requestId, responseBean);
+                break;
+        }
+    }
+    private void handeItem(ServiceNotice.Notice notice ){
+        MessageEvent sendMsg = new MessageEvent<String>();
+        sendMsg.setCode(-1);
+        String noticeType = notice.getNoticeType();
+        String responsemsg = null;
+        if ("strategy".equals(noticeType)) {
+            sendMsg.setCode(-1);
+            sendMsg.setMsg("策略");
+            responsemsg = "策略更新消息已收到";
+        } else if ("appAdd".equals(noticeType)) {//应用新增
+            sendMsg.setCode(Const.NOTICE_APP_ADD);
+            sendMsg.setMsg("应用新增");
+            responsemsg = "应用新增消息已收到";
+        } else if ("appRemove".equals(noticeType)) {//应用移除
+            sendMsg.setCode(Const.NOTICE_APP_REMOVE);
+            sendMsg.setMsg("应用移除");
+            responsemsg = "应用移除消息已收到";
+        } else if ("appUpdate".equals(noticeType)) {//应用更新
+            sendMsg.setCode(Const.NOTICE_APP_UPDATE);
+            sendMsg.setMsg("应用更新");
+            responsemsg = "应用新增消息已收到";
+        } else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
+            sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
+            sendMsg.setMsg("应用清除");
+            responsemsg = "应用清除消息已收到";
+        } else if ("allDataErasure".equals(noticeType)) {//全部数据擦除
+            sendMsg.setCode(Const.CONTROL_ALLDATA_DCREAL);
+            sendMsg.setMsg("设备清除");
+            responsemsg = "设备清除消息已收到";
+        } else if ("screenLock".equals(noticeType)) {//屏幕锁定
+            sendMsg.setCode(Const.CONTROL_SCREEN_LOCK);
+            sendMsg.setMsg("屏幕锁屏");
+            responsemsg = "锁屏消息已收到";
+        } else if ("screenUnLock".equals(noticeType)) {//屏幕解锁
+            sendMsg.setCode(Const.CONTROL_SCREEN_UNLOCK);
+            sendMsg.setMsg("屏幕解锁");
+            responsemsg = "解锁屏幕消息已收到";
+        } else if ("equipmentPositioning".equals(noticeType)) {//设备定位
+            sendMsg.setCode(-1);
+            sendMsg.setMsg("设备定位");
+        } else if ("fileAdd".equals(noticeType)) {//文档新增
+            sendMsg.setCode(-1);
+            sendMsg.setMsg("文档新增");
+            responsemsg = "文档新增消息已收到";
+        } else if ("fileRemove".equals(noticeType)) {
+            sendMsg.setCode(-1);
+            sendMsg.setMsg("文档移除");
+            responsemsg = "文档移除消息已收到";
+        } else if ("fileUpdate".equals(noticeType)) {
+            sendMsg.setCode(-1);
+            sendMsg.setMsg("文档更新");
+            responsemsg = "文档更新消息已收到";
+        }
+        if (sendMsg.getCode() > 0) {
+            EventBus.getDefault().post(sendMsg);
+        }
+    }
+}

@@ -1,0 +1,95 @@
+package com.yw.platform.tools.net;
+
+import java.util.HashMap;
+import java.util.List;
+
+/**
+ * Created by cxb on 2018/4/20.
+ */
+
+public class NettyModel {
+    private User sender;
+    private List<User> recipients;
+    private String method;
+    private HashMap<String,Object> content;
+
+    public User getSender() {
+        return sender;
+    }
+    public void setSender(User sender) {
+        this.sender = sender;
+    }
+
+    public List<User> getRecipients() {
+        return recipients;
+    }
+
+    public void setRecipients(List<User> recipients) {
+        this.recipients = recipients;
+    }
+
+    public  void putContent(String key, Object val){
+        if (content==null)content=new HashMap<>();
+        content.put(key,val);
+    }
+
+    public String getMethod() {
+        return method;
+    }
+
+    public void setMethod(String method) {
+        this.method = method;
+    }
+
+    public HashMap<String, Object> getContent() {
+        return content;
+    }
+
+    public void setContent(HashMap<String, Object> content) {
+        this.content = content;
+    }
+
+    public static class  User{
+        private String userCode;//账号
+        private String client="ANDROIDPHONE";//设备类型
+        private String ict="SOCKET";//通信类型
+
+        public String getUserCode() {
+
+            return userCode;
+        }
+
+        public void setUserCode(String userCode) {
+            this.userCode = userCode;
+        }
+
+        public String getClient() {
+            return client;
+        }
+
+        public void setClient(String client) {
+            this.client = client;
+        }
+
+        public String getIct() {
+            return ict;
+        }
+
+        public void setIct(String ict) {
+            this.ict = ict;
+        }
+    }
+    public static User getDefaultSendUser(){
+        User user=new User();
+        user.setUserCode("test");
+        return user;
+    }
+    public static User getDefaultRecipientUser(){
+        User user=new User();
+        user.setUserCode("INTERFACE");
+        user.setClient("INTERFACE");
+        user.setIct("SOCKET");
+        return user;
+    }
+
+}

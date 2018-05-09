@@ -1,0 +1,85 @@
+package com.yw.platform.netApi;
+
+import android.util.Log;
+
+import com.google.gson.Gson;
+import com.yw.platform.beans.ModelManger;
+import com.yw.platform.beans.base.RequestModel;
+import com.yw.platform.beans.up.Loction;
+import com.yw.platform.global.AppUser;
+import com.yw.platform.global.MyApplication;
+import com.yw.platform.yhtext.beans.MessageEvent;
+import com.yw.platform.yhtext.netty.client.Const;
+
+import org.greenrobot.eventbus.EventBus;
+
+import java.util.HashMap;
+
+/**
+ * Created by cxb on 2018/4/25.
+ */
+
+public class NetApi {
+
+    /**
+     * 位置上传
+     * @param loction
+     */
+    public static void loctionUp(Loction loction){
+       // SuperSendApi.sendMsg("自己位置",loction);
+    }
+
+    /**
+     * 描述：请求应用例表
+     *
+     * @param requestId
+     */
+    public static void queryApp(String requestId) {
+        HashMap<String, String> content = new HashMap<>();
+        content.put("notification", "REQUEST");
+        content.put("deviceSystem", "android");
+        content.put("userCode", getUserCode());
+        RequestModel rModel = ModelManger.getDefaultReqestModel(getUserCode());
+        rModel.setRequestId(requestId);
+        rModel.setMethod(Const.METHER_QUERYAPP);
+        rModel.setContent(content);
+        Gson gson = new Gson();
+        String data = gson.toJson(rModel);
+        Log.e("请求应用列表", data);
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(Const.SEND_CODE);
+        event.setMsg("正在向服务器发送：请求应用例表");
+        event.setData(data);
+        EventBus.getDefault().post(event);
+    }
+    /**
+     * 描述：请求策略
+     *
+     * @param requestId
+     */
+    public static void requestPolicy(String requestId) {
+        HashMap<String, String> content = new HashMap<>();
+        content.put("notification", "REQUEST");
+        content.put("userCode", getUserCode());
+        RequestModel rModel = ModelManger.getDefaultReqestModel(getUserCode());
+        rModel.setRequestId(requestId);
+        rModel.setMethod(Const.METHER_QUERYPOLICY);
+        rModel.setContent(content);
+        Gson gson = new Gson();
+        String data = gson.toJson(rModel);
+        Log.e("请求应用列表", data);
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(Const.SEND_CODE);
+        event.setMsg("正在向服务器发送：请求应用例表");
+        event.setData(data);
+        EventBus.getDefault().post(event);
+    }
+    public static String getUserCode() {
+        AppUser appUser= MyApplication.getInstance().getAppUser();
+        if(appUser==null){
+            return "";
+        }else{
+            return appUser.getUserCode();
+        }
+    }
+}

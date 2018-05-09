@@ -1,0 +1,246 @@
+package com.yw.platform.activity;
+
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.os.Handler;
+import android.text.TextUtils;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
+import com.lidroid.xutils.view.annotation.event.OnCompoundButtonCheckedChange;
+import com.yw.platform.R;
+import com.yw.platform.global.Constants;
+import com.yw.platform.global.MyApplication;
+import com.yw.platform.test.TestActivity;
+import com.yw.platform.utils.CodeUtils;
+import com.yw.platform.utils.DeviceUtil;
+import com.yw.platform.utils.dialog.DialogBase;
+import com.yw.platform.view.CustomProgressDialog;
+
+/**
+ * A login screen that offers login via password.
+ */
+@ContentView(R.layout.activity_login_new)
+public class LoginActivity extends AdminActivity {
+
+    @ViewInject(R.id.edit_account)
+    private EditText editAccount;
+
+    @ViewInject(R.id.edit_password)
+    private EditText editPassword;
+
+    @ViewInject(R.id.textView3)
+    private TextView textView_version;
+
+//    @ViewInject(R.id.loginAllinclude)
+//    private RelativeLayout loginAllinclude;
+
+    @ViewInject(R.id.button)
+    private Button login_btn;
+    @ViewInject(R.id.image_auth_code)
+    private ImageView imageAuthCode;
+
+
+//    @ViewInject(R.id.checkBox)
+//    private CheckBox checkBox;
+
+//    @ViewInject(R.id.mScrollView)
+//    private ScrollView mScrollView;
+
+    private String mCompany;
+    private CustomProgressDialog progressDialog;
+    private SharedPreferences share;
+    private String DownLoadURL;
+    protected static Handler mHandler;
+
+    private final int APK_APP = 0;//0表示apk应用
+    private final int NATIVE_APP = 1;//1表示自带原生应用
+    private final int VIRTUAL_APP = 2;//2表示虚拟应用
+    private final int PHONEGAP_APP = 3;//3表示自带cordova应用(类似代办公文等)
+    private final int WEB_APP = 4;//4.表示webApp
+
+    private boolean showContacts;
+    private boolean showEmail;
+    private boolean veryfyDevice;
+    private boolean showUcWeb;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        ViewUtils.inject(this);
+        MyApplication.getInstance().addActivity(this);
+        MyApplication.getInstance().addActivity(this);
+        share = this.getSharedPreferences(Constants.SYSTEMPREFERENT, 0);
+        if (mHandler == null) {
+            mHandler = new Handler();
+        }
+        textView_version.setText(DeviceUtil.getVersionName(this));
+//        findViewById(R.id.btn_version).setOnClickListener(new OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent();
+//                intent.setClass(LoginActivity.this,SettingActivity.class);
+////                this.startActivity(intent);
+//                startActivityForResult(intent, 0);
+//            }
+//        });
+
+        //检查用户是否选择了记住密码
+//        boolean isRememberPassword=share.getBoolean(Constants.ISREMEMBERPASSWORD,false);
+//        if(isRememberPassword){
+//            String username = share.getString("username","");
+//            String password_entryed=share.getString(username,"");
+//            try {
+//                String password = AESEncryptor.decrypt(Constants.KEY, password_entryed);
+//                username_et.setText(username);
+//                password_et.setText(password);
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//            checkBox.setChecked(true);
+//        }else{
+//            checkBox.setChecked(false);
+//        }
+        Intent intent = getIntent();
+        if (intent != null && intent.hasExtra("company")) {
+            mCompany = intent.getStringExtra("company");
+        }
+        if (TextUtils.isEmpty(mCompany)) {
+            finish();
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+//        super.onBackPressed();
+//        System.exit(0);
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        startActivity(intent);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        imageAuthCode.setImageBitmap(CodeUtils.getInstance().createBitmap());
+    }
+
+    /**
+     * 使ScrollView指向底部
+     */
+    private void changeScrollView() {
+        mHandler.post(new Runnable() {
+            @Override
+            public void run() {
+                //mScrollView.smoothScrollTo(0, mScrollView.getMeasuredHeight());
+            }
+        });
+    }
+
+    @OnCompoundButtonCheckedChange(R.id.checkBox)
+    public void onCheckChanged(CompoundButton view, boolean isChecked) {
+        if (isChecked) {
+            share.edit().putBoolean(Constants.ISREMEMBERPASSWORD, true).apply();
+        } else {
+            share.edit().putBoolean(Constants.ISREMEMBERPASSWORD, false).apply();
+        }
+    }
+
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+//        Intent intent = new Intent();
+//        intent.setClass(this,SettingActivity.class);
+////      this.startActivity(intent);
+//        startActivityForResult(intent, 0);
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @OnClick(R.id.button)
+    public void onLoginBtnClick(View view) {
+        attemptLogin();
+    }
+
+    @OnClick(R.id.image_auth_code)
+    public void refreshAuthCode(View v) {
+        imageAuthCode.setImageBitmap(CodeUtils.getInstance().createBitmap());
+    }
+
+    @OnClick(R.id.button_register_now)
+    public void register(View v) {
+        startActivityForResult(new Intent(this, RegisterActivity.class), 0);
+    }
+    @OnClick(R.id.button_test)
+    public void test(View v) {
+        startActivityForResult(new Intent(this, TestActivity.class), 0);
+    }
+    public void attemptLogin() {
+        final String account = editAccount.getText().toString().trim();
+        if (TextUtils.isEmpty(account)) {
+            Toast.makeText(this, R.string.accountIsEmpty, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // TODO: 2017/10/30 现在是输入图片验证码 密码默认yw123456
+        final String password = editPassword.getText().toString().trim();
+        if (TextUtils.isEmpty(password)) {
+            Toast.makeText(this, R.string.authCodeIsEmpty, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        String code = CodeUtils.getInstance().getCode();
+        //校验验证码
+        if (TextUtils.isEmpty(code) || !password.equalsIgnoreCase(code)) {
+            Toast.makeText(this, R.string.authCodeIsError, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        // TODO: 2017/10/30 现在是输入图片验证码 密码默认yw123456
+        new LoginTask(this).attemptLogin(mCompany, account, "123456", new LoginTask.LoginBack() {
+            @Override
+            public void onSuccess() {
+                MyApplication.getInstance().setCompany(mCompany);
+                Intent intent = new Intent();
+                intent.setClass(LoginActivity.this, MainActivity.class);
+                intent.putExtra("password", password);
+                startActivity(intent);
+                MyApplication.getInstance().setPassWord(password);
+                finish();
+            }
+
+            @Override
+            public void onFail(String err) {
+                showErrorDialog(err);
+            }
+        });
+    }
+
+    private void showErrorDialog(String string) {
+        DialogBase.Builder customDialog = new DialogBase.Builder(this)
+                .setShowTitle(false)
+                .setContent(DialogBase.createTextContent(this, string))
+                .setCanCelable(false)
+                .setPositiveButton("确定", null);
+        customDialog.show();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK) {
+            editAccount.setText(MyApplication.getInstance().getAccount());
+        }
+    }
+}
+
+
+

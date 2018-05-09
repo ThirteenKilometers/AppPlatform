@@ -1,0 +1,37 @@
+package com.yw.platform.tools.nettys;
+
+import android.util.Log;
+
+import org.json.JSONException;
+
+import java.io.IOException;
+
+/**
+ * Created by cxb on 2018/4/16.
+ */
+
+public class Timber {
+
+    public static void e(String s) {
+        Log.e("log日志","-"+s);
+    }
+
+    public static void d(String s, int statusCode) {
+        Log.e("log日志","-"+s+"(状态"+statusCode+")");
+    }
+    public static void d(String s, String statusCode) {
+        Log.e("log日志","-"+s+"(状态"+statusCode+")");
+    }
+    public static void d(String s) {
+        Log.e("log日志","-"+s);
+    }
+
+    public static void e(JSONException e, String message) {
+        Log.e("log日志","-"+message+"("+e.toString()+")");
+    }
+
+    public static void e(IOException e, String message) {
+        Log.e("log日志","-"+message+"("+e.toString()+")");
+    }
+
+}

@@ -1,0 +1,126 @@
+package com.yw.platform.yhtext;
+
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
+import com.yw.platform.R;
+import com.yw.platform.yhtext.bean.BaseMagBean;
+import com.yw.platform.yhtext.bean.ContentLoginBean;
+import com.yw.platform.yhtext.netty.Const;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TextActivity extends AppCompatActivity {
+    public static final String TAG = "MainActivity";
+
+    TextView mTextShow;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_text);
+        EventBus.getDefault().register(this);
+        mTextShow = (TextView) findViewById(R.id.mTextShow);
+    }
+
+
+
+    public void sendMessage(View v) {
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(Const.SEND_CODE);
+        event.setMsg("正在向服务器发送消息");
+        event.setData(JSONObject.toJSONString(createBean()));
+        EventBus.getDefault().post(event);
+
+    }
+
+    @NonNull
+    private BaseMagBean createBean() {
+        BaseMagBean bean = new BaseMagBean();
+
+        bean.setMethod("login");
+        bean.setRequestId("hahahaha");
+       // bean.setMessage("heartbeat");
+        //bean.setSuccess(true);
+       // bean.setRequestId("小欢欢");
+
+        BaseMagBean.SenderBean mSender = new BaseMagBean.SenderBean();
+        mSender.setClient("ANDROIDPHONE");
+        mSender.setUserCode("testUserCode");//发件人可以不传
+        mSender.setIct("SOCKET");
+        mSender.setClientVersion("发件人客户端版本");
+
+        bean.setSender(mSender);
+
+        List<BaseMagBean.RecipientsBean> recipientsBeans = new ArrayList<>();
+        BaseMagBean.RecipientsBean recipientsBean = new BaseMagBean.RecipientsBean();
+        recipientsBean.setClient("INTERFACE");
+        recipientsBean.setIct("SOCKET");//可以不传
+        recipientsBean.setUserCode("INTERFACE");
+        recipientsBeans.add(recipientsBean);
+        bean.setRecipients(recipientsBeans);
+
+        ContentLoginBean contentBean = new ContentLoginBean();
+        contentBean.setDeviceCode("小欢欢的设备");
+        contentBean.setUserCode("testUserCode");
+        contentBean.setPassword("yw123456");
+        contentBean.setNotification("REQUEST");//需要返回值
+        //bean.setContent(JSONObject.toJSONString(contentBean));
+        bean.setContent(contentBean);
+
+        return bean;
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (EventBus.getDefault().isRegistered(this)) EventBus.getDefault().unregister(this);
+    }
+    @Subscribe(threadMode = ThreadMode.MAIN)
+
+    public void onMessageEvent(MessageEvent event) {
+        switch (event.getCode()) {
+            case Const.ACCEPT_CODE:
+                setText((String) event.getData());
+                break;
+            case Const.METHER_LOGIN_CODE:
+                //登录操作
+                event.getData();
+                BaseMagBean bean = getTextBean((String) event.getData());
+                ContentLoginBean  contentLoginBean= (ContentLoginBean) bean.getContent();
+                String str = contentLoginBean.getMessage();
+                mTextShow.setText(str);
+
+               /* Log.d(TAG, "onMessageEvent: "+contentLoginBean.getMessage());
+               if ( bean.isSuccess()){//响应成功时返回
+                  mTextShow.setText("请求得到的信息："+contentLoginBean.getMessage());
+               }*/
+                break;
+            case  Const.METHER_HEARTBEAT_CODE:
+                // TODO: 2018/4/23
+                break;
+        }
+        Toast.makeText(this, event.getMsg(), Toast.LENGTH_LONG).show();
+    }
+
+
+    private BaseMagBean getTextBean(String data) {
+        BaseMagBean bean = JSON.parseObject(data, BaseMagBean.class);
+        bean.setContent(JSON.parseObject(bean.getContent().toString(), ContentLoginBean.class));
+        return bean;
+    }
+    public void setText(String text) {
+        StringBuffer stringBuffer = new StringBuffer(mTextShow.getText());
+        stringBuffer.append(text + "\n\r");
+        mTextShow.setText(stringBuffer.toString());
+    }
+}

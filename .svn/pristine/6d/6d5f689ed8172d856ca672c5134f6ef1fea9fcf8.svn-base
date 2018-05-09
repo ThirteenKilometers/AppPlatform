@@ -1,0 +1,73 @@
+package com.yw.platform.yhtext.bean;
+
+import java.io.Serializable;
+
+public class ContentLoginBean <T>implements Serializable {
+
+    /**
+     * userCode : testUserCode
+     * password : yw123456
+     * notification : REQUEST
+     */
+    private  String deviceCode;
+    private String userCode;
+    private String password;
+    private String notification;
+
+    public String getDeviceCode() {
+        return deviceCode;
+    }
+
+    public void setDeviceCode(String deviceCode) {
+        this.deviceCode = deviceCode;
+    }
+
+    /**
+     * success : false
+
+     * message : 密码错误
+     */
+
+    private boolean success;
+    private String message;
+
+    public String getUserCode() {
+        return userCode;
+    }
+
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getNotification() {
+        return notification;
+    }
+
+    public void setNotification(String notification) {
+        this.notification = notification;
+    }
+
+    public boolean isSuccess() {
+        return success;
+    }
+
+    public void setSuccess(boolean success) {
+        this.success = success;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
+}

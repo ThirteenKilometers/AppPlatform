@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:panel="http://schemas.android.com/apk/res/com.yw.platform"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.yw.platform.view.FloatPanel
+        android:id="@+id/topPanel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        panel:animationDuration="100"
+        panel:closedHandle="@drawable/bardown"
+        panel:content="@+id/panelContent"
+        panel:handle="@+id/panelHandle"
+        panel:linearFlying="true"
+        panel:openedHandle="@drawable/barup"
+        panel:position="top" >
+
+        <Button
+            android:id="@+id/panelHandle"
+            android:layout_width="90dip"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#b0000000" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/panelContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarview"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/imageLogout_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageLogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageLogout"
+                    android:layout_centerHorizontal="true"
+                    android:text="注销"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="|" />
+
+            <RelativeLayout
+                android:id="@+id/imageKeyboard_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageKeyboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/keyboardold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageKeyboard"
+                    android:layout_centerHorizontal="true"
+                    android:text="软键盘"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="|" />
+
+            <RelativeLayout
+                android:id="@+id/imageCursor_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageCursor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/mouse" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageCursor"
+                    android:layout_centerHorizontal="true"
+                    android:text="鼠标"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="|" />
+
+            <RelativeLayout
+                android:id="@+id/imageGesture_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageGesture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/gesture" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageGesture"
+                    android:layout_centerHorizontal="true"
+                    android:text="功能键"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+<!--             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="|" />
+
+            <RelativeLayout
+                android:id="@+id/ChangeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <cn.com.ec.customtool.ImageNumberView
+                    android:id="@+id/imageChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imageChange"
+                    android:layout_centerHorizontal="true"
+                    android:text="切换"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout> -->
+
+            <TextView
+                android:id="@+id/changeLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="|" />
+
+            <RelativeLayout
+                android:id="@+id/imageBack_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dip"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/close" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageBack"
+                    android:layout_centerHorizontal="true"
+                    android:text="返回"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.yw.platform.view.FloatPanel>
+</LinearLayout>

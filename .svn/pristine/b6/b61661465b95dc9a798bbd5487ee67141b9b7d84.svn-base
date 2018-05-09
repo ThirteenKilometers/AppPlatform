@@ -1,0 +1,21 @@
+package com.yw.platform.netApi;
+
+import com.yw.platform.beans.up.Loction;
+
+/**
+ * Created by cxb on 2018/4/25.
+ */
+
+public class NetApi {
+
+    /**
+     * 位置上传
+     * @param loction
+     */
+    public static void loctionUp(Loction loction){
+        SuperSendApi.sendMsg("自己位置",loction);
+    }
+
+
+
+}

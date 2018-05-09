@@ -1,0 +1,31 @@
+package com.yw.platform.yhtext.utils;
+
+import android.content.Context;
+import android.telephony.TelephonyManager;
+
+import java.net.PortUnreachableException;
+
+/**
+ * 此类为手机基本信息，如手机型号，生产厂家,获取手机IMEI号等
+ *
+ */
+
+public class PhoneMessage {
+    //手机设备型号
+    public  static String devicetype=android.os.Build.MODEL;
+    //获取设备制造商
+    public  static  String deviceModel=android.os.Build.MANUFACTURER;
+    //系统版本
+    public  static  String deviceSystemVersion= android.os.Build.VERSION.RELEASE;
+    /**
+     * 获取手机IMEI号
+     *
+     * 需要动态权限: android.permission.READ_PHONE_STATE
+     */
+    public static String getIMEI(Context context) {
+        TelephonyManager telephonyManager = (TelephonyManager) context.getSystemService(context.TELEPHONY_SERVICE);
+        String imei = telephonyManager.getDeviceId();
+
+        return imei;
+    }
+}

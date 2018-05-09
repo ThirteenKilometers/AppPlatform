@@ -1,0 +1,98 @@
+package com.yw.platform.test;
+
+import android.app.KeyguardManager;
+import android.app.Service;
+import android.content.Context;
+import android.content.Intent;
+import android.content.ServiceConnection;
+import android.os.Binder;
+import android.os.Handler;
+import android.os.HandlerThread;
+import android.os.IBinder;
+import android.os.Message;
+
+import com.yw.platform.tools.AppLockTools;
+import com.yw.platform.tools.SetInfo;
+import com.yw.platform.ui.activity.AppLockerActivity;
+
+public class AppLockerService extends Service {
+
+    private final int MSG_CHECK_FG_APP = 1;
+    private final int MONITOR_INTERVAL = 300;
+    private String SHARED_PREF_LOCK_STATUS = "lock_status";
+
+    private HandlerThread mMonitorThread;
+    private Handler mHandler;
+    private KeyguardManager mKeyguardManager;
+
+    public class Connection extends Binder {
+        public AppLockerService getService() {
+            return AppLockerService.this;
+        }
+    }
+    public static void startService(Context context){
+        Intent intent = new Intent(context, AppLockerService.class);
+        context.startService(intent);
+    }
+    public static void bindstartService(Context context,ServiceConnection conn){
+        Intent intent = new Intent(context, AppLockerService.class);
+        context.bindService(intent, conn, BIND_AUTO_CREATE);
+    }
+
+    @Override
+    public IBinder onBind(Intent intent) {
+        return new Connection();
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        initHandlerThread();
+    }
+
+
+    private void initHandlerThread(){
+        mMonitorThread = new HandlerThread("AppLockerMonitorThread");
+        mMonitorThread.start();
+        mKeyguardManager = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
+        mHandler = new Handler(mMonitorThread.getLooper()) {
+            @Override
+            public void handleMessage(Message msg) {
+                switch (msg.what) {
+                    case MSG_CHECK_FG_APP:
+                        if (mKeyguardManager.inKeyguardRestrictedInputMode()) {
+                            SetInfo.getInstance().resetUnlockStatus();
+                            break;
+                        }
+                        String foregroundApp = AppLockTools.getForegroundApp(AppLockerService.this);
+                        if (foregroundApp!=null&&SetInfo.getInstance().AppLock(foregroundApp)) {
+                            Intent intent = new Intent(AppLockerService.this, AppLockerActivity.class);
+                            intent.putExtra("APP_NAME", foregroundApp);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
+                        }
+                        break;
+                }
+                mHandler.sendEmptyMessageDelayed(MSG_CHECK_FG_APP, MONITOR_INTERVAL);
+            }
+        };
+        mHandler.sendEmptyMessageDelayed(MSG_CHECK_FG_APP, MONITOR_INTERVAL);
+    }
+
+
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        return super.onStartCommand(intent, flags, startId);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
+
+
+
+
+
+}

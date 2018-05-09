@@ -1,0 +1,53 @@
+package com.yw.platform.net.entity;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by cxb on 2018/4/24.
+ */
+public class  NetUser{
+    private String userCode;//账号
+    private String client="ANDROIDPHONE";//设备类型
+    private String ict="SOCKET";//通信类型
+    private String clientVersion="12.45";
+
+    public String getUserCode() {
+        return userCode;
+    }
+
+    public void setUserCode(String userCode) {
+        this.userCode = userCode;
+    }
+
+    public String getClient() {
+        return client;
+    }
+
+    public void setClient(String client) {
+        this.client = client;
+    }
+
+    public String getIct() {
+        return ict;
+    }
+
+    public void setIct(String ict) {
+        this.ict = ict;
+    }
+    public static NetUser getDefaultSendUser(){
+        NetUser user=new NetUser();
+        user.setUserCode("test");
+        return user;
+    }
+    public static List<NetUser> getDefaultRecipientUser(){
+        List<NetUser> users=new ArrayList<>();
+        NetUser user=new NetUser();
+        user.setUserCode("INTERFACE");
+        user.setClient("INTERFACE");
+        user.setIct("SOCKET");
+        users.add(user);
+        return users;
+    }
+
+}

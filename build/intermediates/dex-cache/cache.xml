@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\gson-2.2.4_73c55f0eec40b4db0b62a84ed98cdcc43d716005.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\android-pre-support-v4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="feb00b47f92c937a613a34dd533e8e0779f27b80">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\android-pre-support-v4_35fd69aa69b165957add56ea4aee9089594819d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\virturl.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3d18d9deecf1202c231ad2dac66d6bc01129a775">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\virturl_2ec257ef336da187b9ad5958bf83d0e9800b5443.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\loader.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0d5bbff9e60d274d6200c82189d0d9ae80e3685b">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\loader_169b1b0184877940434aad83007b6c1e9c0a4791.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\L4Proxy.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ae8639b84e68bd52ee3716de1534af03c4654b03">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\L4Proxy_d8ce281ada3ef3169a3cd822a03a2b7904479c0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\netty-all-4.1.6.Final.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6cb4393b29248778f0bcf89118c949304cec8bb8">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\netty-all-4.1.6.Final_04b18fdc25b452aa6822763e0be6d65802370065.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="F:\Projects\AppPlatform\app\libs\xUtils-2.6.14.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="F:\Projects\AppPlatform\app\build\intermediates\pre-dexed\debug\xUtils-2.6.14_8402da99b7c60d77a0bc46ba83dad99fdbee446f.jar" />
+    </item>
+
+</items>

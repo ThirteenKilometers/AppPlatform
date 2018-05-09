@@ -1,0 +1,244 @@
+package com.yw.platform.yhtext;
+
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.alibaba.fastjson.JSON;
+import com.yw.platform.R;
+import com.yw.platform.yhtext.beans.MessageEvent;
+import com.yw.platform.yhtext.beans.accept_bean.AcceptLoginBean;
+import com.yw.platform.yhtext.beans.accept_bean.AcceptQueryAppBean;
+import com.yw.platform.yhtext.beans.accept_bean.AcceptUploadDeviceInfBean;
+import com.yw.platform.yhtext.beans.commonbeans.AppInstalInfoBean;
+import com.yw.platform.yhtext.beans.commonbeans.DeviceInfoBean;
+import com.yw.platform.yhtext.beans.send_bean.SendLoginBean;
+import com.yw.platform.yhtext.beans.send_bean.SendQueryAppBean;
+import com.yw.platform.yhtext.beans.send_bean.SendUploadDeviceInfoBean;
+import com.yw.platform.yhtext.beans.send_bean.base.BaseSendMsgBean;
+import com.yw.platform.yhtext.beans.send_bean.base.BaseUserBean;
+import com.yw.platform.yhtext.netty.client.Const;
+import com.yw.platform.yhtext.utils.MD5Util;
+import com.yw.platform.yhtext.utils.PhoneMessage;
+
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class TextActivity extends AppCompatActivity implements View.OnClickListener {
+    public static final String TAG = "MainActivity";
+
+    TextView mTextShow;
+    Button mBtnLogin, mBtnUploadDeviceInfo, mBtnQueryApp;
+    String account = "test", password = "123456";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_text);
+        EventBus.getDefault().register(this);
+        initView();
+    }
+
+    private void initView() {
+        mTextShow = (TextView) findViewById(R.id.mTextShow);
+        mBtnLogin = (Button) findViewById(R.id.mBtnLogin);
+        mBtnLogin.setOnClickListener(this);
+        mBtnUploadDeviceInfo = (Button) findViewById(R.id.mBtnUploadDeviceInfo);
+        mBtnUploadDeviceInfo.setOnClickListener(this);
+        mBtnQueryApp = (Button) findViewById(R.id.mBtnQueryApp);
+        mBtnQueryApp.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        String data = "";
+        switch (view.getId()) {
+            case R.id.mBtnLogin:
+                data = createLogingBean();
+                break;
+            case R.id.mBtnUploadDeviceInfo:
+                data = createUploadDeviceInfoMessage();
+                break;
+            case R.id.mBtnQueryApp:
+                data = createQueryApp();
+        }
+        sendMessage(data);
+    }
+
+    /**
+     * 获取应用接口：method=”queryApp”
+     */
+    private String createQueryApp() {
+        BaseSendMsgBean sendMsgBean = createDefaultSendBean();
+
+        SendQueryAppBean QueryAppBean = new SendQueryAppBean();
+        QueryAppBean.setNotification("REQUEST");
+        QueryAppBean.setDeviceSystem("android");//操作系统:android;ios
+        // TODO: 2018/4/27 登录账号到时要修改
+        QueryAppBean.setUserCode("test");//当前登录账号
+
+        sendMsgBean.setContent(QueryAppBean);
+        sendMsgBean.setMethod(Const.METHER_QUERYAPP);
+        sendMsgBean.setRequestId(Const.METHER_QUERYAPP + "");//请求编号，唯一客户端自己创建
+        return JSON.toJSONString(sendMsgBean);
+    }
+
+    /**
+     * 设备信息上传接口：method=”uploadDeviceInfo”
+     */
+    private String createUploadDeviceInfoMessage() {
+        BaseSendMsgBean sendMsgBean = createDefaultSendBean();
+        SendUploadDeviceInfoBean uploadDeviceInfoBean = new SendUploadDeviceInfoBean();
+        DeviceInfoBean deviceInfoBean = DeviceInfoEntith();
+        List<AppInstalInfoBean> appInstalInfos = new ArrayList<>();
+        appInstalInfos.add(createDeviceInfo());
+        uploadDeviceInfoBean.setDeviceInfoBean(deviceInfoBean);
+        uploadDeviceInfoBean.setAppInstalInfoBeanList(appInstalInfos);
+        uploadDeviceInfoBean.setNotification("REQUEST");
+        uploadDeviceInfoBean.setDeviceCode("设备号");
+        sendMsgBean.setContent(uploadDeviceInfoBean);
+        return JSON.toJSONString(sendMsgBean);
+
+    }
+
+    public void sendMessage(String data) {
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(Const.SEND_CODE);
+        event.setMsg("正在向服务器发送登录消息");
+        event.setData(data);
+        EventBus.getDefault().post(event);
+
+    }
+
+    DeviceInfoBean DeviceInfoEntith() {
+        DeviceInfoBean deviceInfoBean = new DeviceInfoBean();
+        deviceInfoBean.setDeviceCode("设备序列号");
+        deviceInfoBean.setDeviceType("设备型号");
+        deviceInfoBean.setDeviceModel("设备制作商");
+        deviceInfoBean.setDeviceSystem("操作系统");
+        deviceInfoBean.setDeviceSystemVersion("系统版本");
+        deviceInfoBean.setMac("设备MAC地址");
+        deviceInfoBean.setDeviceCode("设备序列号");
+        deviceInfoBean.setImei("IMEI");
+        deviceInfoBean.setEsn("ESN");
+        deviceInfoBean.setCpuOccupy("");
+        deviceInfoBean.setRamOccupy("");
+        deviceInfoBean.setGpsState("");
+        deviceInfoBean.setBluetoothState("");
+        deviceInfoBean.setNetworkState("");
+        deviceInfoBean.setElectricity("");
+        deviceInfoBean.setSignalIntensity("信号强度");
+        deviceInfoBean.setAccessInfo("接入点信息");
+        deviceInfoBean.setSimInfo("SIM卡信息");
+        deviceInfoBean.setPositionInfo("位置信息");
+        deviceInfoBean.setStorageInfo("存储信息");
+        deviceInfoBean.setAppInfo("应用安装信息");
+        deviceInfoBean.setCertificateInfo("证书信息");
+        deviceInfoBean.setConfigInfo("配置信息");
+        return deviceInfoBean;
+    }
+
+    ;
+
+    private String createLogingBean() {
+        BaseSendMsgBean sendMsgBean = createDefaultSendBean();
+        SendLoginBean loginBean = new SendLoginBean();
+        loginBean.setDeviceCode("当前设备号");
+        loginBean.setNotification("REQUEST");
+        loginBean.setDeviceType(PhoneMessage.devicetype);
+        loginBean.setDeviceSystem("android");//操作系统
+        loginBean.setPassword(MD5Util.encrypt(password));//"登录密码，传MD5加密后的值"
+        loginBean.setUserCode(account);//"登录账号"
+        sendMsgBean.setContent(loginBean);
+        sendMsgBean.setRequestId(Const.METHER_LOGIN_CODE + "");
+        sendMsgBean.setMethod(Const.METHER_LOGIN);
+        return JSON.toJSONString(sendMsgBean);
+    }
+
+    @NonNull
+    private BaseSendMsgBean createDefaultSendBean() {
+        BaseSendMsgBean sendMsgBean = new BaseSendMsgBean();
+        sendMsgBean.setSender(createDefault("", "ANDROIDPHONE"));
+        List<BaseUserBean> recipients = new ArrayList<>();
+        recipients.add(createDefault("INTERFACE", ""));
+        sendMsgBean.setRecipients(recipients);
+        return sendMsgBean;
+    }
+
+    private BaseUserBean createDefault(String code, String client) {
+        BaseUserBean userBean = new BaseUserBean();
+        userBean.setClient(client);
+        userBean.setClientVersion("客户端版本，发件人必须传，收件人可以不传");
+        userBean.setIct("SOCKET");//可以不传
+        userBean.setUserCode(code);
+
+        return userBean;
+    }
+
+    private AppInstalInfoBean createDeviceInfo() {
+        AppInstalInfoBean appInstalInfoBean = new AppInstalInfoBean();
+        appInstalInfoBean.setAppTypeId("安装包ID");
+        appInstalInfoBean.setInstallType("安装类型");//current 已安装最新版，history已安装历史版, none 未安装
+        appInstalInfoBean.setVersion("当前安装版本号，未安装不传");
+        return appInstalInfoBean;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (EventBus.getDefault().isRegistered(this))
+            EventBus.getDefault().unregister(this);
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void acceptMsg(MessageEvent event) {
+        switch (event.getCode()) {
+            case Const.ACCEPT_CODE:
+                setText((String) event.getData());
+                break;
+            case Const.METHER_LOGIN_CODE:  //登录操作
+                AcceptLoginBean loginBean = JSON.parseObject((String) event.getDataContent(), AcceptLoginBean.class);
+                mTextShow.setText(loginBean.getMessage() + "");
+
+                break;
+            case Const.METHER_UPLOAD_DEVICE_INFO_CODE:  //设备信息上传接口
+                AcceptUploadDeviceInfBean uploadDeviceInfBean = JSON.parseObject((String) event.getDataContent(), AcceptUploadDeviceInfBean.class);
+                mTextShow.setText(uploadDeviceInfBean.getMessage() + "");
+                // TODO: 2018/4/27  得到设备信息上传后的具体操作
+                break;
+            case Const.METHER_METHER_QUERYAPP_CODE://获取应用接口
+                AcceptQueryAppBean acceptQueryAppBean = JSON.parseObject((String) event.getDataContent(), AcceptQueryAppBean.class);
+                String str = acceptQueryAppBean.getApps().get(0).getAppUrl() + "" + acceptQueryAppBean.getMessage();
+                Log.i(TAG, "==============acceptMsg: " + str);
+                mTextShow.setText(acceptQueryAppBean.getMessage() + "");
+
+                // TODO: 2018/4/27  获取应用接口 后的具体操作
+                break;
+        }
+        Toast.makeText(this, event.getMsg(), Toast.LENGTH_LONG).show();
+    }
+
+//    private BaseMagBean getTextBean(String data) {
+//        BaseMagBean bean = JSON.parseObject(data, BaseMagBean.class);
+//        bean.setContent(JSON.parseObject(bean.getContent().toString(), ContentLoginBean.class));
+//        return bean;
+//    }
+
+    public void setText(String text) {
+        StringBuffer stringBuffer = new StringBuffer(mTextShow.getText());
+        stringBuffer.append(text + "\n\r");
+        mTextShow.setText(stringBuffer.toString());
+    }
+
+
+}

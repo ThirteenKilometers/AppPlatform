@@ -1,0 +1,958 @@
+package com.yw.platform.activity;
+
+
+import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
+import android.app.Dialog;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.ResolveInfo;
+import android.graphics.Bitmap;
+import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.BaseAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.GridView;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.lidroid.xutils.BitmapUtils;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.exception.DbException;
+import com.lidroid.xutils.exception.HttpException;
+import com.lidroid.xutils.http.HttpHandler;
+import com.lidroid.xutils.http.ResponseInfo;
+import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.util.LogUtils;
+import com.lidroid.xutils.view.annotation.ContentView;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.yw.platform.R;
+import com.yw.platform.download.DownloadInfo;
+import com.yw.platform.download.DownloadManager;
+import com.yw.platform.download.DownloadService;
+import com.yw.platform.global.Constants;
+import com.yw.platform.global.MyApplication;
+import com.yw.platform.global.MyApplication.LAST_CONNCED_TYPE;
+import com.yw.platform.model.AppInfo;
+import com.yw.platform.model.VirtualAppInfo;
+import com.yw.platform.utils.BitmapHelp;
+import com.yw.platform.utils.DeviceUtil;
+import com.yw.platform.utils.FileUtil;
+import com.yw.platform.utils.HttpClient;
+import com.yw.platform.utils.LogSendUtils;
+import com.yw.platform.utils.MyBase64;
+import com.yw.platform.utils.dialog.DialogBase;
+import com.yw.platform.view.BaseViewHolder;
+import com.yw.platform.view.CustomProgressDialog;
+import com.yw.platform.view.PageControlView;
+import com.yw.platform.view.RoundProgressBar;
+
+import net.ttxc.L4Proxy.L4ProxyArd;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.crypto.Cipher;
+import javax.crypto.spec.IvParameterSpec;
+import javax.crypto.spec.SecretKeySpec;
+
+import static com.yw.platform.R.id.webview;
+
+/**
+ * Created by panda on 15-1-12.
+ */
+@ContentView(R.layout.activity_main)
+public class MainActivity extends BaseActivity implements android.view.View.OnClickListener {
+    private final int APK_APP = 0;// 0表示apk应用
+    private final int NATIVE_APP = 1;// 1表示自带原生应用
+    private final int VIRTUAL_APP = 2;// 2表示虚拟应用
+    private final int PHONEGAP_APP = 3;// 3表示自带cordova应用(类似代办公文等)
+    private final int WEB_APP = 4;// 4.表示webApp
+    private static int COLUMN_NUM = 4;
+    private static int LINE_NUM = 4;
+    private static int PAGE_COUNT = COLUMN_NUM * LINE_NUM;
+    private int screenWidth, screenHeight;
+    @ViewInject(R.id.pageControl)
+    private PageControlView mPageControl;
+    @ViewInject(R.id.viewpager)
+    private ViewPager mViewPager;
+    private int pageNum;
+    private int mCurPageNumIndex;
+    private ArrayList<GridView> mAppGridViews = new ArrayList<GridView>();
+    public static ArrayList<VirtualAppInfo> vir_resList;
+    private List<AppInfo> resList = new ArrayList<AppInfo>();
+    private int resCount;
+    private List<AppGridViewAdapter> adapterList = new ArrayList<MainActivity.AppGridViewAdapter>();
+    private DownloadManager downloadManager;
+    private PackageManager packageManager;
+    private Context mAppContext;
+    private static final int HANDEL_MSG_GO_SESSION_ACTIVITY = 1;
+    public static LAST_CONNCED_TYPE curConnectType;
+    private int isVpn = 1;
+    private static final String APPSHELL_PATH = "c:\\Virtual Application Cloud Platform\\AppShell\\AppShell.exe ";
+    private static final String LEFT_BRACKET = "[";
+    private static final String RIGHT_BRACKET = "]";
+    private static final String QUOTATION = "\"";
+    public static String password;
+    private SharedPreferences share;
+    // 登陆电子邮件需要的参数
+    public View loginView;
+    public Button login_btn, cancel_btn;
+    public ImageView login_cancel;
+    private EditText email_et, password_et;
+    private String email, email_password;
+    public LinearLayout errorLayout;
+    private TextView errorMsg_tv;
+    private Dialog loginDialog;
+    private CustomProgressDialog loadingDialog;
+    public static MainActivity context;
+    private byte[] iv = {1, 2, 3, 4, 5, 6, 7, 8};
+    private String emailListStr;
+    Intent intent;
+    private String DES_Password;
+    SharedPreferences AutoPrefer;
+    private CheckBox cb_remember;
+    boolean isAuto = false;
+    private String m_ip, m_port;
+    private static BitmapUtils bitmapUtils;
+    public String htmlToken = "";
+    public String readyToOpenVirturl = "";
+    private boolean canRefresh;
+    PagerAdapter mPagerAdapter;
+    private AppInfo currenInfo;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // 注册广播,监听home键
+        MyApplication.getInstance().addActivity(this);
+        //MyApplication.getInstance().addActivity("MainActivity");
+        MyApplication.MainActivityIsAlive = true;
+        ViewUtils.inject(this);
+        screenWidth = DeviceUtil.getScreenWidth(this);
+        screenHeight = DeviceUtil.getScreenHeight(this);
+        share = this.getSharedPreferences(Constants.SYSTEMPREFERENT, 0);
+        mAppContext = this.getApplicationContext();
+        context = this;
+        downloadManager = DownloadService.getDownloadManager(mAppContext);
+        packageManager = getPackageManager();
+        password = getIntent().getStringExtra("password");
+        canRefresh = false;
+        bitmapUtils = BitmapHelp.getBitmapUtils(getApplicationContext());
+        // bitmapUtils.configDefaultLoadingImage(R.drawable.ic_launcher);
+        bitmapUtils.configDefaultLoadFailedImage(R.drawable.uninstall_icom);
+        bitmapUtils.configDefaultBitmapConfig(Bitmap.Config.RGB_565);
+        mPagerAdapter = new PagerAdapter() {
+            @Override
+            public boolean isViewFromObject(View arg0, Object arg1) {
+                return arg0 == arg1;
+            }
+
+            @Override
+            public int getCount() {
+                return mAppGridViews.size();
+            }
+
+            @Override
+            public void destroyItem(View container, int position, Object object) {
+                ((ViewPager) container).removeView(mAppGridViews.get(position));
+            }
+
+            @Override
+            public Object instantiateItem(View container, int position) {
+                ((ViewPager) container).addView(mAppGridViews.get(position));
+                return mAppGridViews.get(position);
+            }
+        };
+        mViewPager.setAdapter(mPagerAdapter);// 与ListView用法相同，设置重写的Adapter。这样就实现了ViewPager的滑动效果。
+        mViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageSelected(int selectedPageIndex) {
+                // TODO Auto-generated method stub
+                mCurPageNumIndex = selectedPageIndex;
+                mPageControl.generatePageControl(mCurPageNumIndex);
+                Log.d("", "mCurPageNum=" + mCurPageNumIndex);
+            }
+
+            @Override
+            public void onPageScrolled(int arg0, float arg1, int arg2) {
+                // TODO Auto-generated method stub
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int arg0) {
+                // TODO Auto-generated method stub
+            }
+        });
+        init();
+    }
+
+    @Override
+    protected void onDestroy() {
+        MyApplication.MainActivityIsAlive = false;
+        super.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        LogUtils.i("resultCode=" + resultCode);
+        switch (resultCode) {
+            case Constants.ACTIVITY_RESULT_STARTINSTALLAPK:
+                break;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    /* (non Javadoc) 
+     * @Description: TODO 
+     * @see android.app.Activity#onResume() 
+     */
+    @Override
+    protected void onResume() {
+        // TODO Auto-generated method stub
+        super.onResume();
+        //为了及时刷新配置
+        if (canRefresh) {
+            new Thread() {
+                public void run() {
+                    getAppList();
+                }
+            }.start();
+        }
+        canRefresh = true;
+    }
+
+    private void init() {
+        // prepareDate();
+        resList = MyApplication.getInstance().getResList();
+        resCount = resList.size();
+        pageNum = (int) Math.ceil(resCount / PAGE_COUNT) + 1;
+        if (resCount % PAGE_COUNT == 0) {
+            pageNum = (int) Math.ceil(resCount / PAGE_COUNT);
+        }
+        adapterList.clear();
+        mAppGridViews.clear();
+        AppGridViewAdapter adapter = null;
+        for (int i = 1; i <= pageNum; i++) {
+            GridView appGridView = new GridView(this);
+            appGridView.setSelector(new ColorDrawable(android.R.color.transparent));
+            adapter = new AppGridViewAdapter(i, resList);
+            appGridView.setAdapter(adapter);
+            appGridView.setNumColumns(COLUMN_NUM);
+            appGridView.setOnItemClickListener(new ItemClickListener(i));
+            final int fI = i;
+            appGridView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+                @Override
+                public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
+                    AppInfo appInfo = resList.get(position + (fI - 1) * PAGE_COUNT);
+                    uninstallApp(appInfo.packageName);// 2017-10-11 没有这个功能 自己加的
+                    return true;
+                }
+            });
+            appGridView.setVerticalSpacing(screenHeight / 20);
+            adapterList.add(adapter);
+            mAppGridViews.add(appGridView);
+        }
+        mPageControl.bindViewGroup(mAppGridViews.size());
+        mViewPager.setAdapter(mPagerAdapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        DialogBase.Builder customDialog = new DialogBase.Builder(this)
+                .setShowTitle(false)
+                .setNegativeButton("取消", new OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setContent(DialogBase.createTextContent(this, "确定要返回桌面吗？"))
+                .setCanCelable(false)
+                .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                        finish();
+                    }
+                });
+        customDialog.show();
+    }
+
+    private class AppGridViewAdapter extends BaseAdapter {
+        private int mPageIndex;
+        private List<AppInfo> resList;
+
+        public AppGridViewAdapter(int pageIndex, List<AppInfo> resList) {
+            mPageIndex = pageIndex;
+            this.resList = resList;
+        }
+
+        @Override
+        public int getCount() {
+            // TODO Auto-generated method stub
+            if (mPageIndex < pageNum) {
+                return PAGE_COUNT;
+            } else {
+                return resList.size() - (mPageIndex - 1) * PAGE_COUNT;
+            }
+        }
+
+        @Override
+        public Object getItem(int position) {
+            // TODO Auto-generated method stub
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            // TODO Auto-generated method stub
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            // TODO Auto-generated method stub
+            AppInfo appInfo = resList.get(position + (mPageIndex - 1) * PAGE_COUNT);
+            if (convertView == null) {
+                convertView = LayoutInflater.from(MainActivity.this).inflate(R.layout.app_item, parent, false);
+            }
+            TextView tv = BaseViewHolder.get(convertView, R.id.tvAppName);
+            ImageView iv = BaseViewHolder.get(convertView, R.id.ivAppImg);
+            if (appInfo.type == NATIVE_APP) {
+                iv.setImageResource(appInfo.appIcon);
+            } else {
+                ImageLoader.getInstance().displayImage(appInfo.iconUrl, iv);
+            }
+            tv.setText(appInfo.appName);
+            if (appInfo.type == APK_APP) {
+                setState(convertView, appInfo);
+            }
+            return convertView;
+        }
+    }
+
+    public void setState(View convertView, AppInfo appInfo) {
+        if (downloadManager.getDownloadInfo(appInfo.packageName) != null) {
+            DownloadInfo info = downloadManager.getDownloadInfo(appInfo.packageName);
+            RoundProgressBar progressBar = BaseViewHolder.get(convertView, R.id.rpb);
+            if (info.getState() == HttpHandler.State.LOADING) {
+                if (info.getHandler() != null) {
+                    info.getHandler()
+                            .setRequestCallBack(new DownloadRequestCallBack(appInfo, convertView));
+                } else {
+                    try {
+                        downloadManager.removeDownload(info);
+                        return;
+                    } catch (DbException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+
+                progressBar.setProgress((int) (info.getProgress() * 100 / info.getFileLength()));
+                progressBar.setVisibility(View.VISIBLE);
+            } else {
+                progressBar.setVisibility(View.GONE);
+            }
+        }
+    }
+
+    private void showWebAppLogin(final AppInfo appInfo) {
+        if (!appInfo.ssoState) {
+            Intent intent = new Intent();
+            intent.putExtra("url", appInfo.web_url);
+            intent.putExtra("appName", appInfo.appName);
+            intent.setClass(MainActivity.this, WebAppActivity.class);
+            startActivity(intent);
+            return;
+        }
+        final SharedPreferences sharepre = context.getSharedPreferences(appInfo.appName, 0);
+        if (sharepre.contains("username")) {
+            Intent intent = new Intent();
+            intent.putExtra("url", appInfo.web_url);
+            intent.putExtra("appName", appInfo.appName);
+            intent.putExtra("isSso", appInfo.ssoState);
+            intent.putExtra("excuteJs", appInfo.excuteJs);
+            intent.setClass(MainActivity.this, WebAppActivity.class);
+            startActivity(intent);
+        } else {
+            LayoutInflater settingInflater = (LayoutInflater) context
+                    .getSystemService(android.content.Context.LAYOUT_INFLATER_SERVICE);
+            View loginView = settingInflater.inflate(R.layout.webapp_login_dialog, null);
+            final Dialog webAppDialog = new Dialog(context, R.style.Theme_NoBackground_NoTitle);
+            webAppDialog.show();
+            TextView textView = (TextView) loginView.findViewById(R.id.title);
+            textView.setText(appInfo.appName);
+            final EditText username_et = (EditText) loginView.findViewById(R.id.webappusername_et);
+            final EditText password_et = (EditText) loginView.findViewById(R.id.webapppassword_et);
+            ImageView login_cancel = (ImageView) loginView.findViewById(R.id.webapp_link_back);
+            login_cancel.setOnClickListener(new android.view.View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    webAppDialog.dismiss();
+                }
+            });
+            Button login_btn = (Button) loginView.findViewById(R.id.webappsave_btn);
+            login_btn.setOnClickListener(new android.view.View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    String username_str = username_et.getText().toString().trim();
+                    String password_str = password_et.getText().toString().trim();
+                    if ("".equals(username_str) || "".equals(password_str)) {
+                        Toast.makeText(context, "各项都不能为空！", Toast.LENGTH_SHORT).show();
+                    } else {
+                        webAppDialog.dismiss();
+                        sharepre.edit().putString("username", username_str).commit();
+                        sharepre.edit().putString("password", password_str).commit();
+                        Intent intent = new Intent();
+                        intent.putExtra("url", appInfo.web_url);
+                        intent.putExtra("appName", appInfo.appName);
+                        intent.putExtra("isSso", appInfo.ssoState);
+                        intent.putExtra("excuteJs", appInfo.excuteJs);
+                        intent.setClass(MainActivity.this, WebAppActivity.class);
+                        startActivity(intent);
+                    }
+                }
+            });
+            Button cancel_btn = (Button) loginView.findViewById(R.id.webappcancel_btn);
+            cancel_btn.setOnClickListener(new android.view.View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // TODO Auto-generated method stub
+                    webAppDialog.dismiss();
+                }
+            });
+            webAppDialog.setContentView(loginView);
+        }
+    }
+
+    public String encryptDES(String encryptString, String encryptKey) throws Exception {
+        IvParameterSpec zeroIv = new IvParameterSpec(iv);
+        SecretKeySpec key = new SecretKeySpec(encryptKey.getBytes(), "DES");
+        Cipher cipher = Cipher.getInstance("DES/CBC/PKCS5Padding");
+        cipher.init(Cipher.ENCRYPT_MODE, key, zeroIv);
+        byte[] encryptedData = cipher.doFinal(encryptString.getBytes());
+        return MyBase64.encode(encryptedData);
+    }
+
+    class ItemClickListener implements OnItemClickListener {
+        private int mPageIndex = 0;
+
+        /**
+         * @Description:TODO
+         */
+        public ItemClickListener(int num) {
+            // TODO Auto-generated constructor stub
+            this.mPageIndex = num;
+        }
+
+        /* (non Javadoc)
+         * @Description: TODO
+         * @param parent
+         * @param view
+         * @param position
+         * @param id 
+         * @see android.widget.AdapterView.OnItemClickListener#onItemClick(android.widget.AdapterView, android.view.View, int, long) 
+         */
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            // TODO Auto-generated method stub
+            AppInfo appInfo = resList.get(position + (mPageIndex - 1) * PAGE_COUNT);
+            currenInfo = appInfo;
+            if (appInfo.type == APK_APP) {
+                if (appInfo.needUpdate) {
+                    // 未安装或需要更新
+                    if (downloadManager.getDownloadInfo(appInfo.packageName) != null) {
+                        // 说明正在下载
+                        if (downloadManager.getDownloadInfo(appInfo.packageName)
+                                .getState() == HttpHandler.State.LOADING) {
+//                            // 正在下载
+                            Toast.makeText(MainActivity.this, appInfo.appName + "取消下载",
+                                    Toast.LENGTH_SHORT).show();
+                            try {
+                                downloadManager.removeDownload(
+                                        downloadManager.getDownloadInfo(appInfo.packageName));
+                            } catch (DbException e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            }
+                        } else {
+                            addToDownload(appInfo, view);
+                        }
+                    } else {
+                        addToDownload(appInfo, view);
+                    }
+                } else {
+                    try {
+//                        Intent intent = new Intent(appInfo.packageName + ".action.MAIN");
+//                        startActivity(intent);
+                        openAppByPackageName(appInfo.packageName);
+                    } catch (Exception e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                        Toast.makeText(mAppContext, "配置出错，请联系管理员！", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            } else if (appInfo.type == VIRTUAL_APP) {
+                // 虚拟应用
+                readyToOpenVirturl = appInfo.virtualResourceName;
+                if (vir_resList == null) {
+                    loadingDialog = CustomProgressDialog.getInstance(MainActivity.this);
+                    loadingDialog.setMessage("正在登录，请稍候...");
+                    loadingDialog.show();
+                    new Thread() {
+                        public void run() {
+                            Looper.prepare();
+                            new com.ec.avirtualapp.controller.LoginActivity(MainActivity.this, handler).login(password);
+                            Looper.loop();
+                        }
+                    }.start();
+                    return;
+                }
+            } else if (appInfo.type == WEB_APP) {
+                if (appInfo.ssoState) {
+                    if (appInfo.needCount) {
+                        // TODO 获取从账号
+                    } else {
+                        showWebAppLogin(appInfo);
+                    }
+                } else {
+                    if (appInfo.appName.equals("内网邮件")) {
+                        goVpn();
+                    } else {
+                        Intent intent = new Intent();
+                        intent.putExtra("url", appInfo.web_url);
+                        intent.putExtra("appName", appInfo.appName);
+                        intent.setClass(MainActivity.this, WebAppActivity.class);
+                        startActivity(intent);
+                    }
+                }
+            } else if (appInfo.type == NATIVE_APP) {
+                Intent intent = new Intent();
+                intent.putExtra("appName", appInfo.appName);
+                intent.setClass(MainActivity.this, appInfo.className);
+                startActivity(intent);
+            }
+        }
+
+    }
+
+    public void openAppByPackageName(String packageName) throws PackageManager.NameNotFoundException {
+        try {
+            PackageManager pm = getPackageManager();
+            PackageInfo pi = pm.getPackageInfo(packageName, 0);
+            Intent resolveIntent = new Intent(Intent.ACTION_MAIN, null);
+            resolveIntent.setPackage(pi.packageName);
+            List<ResolveInfo> apps = pm.queryIntentActivities(resolveIntent, 0);
+            ResolveInfo ri = apps.iterator().next();
+            if (ri != null) {
+                packageName = ri.activityInfo.packageName;
+                String className = ri.activityInfo.name;
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);//重点是加这个
+                ComponentName cn = new ComponentName(packageName, className);
+                intent.setComponent(cn);
+                startActivity(intent);
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void addToDownload(AppInfo appInfo, View view) {
+        try {
+            downloadManager.addNewDownload(appInfo.downloadUrl, appInfo.packageName,
+                    appInfo.localFilePath, false, false,
+                    new DownloadRequestCallBack(appInfo, view));
+        } catch (DbException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+    OnItemClickListener itemListener = new OnItemClickListener() {
+        @Override
+        public void onItemClick(final AdapterView<?> parent1, final View view, final int position, long id) {
+            // TODO Auto-generated method stub
+
+        }
+    };
+
+    // 包括appshell的绝对路径、双引号、左括号、用户名、右括号、双引号
+    private String concatPath(VirtualAppInfo vaInfo) {
+        // TODO Auto-generated method stub
+        String fullPath = String.format("%s%s%s%s%s%s", APPSHELL_PATH, QUOTATION, LEFT_BRACKET, vaInfo.userName,
+                RIGHT_BRACKET, QUOTATION);
+        return fullPath;
+    }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case HANDEL_MSG_GO_SESSION_ACTIVITY:
+//                    goSessionActivity((ManualBookmark) msg.obj);
+                    break;
+                case 6:
+                    //失败报错
+                    loadingDialog.dismiss();
+                    showErrorDialog(msg.getData().getString("text"));
+                    break;
+                case 7:
+                    loadingDialog.dismiss();
+                    int port = L4ProxyArd.getInstance().L4ProxyServiceRun(FileUtil.getIpanPort(currenInfo.web_url));
+                    String ipPort = "127.0.0.1:" + port;
+                    String url = FileUtil.changeUrl(currenInfo.web_url, ipPort);
+                    Intent intent = new Intent();
+                    intent.putExtra("url", url);
+                    intent.putExtra("appName", currenInfo.appName);
+                    intent.setClass(MainActivity.this, WebAppActivity.class);
+                    startActivity(intent);
+                    break;
+                case 123:
+                    // 刷新
+                    for (AppGridViewAdapter adapter : adapterList) {
+                        adapter.notifyDataSetChanged();
+                    }
+                    break;
+                case 1234:
+                    // 刷新
+                    init();
+                    break;
+            }
+        }
+    };
+
+    private void showErrorDialog(String string) {
+        Dialog dialog = new AlertDialog.Builder(this).setTitle("提示").setMessage(
+                string).setPositiveButton("确定",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                }).setCancelable(false).create();
+        dialog.show();
+    }
+
+    //安装应用程序
+    private void installApp(String filePath) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        // 设置目标应用安装包路径
+        i.setDataAndType(Uri.fromFile(new File(filePath)), "application/vnd.android.package-archive");
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+    }
+
+    //卸载应用程序
+    private void uninstallApp(String packageName) {
+        Intent i = new Intent();
+        i.setAction(Intent.ACTION_DELETE);
+        i.setData(Uri.parse("package:" + packageName));
+        startActivity(i);
+    }
+
+    private PackageInfo getPackageInfo(String packageName) {
+        PackageInfo packageInfo;
+        try {
+            packageInfo = packageManager.getPackageInfo(packageName, 0);
+        } catch (PackageManager.NameNotFoundException e) {
+            return null;
+            // LogUtils.e(e.getMessage(), e);
+        }
+        return packageInfo;
+    }
+
+    public class DownloadRequestCallBack extends RequestCallBack<File> {
+        private AppInfo info;
+        private String packageName, localFilePath;
+        private RoundProgressBar progressbar;
+        private final int percent = 100;
+
+        public DownloadRequestCallBack(AppInfo info, View parentView) {
+            // TODO Auto-generated constructor stub
+            // int id=parentView.getId();
+            this.info = info;
+            this.packageName = info.packageName;
+            this.localFilePath = info.localFilePath;
+            this.progressbar = (RoundProgressBar) parentView.findViewById(R.id.rpb);
+        }
+
+        @Override
+        public void onStart() {
+            // TODO Auto-generated method stub
+            super.onStart();
+            progressbar.setVisibility(View.VISIBLE);
+        }
+
+        @Override
+        public void onCancelled() {
+            // TODO Auto-generated method stub
+            super.onCancelled();
+            progressbar.setVisibility(View.GONE);
+        }
+
+        @Override
+        public void onFailure(HttpException arg0, String arg1) {
+            // TODO Auto-generated method stub
+            Toast.makeText(context, "下载失败，请检查网络!", Toast.LENGTH_SHORT).show();
+            try {
+                downloadManager.removeDownload(downloadManager.getDownloadInfo(packageName));
+            } catch (Exception e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+
+        @Override
+        public void onLoading(long total, long current, boolean isUploading) {
+            // TODO Auto-generated method stub
+            super.onLoading(total, current, isUploading);
+            progressbar.setProgress((int) (current * percent / total));
+            downloadManager.getDownloadInfo(packageName).setProgress(current);
+            Log.i("Main", "下载进度：" + (int) (current * percent / total));
+        }
+
+        @Override
+        public void onSuccess(ResponseInfo<File> arg0) {
+            // TODO Auto-generated method stub
+            progressbar.setVisibility(View.GONE);
+            try {
+                if (null != downloadManager.getDownloadInfo(packageName)) {
+                    downloadManager.removeDownload(downloadManager.getDownloadInfo(packageName));
+                }
+            } catch (DbException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            info.needUpdate = false;
+            installApp(localFilePath);
+        }
+    }
+
+    public void logSend(final String name, final String type) {
+        // PLATFORM,PLATFORMRESOURCE,APPLICATION
+        // LOGIN, ACCESS
+        new Thread() {
+            public void run() {
+                // String platform_ip=share.getString(Constants.DEFAULT_PLAT_IP,Constants.platIp);
+                // String platform_port=share.getString(Constants.DEFAULT_PLAT_PORT,
+                // Constants.platPort);
+                //开启ssl加密连接服务
+                L4ProxyArd.getInstance().StartOpenSSL();
+                String result = LogSendUtils.getInstance(MainActivity.this).sendLog(name, "", type,
+                        DeviceUtil.getVersionName(MainActivity.this), "ACCESS", Constants.platIp, Constants.platPort);
+                Log.i("LoginActivity", "logSend_returnJsons=" + result);
+            }
+        }.start();
+    }
+
+    /* (non Javadoc)
+     * @Description: TODO
+     * @param v 
+     * @see android.view.View.OnClickListener#onClick(android.view.View) 
+     */
+    @Override
+    public void onClick(View v) {
+        // TODO Auto-generated method stub
+
+    }
+
+    private void getWhiteAdress() {
+        String result = HttpClient.getInstance().executeGet("http://" + Constants.platIp + ":" + Constants.platPort + "/platform/address");
+        if (result != null) {
+            JSONObject jsonObject_total;
+            try {
+                jsonObject_total = new JSONObject(result);
+                boolean state = jsonObject_total.getBoolean("state");
+                if (!state) {
+                    return;
+                }
+                JSONArray jsonArray_adress = jsonObject_total.getJSONArray("content");
+                List<String> list = new ArrayList<String>();
+                for (int i = 0; i < jsonArray_adress.length(); i++) {
+                    list.add(jsonArray_adress.get(i).toString());
+                }
+                MyApplication.getInstance().setAddressList(list);
+            } catch (JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private void getAppList() {
+        String result = HttpClient.getInstance().post_getAppList(MyApplication.getInstance().getCompany(), Constants.platIp, Constants.platPort);
+        Log.i("LoginActivity", "getAppList_returnJsons=" + result);
+        if (result != null) {
+            try {
+                JSONObject jsonObject_total = new JSONObject(result);
+                boolean state = jsonObject_total.getBoolean("state");
+                if (!state) {
+                    return;
+                }
+                JSONArray jsonArray = jsonObject_total.getJSONArray("content");
+                List<AppInfo> resList = new ArrayList<AppInfo>();
+                AppInfo tmpInfo;
+                for (int i = 0; i < jsonArray.length(); i++) {
+                    tmpInfo = new AppInfo();
+                    tmpInfo.appName = jsonArray.getJSONObject(i).getString("displayName");
+                    tmpInfo.iconUrl = jsonArray.getJSONObject(i).getString("iconURL");
+                    String type = jsonArray.getJSONObject(i).getString("intstallPackageType");
+                    tmpInfo.version = jsonArray.getJSONObject(i).getString("version");
+                    tmpInfo.appCode = jsonArray.getJSONObject(i).getString("applicationCode");
+                    if ("APP_PAGE_ADAPTER".equals(type)) {
+                        //适配的资源
+                        tmpInfo.type = PHONEGAP_APP;
+                        tmpInfo.native_pro = jsonArray.getJSONObject(i).getString("installPackageName");
+                        tmpInfo.localFilePath = Constants.downloadFile + tmpInfo.native_pro + ".zip";
+                        tmpInfo.downloadUrl = jsonArray.getJSONObject(i).getString("installPackageURL");
+                        String cur_version = share.getString(tmpInfo.appName + "_version", "0");
+                        if (!cur_version.equals(tmpInfo.version)) {
+                            tmpInfo.needUpdate = true;
+                        }
+                    } else if ("APP_VIRTUAL".equals(type)) {
+                        tmpInfo.type = VIRTUAL_APP;
+                        tmpInfo.virtualResourceName = jsonArray.getJSONObject(i).getString("virtualResourceName");
+                    } else if ("APP_ANDROID_APK".equals(type)) {
+                        tmpInfo.type = APK_APP;
+                        tmpInfo.localFilePath = Constants.downloadFile + tmpInfo.packageName + ".apk";
+                        tmpInfo.packageName = jsonArray.getJSONObject(i).getString("installPackageName");
+                        tmpInfo.downloadUrl = jsonArray.getJSONObject(i).getString("installPackageURL");
+                        if (checkAppIsNeedUpdate(tmpInfo.packageName, tmpInfo.version)) {
+                            tmpInfo.needUpdate = true;
+                        }
+                    } else if ("APP_WEB".equals(type)) {
+                        tmpInfo.type = WEB_APP;
+                        tmpInfo.ssoState = jsonArray.getJSONObject(i).getString("ssoState").equals("YES");
+                        tmpInfo.web_url = jsonArray.getJSONObject(i).getString("webURL");
+                        if (tmpInfo.ssoState) {
+                            String config = jsonArray.getJSONObject(i).getString("webConfigBase64");
+                        }
+                    }
+                    resList.add(tmpInfo);
+                }
+                if (MyApplication.getInstance().getShowUcWeb()) {
+                    tmpInfo = new AppInfo();
+                    tmpInfo.appName = "浏览器";
+                    tmpInfo.className = UCAppActivity.class;
+                    tmpInfo.type = NATIVE_APP;
+                    tmpInfo.appIcon = R.drawable.email_icon;
+                    resList.add(tmpInfo);
+                }
+
+                tmpInfo = new AppInfo();
+                tmpInfo.appName = "设置";
+                tmpInfo.className = SetActivity.class;
+                tmpInfo.type = NATIVE_APP;
+                tmpInfo.appIcon = R.drawable.ic_launcher;
+                resList.add(tmpInfo);
+
+                MyApplication.getInstance().setResList(resList);
+                getWhiteAdress();
+                handler.sendEmptyMessage(1234);
+            } catch (JSONException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+    }
+
+    private boolean checkAppIsNeedUpdate(String packageName, String newVersion) {
+        if (newVersion.isEmpty() || packageName.isEmpty() || "null".equalsIgnoreCase(newVersion)) {
+            return false;
+        }
+        int versionCode = 0;
+        try {
+            versionCode = MainActivity.this.getPackageManager().getPackageInfo(packageName, 0).versionCode;
+        } catch (NameNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        boolean needUpdate = false;
+        int newV = 3;
+        try {
+            newV = Integer.parseInt(newVersion);
+        } catch (NumberFormatException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        if (versionCode < newV) {
+            needUpdate = true;
+        } else {
+            needUpdate = false;
+        }
+        return needUpdate;
+    }
+
+    public void goVpn() {
+        loadingDialog = CustomProgressDialog.getInstance(MainActivity.this);
+        loadingDialog.setMessage("正在登录，请稍候...");
+        loadingDialog.show();
+
+        new Thread() {
+            public void run() {
+                Looper.prepare();
+                String vpn_ip = share.getString(Constants.DEFAULT_VPN_IP, Constants.vpnIp);
+                String vpn_port = share.getString(Constants.DEFAULT_VPN_PORT, Constants.vpnPort);
+                String user = share.getString(Constants.DEFAULT_VPN_USER, Constants.vpnUser);
+                String pw = share.getString(Constants.DEFAULT_VPN_PW, Constants.vpnPw);
+                vpnConnect(vpn_ip, Integer.parseInt(vpn_port), user, pw);
+                Looper.loop();
+            }
+        }.start();
+    }
+
+    private Boolean vpnConnect(String strIp, int port, String user, String pw) {
+        int iResult = 0;
+        // 建立vpn连接
+        iResult = L4ProxyArd.getInstance().L4ProxyLoginWithPass(strIp, port, user, pw);
+        System.out.println("iResult1:" + iResult);
+
+        if (iResult != 0) {
+            String errnonum = String.valueOf(iResult);
+            Message msg1 = new Message();
+            msg1.what = 6;
+            Bundle bundle = new Bundle();
+            bundle.putString("text", "VPN连接失败");  //往Bundle中存放数据
+            msg1.setData(bundle);//mes利用Bundle传递数据
+            handler.sendMessage(msg1);//用activity中的handler发送消息
+            return false;
+        } else {
+            handler.sendEmptyMessage(7);
+            return true;
+        }
+    }
+}

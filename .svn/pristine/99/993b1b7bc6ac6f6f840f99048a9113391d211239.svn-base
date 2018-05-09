@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:minHeight="60dp"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="name"
+            android:textColor="#000000"
+            android:textSize="18dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tvName"
+            android:layout_alignBottom="@+id/tvName"
+            android:text="job"
+            android:textColor="#5C5C5C"
+            android:textSize="15dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/tvName"
+            android:text="mobile"
+            android:textColor="#436EEE"
+            android:textSize="15dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_marginTop="5dp"
+            android:text="tel"
+            android:textColor="#5C5C5C"
+            android:textSize="15dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMobile"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/tvTel"
+            android:text="email"
+            android:textColor="#5C5C5C"
+            android:textSize="14dip" >
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

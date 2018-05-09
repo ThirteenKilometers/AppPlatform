@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.LZHS:LZHSLibary-lzhs_1.0.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LZHSLibary-lzhs_1.0.6.aar/71e4b58876fae0b0e69d8a64e3e2aada/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/LZHSLibary-lzhs_1.0.6.aar/71e4b58876fae0b0e69d8a64e3e2aada/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.LZHS/LZHSLibary/lzhs_1.0.6/300b63de2d5c6e4ecd744003d4f0fc4df1845a9a/LZHSLibary-lzhs_1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

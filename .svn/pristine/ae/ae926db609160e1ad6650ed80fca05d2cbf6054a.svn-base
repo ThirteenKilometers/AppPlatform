@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/email_top"
+        >
+
+        <ImageView
+            android:id="@+id/email_link_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/email_link_back" />
+
+        <ImageView
+            android:id="@+id/email_link_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/email_link_ok" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/linkman_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/contacts_line"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none"
+        android:listSelector="@android:color/transparent"
+        />
+
+</LinearLayout>

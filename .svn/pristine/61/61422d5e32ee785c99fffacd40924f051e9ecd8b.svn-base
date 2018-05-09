@@ -1,0 +1,137 @@
+package com.yw.platform.tools;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.yw.platform.global.MyApplication;
+import com.yw.platform.utils.SharedPreferencesUtils;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created by cxb on 2018/3/23.
+ */
+
+public class SetInfo {
+    private static SetInfo info=new SetInfo();
+    private int bluetoothEable=-1;//1：true 控制 2：false 不控制
+    private HashMap<String, Boolean> mApplockSate;
+
+    private SetInfo() {
+        initLockList();
+    }
+    public static SetInfo getInstance() {
+        return info;
+    }
+
+    /**
+     * 描述：蓝牙是否可用
+     * @return
+     */
+    public boolean bluetoothEable(){
+        if (bluetoothEable<=0){
+            bluetoothEable= (int) SharedPreferencesUtils.getParam("setinfo", "bluetoothEable",2);
+            if(bluetoothEable!=1&&bluetoothEable!=2);bluetoothEable=2;
+        }
+        return bluetoothEable==1;
+    }
+
+    /**
+     * 描述：设置蓝牙是否可用
+     * @param eable
+     */
+    public void setBluetoothEable(boolean eable){
+        bluetoothEable=eable?1:2;
+        SharedPreferencesUtils.setParam("setinfo", "bluetoothEable",bluetoothEable);
+    }
+
+    /**
+     * 描述：设置app是否需要加锁、解锁
+     * @param packageName
+     */
+    public void setApplock(String packageName,boolean lock) {
+        initLockList();
+        SharedPreferences mLockStatus = MyApplication.getInstance().getSharedPreferences("lockApps", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = mLockStatus.edit();
+        if (lock) {
+            editor.putBoolean(packageName, true);
+            editor.commit();
+            mApplockSate.put(packageName, true);
+        }else{
+            editor.remove(packageName);
+            editor.commit();
+            mApplockSate.remove(packageName);
+        }
+    }
+    /**
+     * 描述：解锁App
+     * @param packageName
+     */
+    public void unlockApp(String packageName) {
+        initLockList();
+        mApplockSate.put(packageName, false);
+    }
+    public List<String> getAllLockApp() {
+        List<String> lockapps=new ArrayList<>();
+        SharedPreferences pref = MyApplication.getInstance().getSharedPreferences("lockApps", Context.MODE_PRIVATE);
+        Map<String, ?> lockedApps = pref.getAll();
+        Iterator iter = lockedApps.entrySet().iterator();
+        while (iter.hasNext()) {
+            Map.Entry entry = (Map.Entry) iter.next();
+            String packageName = (String) entry.getKey();
+            Boolean isLocked = (Boolean) entry.getValue();
+            if (isLocked) {
+                lockapps.add(packageName);
+            }
+        }
+        return lockapps;
+    }
+
+    private void initLockList() {
+        if (mApplockSate!=null){
+            return;
+        }
+        mApplockSate = new HashMap<>();
+        SharedPreferences pref = MyApplication.getInstance().getSharedPreferences("lockApps", Context.MODE_PRIVATE);
+        Map<String, ?> lockedApps = pref.getAll();
+        Iterator iter = lockedApps.entrySet().iterator();
+        while (iter.hasNext()) {
+            Map.Entry entry = (Map.Entry) iter.next();
+            String packageName = (String) entry.getKey();
+            Boolean isLocked = (Boolean) entry.getValue();
+            if (isLocked) {
+                mApplockSate.put(packageName, true);
+            }
+        }
+    }
+
+    /**
+     * 描述：
+     * @param packageName
+     */
+    public boolean AppLock(String packageName){
+        initLockList();
+        if(packageName.equals(MyApplication.getInstance().getPackageName())){
+            return false;
+        }
+        if (mApplockSate.get(packageName) != null&& mApplockSate.get(packageName).equals(true)) {
+            return true;
+        }
+        return false;
+    }
+    /**
+     * 描述：重置所有应用状态
+     */
+    public void resetUnlockStatus() {
+        Iterator iter = mApplockSate.entrySet().iterator();
+        while (iter.hasNext()) {
+            Map.Entry entry = (Map.Entry) iter.next();
+            entry.setValue(true);
+        }
+    }
+
+}

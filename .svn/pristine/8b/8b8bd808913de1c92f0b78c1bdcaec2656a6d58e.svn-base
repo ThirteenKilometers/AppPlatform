@@ -1,0 +1,245 @@
+package com.yw.platform.activity;
+
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.ScaleAnimation;
+import android.view.animation.TranslateAnimation;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Gallery;
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+import com.yw.platform.R;
+import com.yw.platform.adapter.GalleryAdapter;
+import com.yw.platform.view.MyGallery;
+
+public class ShowPicActivity extends BaseActivity implements OnTouchListener {
+	// 屏幕宽度
+	public static int screenWidth;
+	// 屏幕高度
+	public static int screenHeight;
+	private MyGallery gallery;
+	private GalleryAdapter adapter;
+	private String strPicUrl;
+
+	private View mButtonsView;
+	private TextView mFilenameView;
+	private ImageButton mBackButton;
+	private String fileName;
+	private boolean mButtonsVisible = true;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		if(savedInstanceState!=null){
+			Intent it = new Intent(ShowPicActivity.this, MainActivity.class);
+			it.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			it.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+			startActivity(it);
+			return;
+		}
+		requestWindowFeature(Window.FEATURE_NO_TITLE);
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+				WindowManager.LayoutParams.FLAG_FULLSCREEN);
+		setContentView(R.layout.showpic);
+
+		strPicUrl = getIntent().getStringExtra("url");
+		fileName = getIntent().getStringExtra("name");
+		adapter = new GalleryAdapter(this, strPicUrl);
+		gallery = (MyGallery) findViewById(R.id.gallery);
+		gallery.setVerticalFadingEdgeEnabled(false);// 取消竖直渐变边框
+		gallery.setHorizontalFadingEdgeEnabled(false);// 取消水平渐变边框
+		gallery.setAdapter(adapter);
+
+		screenWidth = getWindow().getWindowManager().getDefaultDisplay()
+				.getWidth();
+		screenHeight = getWindow().getWindowManager().getDefaultDisplay()
+				.getHeight();
+
+		mButtonsView = findViewById(R.id.topBar);
+		mBackButton = (ImageButton) findViewById(R.id.backButton);
+		mFilenameView = (TextView) findViewById(R.id.docNameText);
+		mBackButton.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				finish();
+				overridePendingTransition(R.anim.activity_right_in,
+						R.anim.activity_left_out);
+			}
+		});
+
+		mFilenameView.setText(fileName);
+		gallery.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				// TODO Auto-generated method stub
+				if (mButtonsVisible) {
+					hideButtons();
+				} else {
+					showButtons();
+				}
+			}
+		});
+	}
+
+	float beforeLenght = 0.0f; // 两触点距离
+	float afterLenght = 0.0f; // 两触点距离
+	boolean isScale = false;
+	float currentScale = 1.0f;// 当前图片的缩放比率
+
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		finish();
+		overridePendingTransition(R.anim.activity_right_in,
+				R.anim.activity_left_out);
+		super.onBackPressed();
+	}
+
+	@Override
+	public boolean onTouch(View v, MotionEvent event) {
+
+		// Log.i("","touched---------------");
+		switch (event.getAction() & MotionEvent.ACTION_MASK) {
+		case MotionEvent.ACTION_POINTER_DOWN:// 多点缩放
+			beforeLenght = spacing(event);
+			if (beforeLenght > 5f) {
+				isScale = true;
+			}
+			break;
+		case MotionEvent.ACTION_MOVE:
+			if (isScale) {
+				afterLenght = spacing(event);
+				if (afterLenght < 5f)
+					break;
+				float gapLenght = afterLenght - beforeLenght;
+				if (gapLenght == 0) {
+					break;
+				} else if (Math.abs(gapLenght) > 5f) {
+					// FrameLayout.LayoutParams params =
+					// (FrameLayout.LayoutParams) gallery.getLayoutParams();
+					float scaleRate = gapLenght / 854;// 缩放比例
+					// Log.i("",
+					// "scaleRate："+scaleRate+" currentScale:"+currentScale);
+					// Log.i("", "缩放比例：" +
+					// scaleRate+" 当前图片的缩放比例："+currentScale);
+					// params.height=(int)(800*(scaleRate+1));
+					// params.width=(int)(480*(scaleRate+1));
+					// params.height = 400;
+					// params.width = 300;
+					// gallery.getChildAt(0).setLayoutParams(new
+					// Gallery.LayoutParams(300, 300));
+					Animation myAnimation_Scale = new ScaleAnimation(
+							currentScale, currentScale + scaleRate,
+							currentScale, currentScale + scaleRate,
+							Animation.RELATIVE_TO_SELF, 0.5f,
+							Animation.RELATIVE_TO_SELF, 0.5f);
+					// Animation myAnimation_Scale = new
+					// ScaleAnimation(currentScale, 1+scaleRate, currentScale,
+					// 1+scaleRate);
+					myAnimation_Scale.setDuration(100);
+					myAnimation_Scale.setFillAfter(true);
+					myAnimation_Scale.setFillEnabled(true);
+					// gallery.getChildAt(0).startAnimation(myAnimation_Scale);
+
+					// gallery.startAnimation(myAnimation_Scale);
+					currentScale = currentScale + scaleRate;
+					// gallery.getSelectedView().setLayoutParams(new
+					// Gallery.LayoutParams((int)(480), (int)(800)));
+					// Log.i("",
+					// "===========:::"+gallery.getSelectedView().getLayoutParams().height);
+					// gallery.getSelectedView().getLayoutParams().height=(int)(800*(currentScale));
+					// gallery.getSelectedView().getLayoutParams().width=(int)(480*(currentScale));
+					gallery.getSelectedView().setLayoutParams(
+							new Gallery.LayoutParams(
+									(int) (480 * (currentScale)),
+									(int) (854 * (currentScale))));
+					// gallery.getSelectedView().setLayoutParams(new
+					// Gallery.LayoutParams((int)(320*(scaleRate+1)),
+					// (int)(480*(scaleRate+1))));
+					// gallery.getSelectedView().startAnimation(myAnimation_Scale);
+					// isScale = false;
+					beforeLenght = afterLenght;
+				}
+				return true;
+			}
+			break;
+		case MotionEvent.ACTION_POINTER_UP:
+			isScale = false;
+			break;
+		}
+
+		return false;
+	}
+
+	/**
+	 * 就算两点间的距离
+	 */
+	private float spacing(MotionEvent event) {
+		float x = event.getX(0) - event.getX(1);
+		float y = event.getY(0) - event.getY(1);
+		return (float) Math.sqrt(x * x + y * y);
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		// TODO Auto-generated method stub
+		super.onConfigurationChanged(newConfig);
+		screenWidth = getWindow().getWindowManager().getDefaultDisplay()
+				.getWidth();
+		screenHeight = getWindow().getWindowManager().getDefaultDisplay()
+				.getHeight();
+		adapter.notifyDataSetChanged();
+	}
+
+	void hideButtons() {
+		mButtonsVisible = false;
+		Animation anim = new TranslateAnimation(0, 0, 0, -mButtonsView
+				.getHeight());
+		anim.setDuration(200);
+		anim.setAnimationListener(new Animation.AnimationListener() {
+			public void onAnimationStart(Animation animation) {
+			}
+
+			public void onAnimationRepeat(Animation animation) {
+			}
+
+			public void onAnimationEnd(Animation animation) {
+				mButtonsView.setVisibility(View.INVISIBLE);
+			}
+		});
+		mButtonsView.startAnimation(anim);
+	}
+
+	void showButtons() {
+		mButtonsVisible = true;
+
+		Animation anim = new TranslateAnimation(0, 0,
+				-mButtonsView.getHeight(), 0);
+		anim.setDuration(200);
+		anim.setAnimationListener(new Animation.AnimationListener() {
+			public void onAnimationStart(Animation animation) {
+				mButtonsView.setVisibility(View.VISIBLE);
+			}
+
+			public void onAnimationRepeat(Animation animation) {
+			}
+
+			public void onAnimationEnd(Animation animation) {
+			}
+		});
+		mButtonsView.startAnimation(anim);
+	}
+}

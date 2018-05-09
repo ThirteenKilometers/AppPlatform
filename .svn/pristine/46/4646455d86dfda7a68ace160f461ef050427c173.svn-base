@@ -1,0 +1,60 @@
+package com.yw.platform.netApi;
+
+import android.support.annotation.NonNull;
+import android.util.Log;
+
+import com.alibaba.fastjson.JSON;
+import com.yw.platform.yhtext.beans.MessageEvent;
+import com.yw.platform.yhtext.beans.send_bean.base.BaseSendMsgBean;
+import com.yw.platform.yhtext.beans.send_bean.base.BaseUserBean;
+import com.yw.platform.yhtext.netty.client.Const;
+
+import org.greenrobot.eventbus.EventBus;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by cxb on 2018/4/25.
+ */
+
+public class SuperSendApi {
+
+
+    public  static void sendMsg(String hint,Object objContent) {
+        BaseSendMsgBean sendMsgBean = createDefaultSendBean();
+        JSONObject jsonObject= (JSONObject) JSON.toJSON(sendMsgBean);
+        JSONObject jsonContent= (JSONObject) JSON.toJSON(objContent);
+        try {
+            jsonObject.put("content",jsonContent);
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        String data=jsonObject.toString();
+        Log.e("消息发送"+hint,data);
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(Const.SEND_CODE);
+        event.setMsg("正在向服务器发送："+hint);
+        event.setData(data);
+        EventBus.getDefault().post(event);
+    }
+    @NonNull
+    private static BaseSendMsgBean createDefaultSendBean() {
+        BaseSendMsgBean sendMsgBean = new BaseSendMsgBean();
+        sendMsgBean.setSender(createDefault());
+        List<BaseUserBean> recipients = new ArrayList<>();
+        recipients.add(createDefault());
+        sendMsgBean.setRecipients(recipients);
+        return sendMsgBean;
+    }
+    private static BaseUserBean createDefault() {
+        BaseUserBean userBean = new BaseUserBean();
+        userBean.setClient("ANDROIDPHONE");
+        userBean.setClientVersion("客户端版本，发件人必须传，收件人可以不传");
+        userBean.setIct("通信类型SOCKET; WEBSOCKET，可以不传");
+        userBean.setUserCode("用户账号， 发件人可以不传，收件人必须传");
+        return userBean;
+    }
+}

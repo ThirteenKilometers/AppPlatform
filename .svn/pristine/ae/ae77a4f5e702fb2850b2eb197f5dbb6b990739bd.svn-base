@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/ivAppImg"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_icon"/>
+
+        <Button
+            android:id="@+id/message_view"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_special_disease_circle"
+            android:text="59"
+            android:textColor="@android:color/white"
+            android:textSize="12dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <com.yw.platform.view.RoundProgressBar
+        android:id="@+id/rpb"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:alpha="0.7"
+        android:background="@drawable/progress_bg"
+        android:visibility="gone"
+        android_custom:roundColor="@android:color/black"
+        android_custom:roundProgressColor="@android:color/white"
+        android_custom:roundWidth="37dp"
+        android_custom:style="FILL"
+        android_custom:textColor="#9A32CD"
+        android_custom:textIsDisplayable="false"
+        android_custom:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="opiajsdglk"
+        android:textColor="#333333"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
