@@ -10,6 +10,15 @@ public class  NetUser implements Serializable {
     private String client="ANDROIDPHONE";//设备类型
     private String ict="SOCKET";//通信类型
     private String clientVersion="1.24";
+    String channelId;
+
+    public String getChannelId() {
+        return channelId;
+    }
+
+    public void setChannelId(String channelId) {
+        this.channelId = channelId;
+    }
 
     public String getUserCode() {
         return userCode;

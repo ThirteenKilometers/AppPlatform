@@ -40,10 +40,12 @@ public class SuperSendApi {
      * @param hint
      * @param content
      */
-    public  static void responseMsg(String hint,String requestId,Object content) {
+    public  static void responseMsg(String hint,String requestId,Object content,String meoth,ResponseModel responseData) {
         ResponseModel rModel= ModelManger.getDefaultResponseModel(getUserCode());
         rModel.setRequestId(requestId);
         rModel.setContent(content);
+        rModel.setMethod(meoth);
+        rModel.setRecipient(responseData.getSender());
         Gson gson=new Gson();
         String data=gson.toJson(rModel);
         Log.e("消息发送"+hint,data);

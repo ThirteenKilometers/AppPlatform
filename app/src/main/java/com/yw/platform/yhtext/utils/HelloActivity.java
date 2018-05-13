@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.alibaba.fastjson.JSON;
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
 import com.baidu.location.LocationClient;
@@ -18,8 +17,11 @@ import lzhs.com.library.wedgit.permission.PermissionHelper;
 
 public class HelloActivity extends AppCompatActivity implements View.OnClickListener {
     Button button;
+    double latitude = 0;
+    double longitude = 0;
     public LocationClient mLocationClient = null;
     private MyLocationListener myListener = new MyLocationListener();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +34,9 @@ public class HelloActivity extends AppCompatActivity implements View.OnClickList
         mLocationClient.registerLocationListener(myListener);
         //注册监听函数
         SetOption();
-        init();
+        mLocationClient.start();
+
+        // init();
     }
 
     private void init() {
@@ -86,7 +90,7 @@ public class HelloActivity extends AppCompatActivity implements View.OnClickList
         option.SetIgnoreCacheException(false);
 //可选，设置是否收集Crash信息，默认收集，即参数为false
 
-        option.setWifiCacheTimeOut(5*60*1000);
+        option.setWifiCacheTimeOut(5 * 60 * 1000);
 //可选，7.2版本新增能力
 //如果设置了该接口，首次启动定位时，会先判断当前WiFi是否超出有效期，若超出有效期，会先重新扫描WiFi，然后定位
 
@@ -107,26 +111,26 @@ public class HelloActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+        //button.setText(latitude + "");
+        button.setText( "你好呀");
 
         /*Intent intent=new Intent(HelloActivity.this, WebViewActivity.class);
         startActivity(intent);*/
 
 
     }
+
     public class MyLocationListener extends BDAbstractLocationListener {
+
+
         @Override
-        public void onReceiveLocation(BDLocation location){
-            //此处的BDLocation为定位结果信息类，通过它的各种get方法可获取定位相关的全部结果
-            //以下只列举部分获取经纬度相关（常用）的结果信息
-            //更多结果信息获取说明，请参照类参考中BDLocation类中的说明
-
-            double latitude = location.getLatitude();    //获取纬度信息
-            double longitude = location.getLongitude();    //获取经度信息
+        public void onReceiveLocation(BDLocation location) {
+            latitude = location.getLatitude();    //获取纬度信息
+            longitude = location.getLongitude();    //获取经度信息
             float radius = location.getRadius();    //获取定位精度，默认值为0.0f
-
             String coorType = location.getCoorType();
             //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
-            button.setText(JSON.toJSONString(location));
+            //  button.setText(JSON.toJSONString(location));
             int errorCode = location.getLocType();
             //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
         }

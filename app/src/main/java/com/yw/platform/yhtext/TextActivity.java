@@ -1,6 +1,7 @@
 package com.yw.platform.yhtext;
 
 import android.Manifest;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +39,7 @@ import com.yw.platform.yhtext.beans.send_bean.base.BaseSendMsgBean;
 import com.yw.platform.yhtext.beans.send_bean.base.BaseUserBean;
 import com.yw.platform.yhtext.netty.client.Const;
 import com.yw.platform.yhtext.utils.ApkTool;
+import com.yw.platform.yhtext.utils.HelloActivity;
 import com.yw.platform.yhtext.utils.MD5Util;
 import com.yw.platform.yhtext.utils.MyAppInfo;
 import com.yw.platform.yhtext.utils.PhoneMessage;
@@ -49,6 +51,7 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
+import lzhs.com.library.Utils;
 import lzhs.com.library.wedgit.permission.PermissionHelper;
 import lzhs.com.library.wedgit.permission.PermissionUtils;
 
@@ -68,9 +71,10 @@ public class TextActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text);
         EventBus.getDefault().register(this);
-        initView();
+        Utils.init(this);
+        //initView();
 //        initpermission();//单个动态请求
-//        initpermissions();//多个动态请求
+      // initpermissions();//多个动态请求
     }
 
     private void initpermissions() {
@@ -157,7 +161,9 @@ public class TextActivity extends AppCompatActivity implements View.OnClickListe
                 data = createQueryNotice();
                 break;
             case R.id.mBtnPretend:
-                initAppList();
+                //initAppList();
+                Intent intent=new Intent(this, HelloActivity.class);
+                startActivity(intent);
                 break;
             case R.id.mBtnDocumentList:
                 creatwQueryDocumentList();

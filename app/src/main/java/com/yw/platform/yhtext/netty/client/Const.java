@@ -88,6 +88,7 @@ public final class Const {
      */
     public final static String METHER_QUERYDOCUMENTLIST = "queryDocumentList";
     public final static int METHER_QUERYDOCUMENTLIST_CODE = 0xa008;
+    public final static int METHER_PUSH_QUERYDOCUMENTLIST_CODE = 0xa108;//自动刷新文档列表接口
 
     /**
      * 获取文档在线预览路径接口：method=”queryDocumentPreviewUrl”

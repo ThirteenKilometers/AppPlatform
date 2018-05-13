@@ -10,6 +10,11 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.ec.avirtualapp.controller.VpassSessionActivity;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -25,8 +30,6 @@ import com.yw.platform.service.LocalHandleService;
 import com.yw.platform.utils.LockPatternUtils;
 import com.yw.platform.yhtext.netty.NettyService;
 
-import net.ttxc.L4Proxy.L4ProxyArd;
-
 import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
@@ -40,6 +43,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import lzhs.com.library.Utils;
+
 public class MyApplication extends Application {
 
     private static MyApplication mInstance=null;
@@ -48,6 +53,10 @@ public class MyApplication extends Application {
     private PolicyBean policy;
 
     private RequestModel heartPack;//心跳包
+    double latitude = 0;//纬度
+    double longitude = 0;//精度
+    public LocationClient mLocationClient = null;
+    private MyLocationListener myListener = new MyLocationListener();
 
     public static MyApplication getInstance() {
         return mInstance;
@@ -60,9 +69,10 @@ public class MyApplication extends Application {
         mInstance = this;
         mLockPatternUtils = new LockPatternUtils(this);
         configImageLoader();
-        //Utils.init(this);
+        Utils.init(this);
         //开启ssl加密连接服务
-        L4ProxyArd.getInstance().StartOpenSSL();
+       // L4ProxyArd.getInstance().StartOpenSSL();
+        initLocation();//百度定位
         init();
         // 程序创建的时候执行 by yh
         if (!isServiceRunning(this, NettyService.class.getName()))
@@ -70,7 +80,7 @@ public class MyApplication extends Application {
     }
     private void init(){
         startService(new Intent(this, LocalHandleService.class));
-        EventBus.getDefault().register(ReceiveNotice.getinReceiveNotice());
+        EventBus.getDefault().register(ReceiveNotice.getinReceiveNotice(JSON.toJSONString(longitude),JSON.toJSONString(latitude)));
     }
     public void setResList(List<AppInfo> resList) {
         this.resList = resList;
@@ -355,5 +365,44 @@ public class MyApplication extends Application {
             }
         }
         return false;
+    }
+
+    /**
+     * 百度地图 MyLocationListener
+     */
+    public class MyLocationListener extends BDAbstractLocationListener {
+        @Override
+        public void onReceiveLocation(BDLocation location) {
+            latitude = location.getLatitude();    //获取纬度信息
+            longitude = location.getLongitude();    //获取经度信息
+            float radius = location.getRadius();    //获取定位精度，默认值为0.0f
+            String coorType = location.getCoorType();
+            //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+            //  button.setText(JSON.toJSONString(location));
+            int errorCode = location.getLocType();
+            //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
+        }
+    }
+
+    private void SetOption() {
+        LocationClientOption option = new LocationClientOption();
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
+        option.setCoorType("bd09ll");
+        option.setScanSpan(1000);
+        option.setOpenGps(true);
+        option.setLocationNotify(true);
+        option.setIgnoreKillProcess(false);
+        option.SetIgnoreCacheException(false);
+        option.setWifiCacheTimeOut(5 * 60 * 1000);
+        option.setEnableSimulateGps(false);
+        mLocationClient.setLocOption(option);
+    }
+    private void initLocation() {
+        mLocationClient = new LocationClient(getApplicationContext());
+        //声明LocationClient类
+        mLocationClient.registerLocationListener(myListener);
+        //注册监听函数
+        SetOption();
+        mLocationClient.start();
     }
 }

@@ -41,6 +41,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.DbException;
 import com.lidroid.xutils.exception.HttpException;
@@ -57,6 +61,7 @@ import com.yw.platform.beans.base.ResponseModel;
 import com.yw.platform.download.DownloadInfo;
 import com.yw.platform.download.DownloadManager;
 import com.yw.platform.download.DownloadService;
+import com.yw.platform.global.AppUser;
 import com.yw.platform.global.Constants;
 import com.yw.platform.global.MyApplication;
 import com.yw.platform.model.AppInfo;
@@ -77,14 +82,14 @@ import com.yw.platform.view.PageControlView;
 import com.yw.platform.view.RoundProgressBar;
 import com.yw.platform.yhtext.beans.MessageEvent;
 import com.yw.platform.yhtext.beans.accept_bean.AcceptQueryAppBean;
+import com.yw.platform.yhtext.beans.accept_bean.AcceptQueryNoticBean;
 import com.yw.platform.yhtext.beans.commonbeans.AppInstalInfoBean;
 import com.yw.platform.yhtext.beans.commonbeans.DeviceInfoBean;
+import com.yw.platform.yhtext.beans.send_bean.SendQueryNoticBean;
 import com.yw.platform.yhtext.beans.send_bean.SendUploadDeviceInfoBean;
 import com.yw.platform.yhtext.beans.send_bean.base.BaseSendMsgBean;
 import com.yw.platform.yhtext.beans.send_bean.base.BaseUserBean;
 import com.yw.platform.yhtext.netty.client.Const;
-import com.yw.platform.yhtext.utils.ApkTool;
-import com.yw.platform.yhtext.utils.MyAppInfo;
 import com.yw.platform.yhtext.utils.PhoneMessage;
 
 import net.ttxc.L4Proxy.L4ProxyArd;
@@ -114,7 +119,10 @@ import lzhs.com.library.utils.log.LogUtils;
 public class MainNewActivity extends BaseActivity implements View.OnClickListener {
     String data = "";
     int Singlestrength;
-    // TODO: 2018/5/4  扫描Android手机应用程序列表
+    double latitude = 0;//纬度
+    double longitude = 0;//精度
+    public LocationClient mLocationClient = null;
+    private MyLocationListener myListener = new MyLocationListener();
 
     private static int COLUMN_NUM = 4;
     private static int LINE_NUM = 4;
@@ -158,28 +166,54 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         //MyApplication.getInstance().addActivity("MainActivity");
         context = this;
         ViewUtils.inject(this);
+        initLocation();//百度定位
         EventBus.getDefault().register(this);
         initView();
         initData(MyApplication.getInstance().getResList());
         updateAppList();
         data = createUploadDeviceInfoMessage();
         sendMessage(data);
+        sendMessage(createQueryNotice());
     }
 
-    public void initAppList() {
-        new Thread() {
-            Bundle bundle = new Bundle();
+    private void initLocation() {
+        mLocationClient = new LocationClient(getApplicationContext());
+        //声明LocationClient类
+        mLocationClient.registerLocationListener(myListener);
+        //注册监听函数
+        SetOption();
+        mLocationClient.start();
+    }
 
-            @Override
-            public void run() {
-                super.run();
-                //扫描得到APP列表
-                List<MyAppInfo> appInfos = ApkTool.scanLocalInstallAppList(MainNewActivity.this.getPackageManager());
-                for (int i = 0; i < appInfos.size(); i++) {
-                }
-                //bundle.putStringArrayList("appInfos",appInfos);
-            }
-        }.start();
+    private void SetOption() {
+        LocationClientOption option = new LocationClientOption();
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
+        option.setCoorType("bd09ll");
+        option.setScanSpan(1000);
+        option.setOpenGps(true);
+        option.setLocationNotify(true);
+        option.setIgnoreKillProcess(false);
+        option.SetIgnoreCacheException(false);
+        option.setWifiCacheTimeOut(5 * 60 * 1000);
+        option.setEnableSimulateGps(false);
+        mLocationClient.setLocOption(option);
+    }
+
+    /**
+     * 获取通知接口:  method=” queryNotice”
+     */
+    private String createQueryNotice() {
+        BaseSendMsgBean sendMsgBean = createDefaultSendBean();
+        SendQueryNoticBean sendQueryNoticBean = new SendQueryNoticBean();
+        sendQueryNoticBean.setNotification("REQUEST");
+        sendQueryNoticBean.setNoticeType("");//通知类型: 传null查所有类型的通知
+        sendQueryNoticBean.setNoticeId("");//通知ID: 传null查所有类型的通知
+        sendQueryNoticBean.setUserCode(getUserCode());//当前登录账号
+        sendMsgBean.setContent(sendQueryNoticBean);
+
+        sendMsgBean.setMethod(Const.METHER_QUERYNOTIC);
+        sendMsgBean.setRequestId(Const.METHER_QUERYNOTIC + "");
+        return JSON.toJSONString(sendMsgBean);
     }
 
     @SuppressLint("MissingPermission")
@@ -246,10 +280,9 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         deviceInfoBean.setSignalIntensity(Singlestrength + "");//"信号强度"
         deviceInfoBean.setAccessInfo("");//接入点信息
         deviceInfoBean.setSimInfo("");//SIM卡信息
-        // TODO: 2018/5/8 传经纬度 
-       // deviceInfoBean.setPositionInfo("");//位置信息
-        deviceInfoBean.setLongitude("0");//经度（不能传空字符串）
-        deviceInfoBean.setLatitude("0");//纬度
+        //传经纬度
+        deviceInfoBean.setLongitude(JSON.toJSONString(longitude));//经度（不能传空字符串）
+        deviceInfoBean.setLatitude(JSON.toJSONString(latitude));//纬度
         deviceInfoBean.setStorageInfo("");//存储信息
         deviceInfoBean.setAppInfo("");//应用安装信息
         deviceInfoBean.setCertificateInfo("");//证书信息
@@ -263,7 +296,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         List<AppInfo> appInfoList = MyApplication.getInstance().getResList();//服务器历史数据
         List<AppUtils.AppInfo> locaApps = AppUtils.getAppsInfo();//获取本地应用信息
         for (AppInfo appInfo : appInfoList) {
-          if (appInfo.type == 4) {
+            if (appInfo.type == 0) {
                 boolean isInstall = false;//是否安装应用
                 AppInstalInfoBean infoBean = new AppInstalInfoBean();
                 infoBean.setAppTypeId(appInfo.appId);
@@ -283,10 +316,11 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                     infoBean.setVersion("");
                 }
                 arrBean.add(infoBean);
+
             }
         }
         LogUtils.json("arrBean", JSON.toJSONString(arrBean));
-        return  arrBean;
+        return arrBean;
     }
 
     public void sendMessage(String data) {
@@ -385,6 +419,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     private void updateAppList() {
         lastRequestId = NetApi.getReuestId();
         NetApi.queryApp(lastRequestId);
+        Log.i("info", "---------------------updateAppList: ");
     }
 
 
@@ -428,6 +463,59 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                                 e.printStackTrace();
                             }
                         }
+                    }
+                }
+                break;
+            case Const.METHER_METHER_QUERYNOTIC_CODE://获取通知接口
+                AcceptQueryNoticBean acceptQueryNoticBean =
+                        JSON.parseObject((String) event.getDataContent(), AcceptQueryNoticBean.class);
+               // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
+
+                List<AcceptQueryNoticBean.Notice> notices = acceptQueryNoticBean.getNotices();
+
+                for (int i = 0; i < notices.size(); i++) {
+                    MessageEvent sendMsg = new MessageEvent<String>();
+                    sendMsg.setCode(-1);
+                    String noticeType = notices.get(i).getNoticeType();
+                    if ("strategy".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("策略");
+                    } else if ("appAdd".equals(noticeType)) {//应用新增
+                        sendMsg.setCode(Const.NOTICE_APP_ADD);
+                        sendMsg.setMsg("应用新增");
+                    } else if ("appRemove".equals(noticeType)) {//应用移除
+                        sendMsg.setCode(Const.NOTICE_APP_REMOVE);
+                        sendMsg.setMsg("应用移除");
+                    } else if ("appUpdate".equals(noticeType)) {//应用更新
+                        sendMsg.setCode(Const.NOTICE_APP_UPDATE);
+                        sendMsg.setMsg("应用更新");
+                    } else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
+                        sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
+                        sendMsg.setMsg("应用清除");
+                    } else if ("allDataErasure".equals(noticeType)) {//全部数据擦除
+                        sendMsg.setCode(Const.CONTROL_ALLDATA_DCREAL);
+                        sendMsg.setMsg("设备清除");
+                    } else if ("screenLock".equals(noticeType)) {//屏幕锁定
+                        sendMsg.setCode(Const.CONTROL_SCREEN_LOCK);
+                        sendMsg.setMsg("屏幕锁屏");
+                    } else if ("screenUnLock".equals(noticeType)) {//屏幕解锁
+                        sendMsg.setCode(Const.CONTROL_SCREEN_UNLOCK);
+                        sendMsg.setMsg("屏幕解锁");
+                    } else if ("equipmentPositioning".equals(noticeType)) {//设备定位
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("设备定位");
+                    } else if ("fileAdd".equals(noticeType)) {//文档新增
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档新增");
+                    } else if ("fileRemove".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档移除");
+                    } else if ("fileUpdate".equals(noticeType)) {
+                        sendMsg.setCode(-1);
+                        sendMsg.setMsg("文档更新");
+                    }
+                    if (sendMsg.getCode() > 0) {
+                        EventBus.getDefault().post(sendMsg);
                     }
                 }
                 break;
@@ -968,6 +1056,32 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         } else {
             handler.sendEmptyMessage(7);
             return true;
+        }
+    }
+
+    /**
+     * 登录账号
+     */
+    public static String getUserCode() {
+        AppUser appUser = MyApplication.getInstance().getAppUser();
+        if (appUser == null) {
+            return "";
+        } else {
+            return appUser.getUserCode();
+        }
+    }
+
+    public class MyLocationListener extends BDAbstractLocationListener {
+        @Override
+        public void onReceiveLocation(BDLocation location) {
+            latitude = location.getLatitude();    //获取纬度信息
+            longitude = location.getLongitude();    //获取经度信息
+            float radius = location.getRadius();    //获取定位精度，默认值为0.0f
+            String coorType = location.getCoorType();
+            //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+            //  button.setText(JSON.toJSONString(location));
+            int errorCode = location.getLocType();
+            //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
         }
     }
 }

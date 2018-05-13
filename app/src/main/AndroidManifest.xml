@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yw.platform"
     xmlns:tools="http://schemas.android.com/tools"
+    package="com.yw.platform"
     android:versionCode="20180316"
     android:versionName="2.0.8">
 
@@ -64,20 +64,20 @@
         tools:ignore="ProtectedPermissions" />
 
     <application
-        tools:replace="android:allowBackup"
         android:name=".global.MyApplication"
         android:allowBackup="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar">
+        android:theme="@android:style/Theme.Light.NoTitleBar"
+        tools:replace="android:allowBackup">
 
         <meta-data
-        android:name="com.baidu.lbsapi.API_KEY"
-        android:value="tWQ2AoGTXgyUnUMjI5XgmjR9I4IKepqo" >
-    </meta-data>
-        <service android:name="com.baidu.location.f"
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tWQ2AoGTXgyUnUMjI5XgmjR9I4IKepqo"></meta-data>
+        <service
+            android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote"> </service>
+            android:process=":remote"></service>
         <activity
             android:name=".activity.WelcomeActivity"
             android:screenOrientation="portrait"
@@ -217,31 +217,35 @@
 
         <!-- netty通信服务 -->
         <service android:name=".yhtext.netty.NettyService" />
+        <service android:name=".service.LocalHandleService" />
         <!-- 测试netty -->
         <activity
             android:name=".yhtext.TextActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
         <!-- 登录界面 -->
         <activity
             android:name=".yhtext.activity.LoginActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
-        <activity android:name=".ui.activity.MainNewActivity" />
-        <activity android:name=".ui.activity.WebAppNewActivity" />
-        <activity
-            android:name=".yhtext.utils.HelloActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.activity.MainNewActivity" />
+        <activity android:name=".ui.activity.WebAppNewActivity" />
+        <activity
+            android:name=".yhtext.utils.HelloActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
         <activity
             android:name=".yhtext.activity.DocumentListActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".yhtext.activity.WebViewActivity"
+        <activity
+            android:name=".yhtext.activity.WebViewActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 

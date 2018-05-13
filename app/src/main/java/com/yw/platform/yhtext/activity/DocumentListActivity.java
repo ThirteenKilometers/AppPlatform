@@ -59,7 +59,7 @@ public class DocumentListActivity extends AppCompatActivity {
         mAdapter = new DocAdapter(this, R.layout.item_list, mDatas);
         mRecycleList.setAdapter(mAdapter);
         mRefreshLayout = findViewById(R.id.refreshLayout);
-      //  mRefreshLayout.setHeaderView(new SSSRefreshHeader(this));
+        //  mRefreshLayout.setHeaderView(new SSSRefreshHeader(this));
         mRefreshLayout.setAutoLoadMore(true);
         mRefreshLayout.setOnRefreshListener(new RefreshListenerAdapter() {//刷新
             @Override
@@ -73,11 +73,10 @@ public class DocumentListActivity extends AppCompatActivity {
             public void onLoadMore(TwinklingRefreshLayout refreshLayout) {
                 super.onLoadMore(refreshLayout);
                 if (pagingInfoBean != null) {
-                    if ((pagingInfoBean.getTotalPageNum() - currPageNum) > 0){
+                    if ((pagingInfoBean.getTotalPageNum() - currPageNum) > 0) {
                         ++currPageNum;//有下一页的话
-                    sendMessage(creatwQueryDocumentList());
-                }
-                    else {
+                        sendMessage(creatwQueryDocumentList());
+                    } else {
                         ToastUtils.showShort("已经没有更多的数据了");
                         mRefreshLayout.finishLoadmore();
                     }
@@ -161,10 +160,14 @@ public class DocumentListActivity extends AppCompatActivity {
                         JSON.parseObject((String) event.getDataContent(), AcceptQueryDocumentListBean.class);
                 // TODO: 2018/5/9 获取 分页信息
                 pagingInfoBean = (PagingInfoBean) acceptQueryDocumentListBean.getPagingInfo();
-                if(currPageNum==1)mDatas.clear();
+                if (currPageNum == 1) mDatas.clear();
                 mDatas.addAll(acceptQueryDocumentListBean.getDocuments());
                 mAdapter.notifyDataSetChanged();
 
+                break;
+                case Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE://自动刷新
+                currPageNum = 1;
+                sendMessage(creatwQueryDocumentList());
                 break;
             case Const.METHER_QUERYDOCUMENTPREVIEWURL_CODE:
                 AcceptQueryDocumentPreviewUrl acceptQueryDocumentPreviewUrl =
@@ -192,10 +195,41 @@ public class DocumentListActivity extends AppCompatActivity {
 
         @Override
         protected void convert(ViewHolder holder, final DocumentBean item, int position) {
-            holder.setText(R.id.fileName, item.getFileName() + "");
+            String filename = item.getFileName();
+            holder.setText(R.id.fileName, filename);
             holder.setText(R.id.fileDate, item.getCreateDate() + "");
-            holder.setText(R.id.FileDescribetion, item.getDescribetion() + "");//描述
+            holder.setText(R.id.FileDescribetion, item.getDescribetion() + "");//描述item.getFileName()
+            String subfilename = filename.substring(filename.lastIndexOf(".") + 1);
+            switch (subfilename) {
+                case ".xls":
+                case ".xlsx":
+                case ".xlsb":
+                    holder.setImageResource(R.id.FileImage, R.drawable.excel);
+                    break;
+                case "bmp":
+                case "gif":
+                case "jpg":
+                case "pic":
+                case "png":
+                case "tif":
+                    holder.setImageResource(R.id.FileImage, R.drawable.pic);
+                    break;
+                case "ppt":
+                case "pptx":
+                    holder.setImageResource(R.id.FileImage, R.drawable.ppt);
+                    break;
+                case "txt":
+                    holder.setImageResource(R.id.FileImage, R.drawable.txt);
+                    break;
+                case "doc":
+                case "docx":
+                    holder.setImageResource(R.id.FileImage, R.drawable.word);
+                    break;
+                default:
+                    holder.setImageResource(R.id.FileImage, R.drawable.unknow);
 
+                    break;
+            }
             holder.getConvertView().setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -216,6 +250,7 @@ public class DocumentListActivity extends AppCompatActivity {
         }
     }
 
-    public void onBack(View view)
-    {this.finish();}
+    public void onBack(View view) {
+        this.finish();
+    }
 }

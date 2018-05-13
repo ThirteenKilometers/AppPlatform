@@ -93,9 +93,15 @@ public class ModelManger {
      * 描述：默认对服务端的响应实体
      * @return
      */
-    public static ResponseBean getDefaultResponseBean(String noticeId,String msg){
+    /*public static ResponseBean getDefaultResponseBean(String noticeId,String msg){
         ResponseBean responseBean=new ResponseBean();
         responseBean.setNoticeId(noticeId);
+        responseBean.setMessage(msg);
+        return responseBean;
+    }*/
+    public static ResponseBean getDefaultResponseBean(List<String> noticeId, String msg){
+        ResponseBean responseBean=new ResponseBean();
+        responseBean.setNoticeIds(noticeId);
         responseBean.setMessage(msg);
         return responseBean;
     }

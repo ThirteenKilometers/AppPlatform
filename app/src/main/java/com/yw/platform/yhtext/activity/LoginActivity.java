@@ -21,10 +21,9 @@ import com.yw.platform.global.MyApplication;
 import com.yw.platform.model.AppInfo;
 import com.yw.platform.netApi.NetApi;
 import com.yw.platform.service.DeviceManager;
+import com.yw.platform.service.LocalHandleService;
 import com.yw.platform.test.TestActivity;
 import com.yw.platform.tools.AppInfoTools;
-import com.yw.platform.tools.RroadcastUtil;
-import com.yw.platform.tools.SetInfo;
 import com.yw.platform.ui.activity.MainNewActivity;
 import com.yw.platform.view.CustomProgressDialog;
 import com.yw.platform.yhtext.beans.MessageEvent;
@@ -135,11 +134,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                         if (TextUtils.equals(camera,"yes")) DeviceManager.getInstance(this).setCameraDisabled(true);
                         else  DeviceManager.getInstance(this).setCameraDisabled(false);
 
-                       String wifi=policy.getBluetooth();//蓝牙
+                      /* String wifi=policy.getBluetooth();//蓝牙
                         RroadcastUtil.addBluetoothSate(this);//注册广播
                         if (TextUtils.equals(wifi,"yes")) SetInfo.getInstance().setBluetoothEable(true);
                         else  SetInfo.getInstance().setBluetoothEable(false);
-
+*/
                         MyApplication.getInstance().setPolicy(policy);
                         requestId=System.currentTimeMillis()+"_"+((int)(Math.random()*100));
                         NetApi.queryApp(requestId);

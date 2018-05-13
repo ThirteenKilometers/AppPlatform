@@ -9,6 +9,7 @@ import android.os.HandlerThread;
 import android.os.IBinder;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import com.yw.platform.tools.AppLockTools;
 import com.yw.platform.tools.SetInfo;
@@ -33,6 +34,7 @@ public class LocalHandleService  extends Service{
 
     @Override
     public void onCreate() {
+        Log.i("info", "======onCreate:LocalHandleService ");
         super.onCreate();
         EventBus.getDefault().register(this);
         deviceManager = DeviceManager.getInstance(this);
@@ -50,6 +52,7 @@ public class LocalHandleService  extends Service{
 
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent event) {
+        Log.i("info", "======LocalHandleService"+event.getCode());
         switch (event.getCode()) {
             case Const.CONTROL_COMPANYDATA_DCREAL://清除企业数据
                 deviceManager.clearAppCache(this);

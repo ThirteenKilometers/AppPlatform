@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="获取已安装信息" />
+                android:text="跳转到定位页面" />
             <Button
                 android:id="@+id/mBtnLogin"
                 android:layout_width="match_parent"
