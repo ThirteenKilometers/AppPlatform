@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "/Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\values-v11\\styles.xml",
-                    "from": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "177",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "316"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "194"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\521c8b527a775da086af990afba24999\\res\\values-v11\\values-v11.xml",
+                    "source": "/Users/liuchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f7489759105d4981d4d46030c5e2f54d/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,136,191",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -39,6 +20,25 @@
                         "endLines": "11,17,23,29,35,41,42,46,50,51,55,59,60,64,69,74,79,81,83,84,85,139,194,195",
                         "endColumns": "12,12,12,12,12,12,88,12,12,100,12,12,102,12,12,12,12,12,12,70,82,12,12,90",
                         "endOffsets": "613,1038,1466,1892,2319,2744,2833,3079,3328,3429,3681,3936,4039,4292,4700,5120,5542,5649,5778,5849,5932,9957,14125,14216"
+                    }
+                },
+                {
+                    "source": "/Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/src/main/res/values-v11/styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "177",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "316"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "194"
                     }
                 }
             ]

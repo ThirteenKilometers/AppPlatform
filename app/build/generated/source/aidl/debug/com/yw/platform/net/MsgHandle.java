@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: F:\\Projects\\AppPlatform\\app\\src\\main\\aidl\\com\\yw\\platform\\net\\MsgHandle.aidl
+ * Original file: /Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/src/main/aidl/com/yw/platform/net/MsgHandle.aidl
  */
 package com.yw.platform.net;
 // Declare any non-default types here with import statements

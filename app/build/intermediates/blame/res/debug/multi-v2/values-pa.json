@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pa\\values-pa.xml",
+            "outputFile": "/Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-pa/values-pa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\521c8b527a775da086af990afba24999\\res\\values-pa\\values-pa.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,208,305,410,496,596,709,786,862,941,1042,1146,1243,1352,1451,1561,1720,1820",
-                        "endColumns": "102,96,104,85,99,112,76,75,78,100,103,96,108,98,109,158,99,79",
-                        "endOffsets": "203,300,405,491,591,704,781,857,936,1037,1141,1238,1347,1446,1556,1715,1815,1895"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\231a46c588598872cb84a7c271a09963\\res\\values-pa\\values-pa.xml",
+                    "source": "/Users/liuchen/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/e40c7056e4a74050e93c454f5fe2d864/res/values-pa/values-pa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "1900",
                         "endColumns": "100",
                         "endOffsets": "1996"
+                    }
+                },
+                {
+                    "source": "/Users/liuchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f7489759105d4981d4d46030c5e2f54d/res/values-pa/values-pa.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,208,305,410,496,596,709,786,862,941,1042,1146,1243,1352,1451,1561,1720,1820",
+                        "endColumns": "102,96,104,85,99,112,76,75,78,100,103,96,108,98,109,158,99,79",
+                        "endOffsets": "203,300,405,491,591,704,781,857,936,1037,1141,1238,1347,1446,1556,1715,1815,1895"
                     }
                 }
             ]

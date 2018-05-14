@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-el\\values-el.xml",
+            "outputFile": "/Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-el/values-el.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\521c8b527a775da086af990afba24999\\res\\values-el\\values-el.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,223,334,451,536,641,767,855,941,1026,1137,1247,1349,1460,1569,1677,1837,1937",
-                        "endColumns": "117,110,116,84,104,125,87,85,84,110,109,101,110,108,107,159,99,84",
-                        "endOffsets": "218,329,446,531,636,762,850,936,1021,1132,1242,1344,1455,1564,1672,1832,1932,2017"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\231a46c588598872cb84a7c271a09963\\res\\values-el\\values-el.xml",
+                    "source": "/Users/liuchen/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/e40c7056e4a74050e93c454f5fe2d864/res/values-el/values-el.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -28,6 +18,16 @@
                         "startOffsets": "2022",
                         "endColumns": "100",
                         "endOffsets": "2118"
+                    }
+                },
+                {
+                    "source": "/Users/liuchen/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/f7489759105d4981d4d46030c5e2f54d/res/values-el/values-el.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,223,334,451,536,641,767,855,941,1026,1137,1247,1349,1460,1569,1677,1837,1937",
+                        "endColumns": "117,110,116,84,104,125,87,85,84,110,109,101,110,108,107,159,99,84",
+                        "endOffsets": "218,329,446,531,636,762,850,936,1021,1132,1242,1344,1455,1564,1672,1832,1932,2017"
                     }
                 }
             ]

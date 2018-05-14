@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: F:\\Projects\\AppPlatform\\app\\src\\main\\aidl\\com\\yw\\platform\\tools\\guard\\CastielProgressConnection.aidl
+ * Original file: /Users/liuchen/Developer/LZHS/Development/Projects/AppPlatform/app/src/main/aidl/com/yw/platform/tools/guard/CastielProgressConnection.aidl
  */
 package com.yw.platform.tools.guard;
 // Declare any non-default types here with import statements
