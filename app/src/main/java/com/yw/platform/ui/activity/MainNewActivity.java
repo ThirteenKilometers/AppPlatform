@@ -456,6 +456,8 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                             JSONObject jsonObject = null;
                             try {
                                 jsonObject = new JSONObject((String) responseData2.getContent());
+                                LogUtils.json("==MainNewActivity", JSON.toJSONString(responseData2));
+
                                 downloadManager.addNewDownload(jsonObject.optString("queryAppDownloadUrl"), appItem.appInfo.packageName,
                                         appItem.appInfo.localFilePath, false, false,
                                         new DownloadRequestCallBack(appItem.appInfo, appItem.view));
@@ -761,6 +763,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                         }
                     } else if (isApkExist(appInfo.localFilePath)) {//已下载
                         if (ApkCheckUtils.isLegalApk(appInfo.localFilePath)) {//合法apk
+                            Log.i("info", "==下载的apk地址是: "+appInfo.localFilePath);
                             installApp(appInfo.localFilePath);
                         } else {
                             addToDownload(appInfo, view);
@@ -931,7 +934,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             String authority = MyApplication.getInstance().getPackageName() + ".provider";
             Uri contentUri = FileProvider.getUriForFile(MyApplication.getInstance(), authority, apkfile);
-
             i.setDataAndType(contentUri, "application/vnd.android.package-archive");
         } else {
             i.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android" +
