@@ -155,13 +155,13 @@ public class ReceiveNotice {
         } /*else if ("equipmentPositioning".equals(noticeType)) {//设备定位
             sendMsg.setCode(-1);
             sendMsg.setMsg("设备定位");
-        } */ else if ("fileAdd".equals(noticeType)) {//文档新增
+        } */ else if ("fileDistribution".equals(noticeType)) {//文档新增
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
-            sendMsg.setMsg("文档新增");
-            responsemsg = "文档新增消息已收到";
+            sendMsg.setMsg("文档分发");
+            responsemsg = "文档分发消息已收到";
             showNotic(responsemsg,new Intent(MyApplication.getInstance(), DocumentListActivity.class));
-
-        } else if ("fileRemove".equals(noticeType)) {
+            Log.i("info", "noticePushServerRequest "+"接收到文档分发消息");
+        } /*else if ("fileRemove".equals(noticeType)) {
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档移除");
             responsemsg = "文档移除消息已收到";
@@ -172,7 +172,7 @@ public class ReceiveNotice {
             sendMsg.setMsg("文档更新");
             responsemsg = "文档更新消息已收到";
             showNotic(responsemsg,new Intent(MyApplication.getInstance(), DocumentListActivity.class));
-        }
+        }*/
 
         if (sendMsg.getCode() > 0) {
             EventBus.getDefault().post(sendMsg);
@@ -190,7 +190,7 @@ public class ReceiveNotice {
                 PendingIntent.FLAG_CANCEL_CURRENT
         );
         Notification.Builder myBuilder = new Notification.Builder(MyApplication.getInstance());
-        myBuilder.setContentTitle("移动安全系统通知")
+        myBuilder.setContentTitle("移动安全平台系统通知")
                 .setContentText(ContentText)
                 .setTicker("您收到新的消息")
                 //设置状态栏中的小图片，尺寸一般建议在24×24，这个图片同样也是在下拉状态栏中所显示

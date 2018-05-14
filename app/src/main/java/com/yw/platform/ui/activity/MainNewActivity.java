@@ -18,11 +18,13 @@ import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.support.annotation.NonNull;
+import android.support.v4.content.FileProvider;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.TextUtils;
@@ -469,7 +471,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             case Const.METHER_METHER_QUERYNOTIC_CODE://获取通知接口
                 AcceptQueryNoticBean acceptQueryNoticBean =
                         JSON.parseObject((String) event.getDataContent(), AcceptQueryNoticBean.class);
-               // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
+                // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
 
                 List<AcceptQueryNoticBean.Notice> notices = acceptQueryNoticBean.getNotices();
 
@@ -919,11 +921,28 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
     //安装应用程序
     private void installApp(String filePath) {
+        File apkfile = new File(filePath);
+       /* if (!apkfile.exists()) {
+            return;
+        }*/
+        Log.i("info", "installApp: "+filePath);
         Intent i = new Intent(Intent.ACTION_VIEW);
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N) {
+            i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            String authority = MyApplication.getInstance().getPackageName() + ".provider";
+            Uri contentUri = FileProvider.getUriForFile(MyApplication.getInstance(), authority, apkfile);
+
+            i.setDataAndType(contentUri, "application/vnd.android.package-archive");
+        } else {
+            i.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android" +
+                    ".package-archive");
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        }
+       /* // TODO: 2018/5/14   FileProvider.getUriForFile(MyApplication.getInstance(),MyApplication.getInstance().getPackageName(),)
         // 设置目标应用安装包路径
         i.setDataAndType(Uri.fromFile(new File(filePath)), "application/vnd.android.package-archive");
-        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(i);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);*/
+        MyApplication.getInstance().startActivity(i);
     }
 
     //卸载应用程序

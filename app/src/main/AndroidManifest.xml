@@ -70,6 +70,15 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light.NoTitleBar"
         tools:replace="android:allowBackup">
+        <provider
+            android:authorities="com.yw.platform.provider"
+            android:name="android.support.v4.content.FileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
@@ -242,6 +251,7 @@
 
         </activity>
         <activity
+            android:launchMode="singleTask"
             android:name=".yhtext.activity.DocumentListActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
         <activity

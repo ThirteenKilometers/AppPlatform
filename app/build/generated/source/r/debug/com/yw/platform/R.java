@@ -16603,5 +16603,6 @@ public final class R {
   public static final class xml {
     public static final int adminpolicy=0x7f100000;
     public static final int config=0x7f100001;
+    public static final int file_paths=0x7f100002;
   }
 }

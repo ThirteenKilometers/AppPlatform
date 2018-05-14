@@ -2886,3 +2886,4 @@ int styleable ViewStubCompat_android_layout 1
 int styleable ViewStubCompat_android_inflatedId 2
 int xml adminpolicy 0x7f100000
 int xml config 0x7f100001
+int xml file_paths 0x7f100002
