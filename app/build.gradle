@@ -1,16 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
 
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
+
+  
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.yw.platform"
         minSdkVersion 15
         targetSdkVersion 27
-    }
 
+
+    }
 
     buildTypes {
         release {
@@ -34,6 +37,16 @@ dependencies {
     implementation files('libs/gson-2.2.4.jar')
     implementation files('libs/virturl.jar')
     implementation files('libs/xUtils-2.6.14.jar')
+    implementation 'io.netty:netty-all:5.0.0.Alpha2'
+    implementation 'com.alibaba:fastjson:1.2.47'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation files('libs/L4Proxy.jar')
+
+    implementation files('libs/loader.jar')
+    implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/virturl.jar')
+    implementation files('libs/xUtils-2.6.14.jar')
+
     implementation 'io.netty:netty-all:5.0.0.Alpha2'
     implementation 'com.alibaba:fastjson:1.2.47'
     implementation 'org.greenrobot:eventbus:3.1.1'

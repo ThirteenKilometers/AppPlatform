@@ -191,13 +191,15 @@
                 <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.yw.platform.broadcastReceiver.NetworkConnectChangedReceiver" >
+        <!--
+        <receiver android:name=".broadcastReceiver.NetworkConnectChangedReceiver">
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
                 <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
         </receiver>
+        -->
         <receiver android:name="com.yw.platform.broadcastReceiver.ScreenBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.SCREEN_OFF" />
@@ -247,7 +249,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.yw.platform.ui.activity.MainNewActivity" />
+        <activity
+            android:name="com.yw.platform.ui.activity.MainNewActivity"
+            android:launchMode="singleTop" />
         <activity android:name="com.yw.platform.ui.activity.WebAppNewActivity" />
         <activity
             android:name="com.yw.platform.yhtext.utils.HelloActivity"
@@ -255,7 +259,7 @@
         </activity>
         <activity
             android:name="com.yw.platform.yhtext.activity.DocumentListActivity"
-            android:launchMode="singleTask"
+            android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name="com.yw.platform.yhtext.activity.WebViewActivity"

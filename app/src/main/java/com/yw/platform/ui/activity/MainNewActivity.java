@@ -5,6 +5,9 @@ package com.yw.platform.ui.activity;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog.Builder;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -82,6 +85,7 @@ import com.yw.platform.view.BaseViewHolder;
 import com.yw.platform.view.CustomProgressDialog;
 import com.yw.platform.view.PageControlView;
 import com.yw.platform.view.RoundProgressBar;
+import com.yw.platform.yhtext.activity.DocumentListActivity;
 import com.yw.platform.yhtext.beans.MessageEvent;
 import com.yw.platform.yhtext.beans.accept_bean.AcceptQueryAppBean;
 import com.yw.platform.yhtext.beans.accept_bean.AcceptQueryNoticBean;
@@ -121,8 +125,8 @@ import lzhs.com.library.utils.log.LogUtils;
 public class MainNewActivity extends BaseActivity implements View.OnClickListener {
     String data = "";
     int Singlestrength;
-    double latitude = 0;//纬度
-    double longitude = 0;//精度
+    double latitude;//纬度
+    double longitude; //精度
     public LocationClient mLocationClient = null;
     private MyLocationListener myListener = new MyLocationListener();
 
@@ -283,12 +287,16 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         deviceInfoBean.setAccessInfo("");//接入点信息
         deviceInfoBean.setSimInfo("");//SIM卡信息
         //传经纬度
+        // Log.i(TAG, "DeviceInfoEntith: ");
+        Log.i("device", "DeviceInfoEntith: "+longitude+"纬度"+latitude);
         deviceInfoBean.setLongitude(JSON.toJSONString(longitude));//经度（不能传空字符串）
         deviceInfoBean.setLatitude(JSON.toJSONString(latitude));//纬度
         deviceInfoBean.setStorageInfo("");//存储信息
         deviceInfoBean.setAppInfo("");//应用安装信息
         deviceInfoBean.setCertificateInfo("");//证书信息
         deviceInfoBean.setConfigInfo("");//配置信息
+        LogUtils.json("devicehhhhhhh", JSON.toJSONString(deviceInfoBean));
+
         return deviceInfoBean;
     }
 
@@ -456,8 +464,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                             JSONObject jsonObject = null;
                             try {
                                 jsonObject = new JSONObject((String) responseData2.getContent());
-                                LogUtils.json("==MainNewActivity", JSON.toJSONString(responseData2));
-
                                 downloadManager.addNewDownload(jsonObject.optString("queryAppDownloadUrl"), appItem.appInfo.packageName,
                                         appItem.appInfo.localFilePath, false, false,
                                         new DownloadRequestCallBack(appItem.appInfo, appItem.view));
@@ -473,7 +479,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             case Const.METHER_METHER_QUERYNOTIC_CODE://获取通知接口
                 AcceptQueryNoticBean acceptQueryNoticBean =
                         JSON.parseObject((String) event.getDataContent(), AcceptQueryNoticBean.class);
-                // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
+                LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
 
                 List<AcceptQueryNoticBean.Notice> notices = acceptQueryNoticBean.getNotices();
 
@@ -487,12 +493,18 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                     } else if ("appAdd".equals(noticeType)) {//应用新增
                         sendMsg.setCode(Const.NOTICE_APP_ADD);
                         sendMsg.setMsg("应用新增");
+                        showNotic("应用新增消息已收到", new Intent(MyApplication.getInstance(), MainNewActivity.class));
+
                     } else if ("appRemove".equals(noticeType)) {//应用移除
                         sendMsg.setCode(Const.NOTICE_APP_REMOVE);
                         sendMsg.setMsg("应用移除");
+                        showNotic("应用移除消息已收到", new Intent(MyApplication.getInstance(), MainNewActivity.class));
+
                     } else if ("appUpdate".equals(noticeType)) {//应用更新
                         sendMsg.setCode(Const.NOTICE_APP_UPDATE);
                         sendMsg.setMsg("应用更新");
+                        showNotic("应用更新消息已收到", new Intent(MyApplication.getInstance(), MainNewActivity.class));
+
                     } else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
                         sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
                         sendMsg.setMsg("应用清除");
@@ -508,15 +520,11 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                     } else if ("equipmentPositioning".equals(noticeType)) {//设备定位
                         sendMsg.setCode(-1);
                         sendMsg.setMsg("设备定位");
-                    } else if ("fileAdd".equals(noticeType)) {//文档新增
-                        sendMsg.setCode(-1);
-                        sendMsg.setMsg("文档新增");
-                    } else if ("fileRemove".equals(noticeType)) {
-                        sendMsg.setCode(-1);
-                        sendMsg.setMsg("文档移除");
-                    } else if ("fileUpdate".equals(noticeType)) {
-                        sendMsg.setCode(-1);
-                        sendMsg.setMsg("文档更新");
+                    } else if ("fileDistribution".equals(noticeType)) {//文档新增
+                        sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
+                        sendMsg.setMsg("文档分发");
+                        showNotic("文档分发消息已收到", new Intent(MyApplication.getInstance(), DocumentListActivity.class));
+                        Log.i("info", "noticePushServerRequest " + "接收到文档分发消息");
                     }
                     if (sendMsg.getCode() > 0) {
                         EventBus.getDefault().post(sendMsg);
@@ -524,6 +532,41 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                 }
                 break;
         }
+    }
+
+    //显示通知
+    @SuppressLint("NewApi")
+    private void showNotic(String ContentText, Intent intent) {
+        NotificationManager myManager = (NotificationManager) MyApplication.getInstance().getSystemService(NOTIFICATION_SERVICE);
+        //3.定义一个PendingIntent，点击Notification后启动一个Activity
+        PendingIntent pi = PendingIntent.getActivity(
+                MyApplication.getInstance(),
+                100,
+                intent,
+                PendingIntent.FLAG_CANCEL_CURRENT
+        );
+        Notification.Builder myBuilder = new Notification.Builder(MyApplication.getInstance());
+        myBuilder.setContentTitle("移动安全平台系统通知")
+                .setContentText(ContentText)
+                .setTicker("您收到新的消息")
+                //设置状态栏中的小图片，尺寸一般建议在24×24，这个图片同样也是在下拉状态栏中所显示
+                .setSmallIcon(R.drawable.icon)
+                // .setLargeIcon(R.drawable.icon)
+                //设置默认声音和震动
+                .setDefaults(Notification.DEFAULT_SOUND | Notification.DEFAULT_VIBRATE)
+                .setAutoCancel(true)//点击后取消
+                .setWhen(System.currentTimeMillis())//设置通知时间
+                .setPriority(Notification.PRIORITY_HIGH)//高优先级
+                .setVisibility(Notification.VISIBILITY_PRIVATE)
+                //android5.0加入了一种新的模式Notification的显示等级，共有三种：
+                //VISIBILITY_PUBLIC  只有在没有锁屏时会显示通知
+                //VISIBILITY_PRIVATE 任何情况都会显示通知
+                //VISIBILITY_SECRET  在安全锁和没有锁屏的情况下显示通知
+                .setContentIntent(pi);  //3.关联PendingIntent
+        Notification myNotification = myBuilder.build();
+        //4.通过通知管理器来发起通知，ID区分通知，不要和其他应用发生冲突
+        myManager.notify(0, myNotification);
+
     }
 
     @Override
@@ -763,8 +806,8 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                         }
                     } else if (isApkExist(appInfo.localFilePath)) {//已下载
                         if (ApkCheckUtils.isLegalApk(appInfo.localFilePath)) {//合法apk
-                            Log.i("info", "==下载的apk地址是: "+appInfo.localFilePath);
-                            installApp(appInfo.localFilePath);
+//                            installApp(appInfo.localFilePath);
+                            install(MyApplication.getInstance(), appInfo.localFilePath);
                         } else {
                             addToDownload(appInfo, view);
                         }
@@ -928,12 +971,13 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
        /* if (!apkfile.exists()) {
             return;
         }*/
-        Log.i("info", "installApp: "+filePath);
+        Log.i("info", "installApp: " + filePath);
         Intent i = new Intent(Intent.ACTION_VIEW);
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N) {
             i.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             String authority = MyApplication.getInstance().getPackageName() + ".provider";
             Uri contentUri = FileProvider.getUriForFile(MyApplication.getInstance(), authority, apkfile);
+
             i.setDataAndType(contentUri, "application/vnd.android.package-archive");
         } else {
             i.setDataAndType(Uri.fromFile(apkfile), "application/vnd.android" +
@@ -945,6 +989,27 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         i.setDataAndType(Uri.fromFile(new File(filePath)), "application/vnd.android.package-archive");
         i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);*/
         MyApplication.getInstance().startActivity(i);
+    }
+
+
+    /**
+     * 通过隐式意图调用系统安装程序安装APK
+     */
+    public static void install(Context mContext, String apkPath) {
+        LogUtils.d("通过隐式意图调用系统安装程序安装APK");
+        File file = new File(apkPath);
+        Intent mIntent = new Intent(Intent.ACTION_VIEW);
+        // 由于没有在Activity环境下启动Activity,设置下面的标签
+        mIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        if (Build.VERSION.SDK_INT >= 24) { //判读版本是否在7.0以上
+            //参数1 上下文, 参数2 Provider主机地址 和配置文件中保持一致   参数3  共享的文件
+            Uri apkUri = FileProvider.getUriForFile(mContext, "com.yw.platform.provider", file);
+            //添加这一句表示对目标应用临时授权该Uri所代表的文件
+            mIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            mIntent.setDataAndType(apkUri, "application/vnd.android.package-archive");
+        } else
+            mIntent.setDataAndType(Uri.fromFile(file), "application/vnd.android.package-archive");
+        context.startActivity(mIntent);
     }
 
     //卸载应用程序
@@ -1025,7 +1090,9 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                 e.printStackTrace();
             }
             //info.needUpdate ==== false;
-            installApp(localFilePath);
+//            installApp(localFilePath);
+            install(MyApplication.getInstance(), localFilePath);
+
         }
     }
 
@@ -1095,8 +1162,10 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     public class MyLocationListener extends BDAbstractLocationListener {
         @Override
         public void onReceiveLocation(BDLocation location) {
-            latitude = location.getLatitude();    //获取纬度信息
-            longitude = location.getLongitude();    //获取经度信息
+            double latitude1 = location.getLatitude();    //获取纬度信息
+            double longitude1 = location.getLongitude();    //获取经度信息
+            MainNewActivity.this.latitude= latitude1;
+            MainNewActivity.this.longitude = longitude1;
             float radius = location.getRadius();    //获取定位精度，默认值为0.0f
             String coorType = location.getCoorType();
             //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准

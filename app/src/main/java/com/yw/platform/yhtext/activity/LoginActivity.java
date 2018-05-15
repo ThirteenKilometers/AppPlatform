@@ -2,7 +2,13 @@ package com.yw.platform.yhtext.activity;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
@@ -21,7 +27,6 @@ import com.yw.platform.global.MyApplication;
 import com.yw.platform.model.AppInfo;
 import com.yw.platform.netApi.NetApi;
 import com.yw.platform.service.DeviceManager;
-import com.yw.platform.service.LocalHandleService;
 import com.yw.platform.test.TestActivity;
 import com.yw.platform.tools.AppInfoTools;
 import com.yw.platform.ui.activity.MainNewActivity;
@@ -44,6 +49,7 @@ import java.util.List;
 
 import lzhs.com.library.Utils;
 import lzhs.com.library.utils.PhoneUtils;
+import lzhs.com.library.utils.log.LogUtils;
 import lzhs.com.library.wedgit.permission.PermissionUtils;
 
 /**
@@ -54,7 +60,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     EditText editAccount, editPassword;
     String account, password;
     private CustomProgressDialog progressDialog;
-
+    WifiManager wifiManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,11 +74,12 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         initpermissions();
 
     }
+
     private void initpermissions() {
         String[] permissions = {
                 Manifest.permission_group.LOCATION,
                 Manifest.permission_group.STORAGE
-                ,Manifest.permission_group.PHONE
+                , Manifest.permission_group.PHONE
         };
         PermissionUtils.permission(permissions)
                 .rationale(new PermissionUtils.OnRationaleListener() {
@@ -99,8 +106,11 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
 
     }
+
     private String requestId;
+
     //接收消息
+    @SuppressLint("WifiManagerLeak")
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void acceptMsg(MessageEvent event) {
         switch (event.getCode()) {
@@ -109,30 +119,45 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 break;
             case Const.METHER_LOGIN_CODE:  //登录LOGIN操作
                 AcceptLoginBean loginBean = JSON.parseObject((String) event.getDataContent(), AcceptLoginBean.class);
-                if (loginBean.isSuccess()){
-                    AppUser appUser=new AppUser();
+                if (loginBean.isSuccess()) {
+                    AppUser appUser = new AppUser();
                     appUser.setUserCode(loginBean.getUserCode());
                     appUser.setName("吴名氏");
                     MyApplication.getInstance().setAppUser(appUser);
                     setUpateMessage("设备信息验证中...");
-                    requestId=System.currentTimeMillis()+"_"+((int)(Math.random()*100));
+                    requestId = System.currentTimeMillis() + "_" + ((int) (Math.random() * 100));
                     NetApi.requestPolicy(requestId);
-                }else {
+                } else {
                     dialogDismiss();
                     Toast.makeText(this, loginBean.getMessage(), Toast.LENGTH_SHORT).show();
                 }
                 break;
             case Const.METHER_QUERYPOLICY_CODE:
-                ResponseModel responseData= event.getResponseData();
-                if(!responseData.getRequestId().equals(requestId)) break;
-                if (responseData.isSuccess()){
+                ResponseModel responseData = event.getResponseData();
+                if (!responseData.getRequestId().equals(requestId)) break;
+                if (responseData.isSuccess()) {
                     try {
                         responseData.setContentClass(PolicyBean.class);
-                        PolicyBean policy= (PolicyBean) responseData.getContentData();
+                        PolicyBean policy = (PolicyBean) responseData.getContentData();
+                        LogUtils.json("policy", JSON.toJSONString(policy));
+
                         // TODO: 2018/5/8 获取策略接口
-                         String camera = policy.getCamera();//相机
-                        if (TextUtils.equals(camera,"yes")) DeviceManager.getInstance(this).setCameraDisabled(true);
-                        else  DeviceManager.getInstance(this).setCameraDisabled(false);
+
+                        String camera = policy.getCamera();//相机
+                        if (TextUtils.equals(camera, "yes"))
+                            DeviceManager.getInstance(this).setCameraDisabled(false);
+                        else DeviceManager.getInstance(this).setCameraDisabled(true);
+
+                        String wifiVisit = policy.getWifiVisit();
+                         wifiManager = (WifiManager) this.getSystemService(Context.WIFI_SERVICE);
+                        if (TextUtils.equals(wifiVisit, "yes")) {
+                            wifiManager.setWifiEnabled(true);//开启wifi
+                        } else {//关闭wifi
+                            IntentFilter myIntentFilter = new IntentFilter();
+                            myIntentFilter.addAction(ConnectivityManager.CONNECTIVITY_ACTION);
+                            registerReceiver(mwifiBroadcastReceiver,myIntentFilter);
+
+                        }
 
                       /* String wifi=policy.getBluetooth();//蓝牙
                         RroadcastUtil.addBluetoothSate(this);//注册广播
@@ -140,38 +165,39 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                         else  SetInfo.getInstance().setBluetoothEable(false);
 */
                         MyApplication.getInstance().setPolicy(policy);
-                        requestId=System.currentTimeMillis()+"_"+((int)(Math.random()*100));
+                        requestId = System.currentTimeMillis() + "_" + ((int) (Math.random() * 100));
                         NetApi.queryApp(requestId);
                         setUpateMessage("获取应用例表");
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         dialogDismiss();
                         Toast.makeText(this, "策略信息异常", Toast.LENGTH_SHORT).show();
                     }
-                }else{
+                } else {
                     dialogDismiss();
-                    Toast.makeText(this,"策略获取失败", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "策略获取失败", Toast.LENGTH_SHORT).show();
                 }
                 break;
             //请求数据返回
             case Const.METHER_METHER_QUERYAPP_CODE:
-                ResponseModel responseData1= event.getResponseData();
-                if(!responseData1.getRequestId().equals(requestId)) break;
-                if (responseData1.isSuccess()){
+                ResponseModel responseData1 = event.getResponseData();
+                if (!responseData1.getRequestId().equals(requestId)) break;
+                if (responseData1.isSuccess()) {
                     responseData1.setContentClass(AcceptQueryAppBean.class);
-                    AcceptQueryAppBean appBean= (AcceptQueryAppBean) responseData1.getContentData();
-                    List<AppInfo> apps= AppInfoTools.appBean2Appinfo(appBean.getApps());
+                    AcceptQueryAppBean appBean = (AcceptQueryAppBean) responseData1.getContentData();
+                    List<AppInfo> apps = AppInfoTools.appBean2Appinfo(appBean.getApps());
                     MyApplication.getInstance().setResList(apps);
                     dialogDismiss();
-                    Intent intent =new Intent();
+                    Intent intent = new Intent();
                     intent.setClass(this, MainNewActivity.class);
                     startActivity(intent);
                     finish();
-                }else{
+                } else {
 
                 }
                 break;
         }
     }
+
     /**
      * 更新进度显示
      */
@@ -185,7 +211,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         progressDialog.setMessage(message);
         progressDialog.show();
     }
-    public void dialogDismiss(){
+
+    public void dialogDismiss() {
         if (progressDialog != null) {
             progressDialog.dismiss();
         }
@@ -202,7 +229,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         loginBean.setPassword(MD5Util.encrypt(password));//"登录密码，传MD5加密后的值"
         loginBean.setUserCode(account);//"登录账号"
         sendMsgBean.setContent(loginBean);
-        sendMsgBean.setRequestId(Const.METHER_LOGIN_CODE+"");
+        sendMsgBean.setRequestId(Const.METHER_LOGIN_CODE + "");
         sendMsgBean.setMethod(Const.METHER_LOGIN);
         return JSON.toJSONString(sendMsgBean);
     }
@@ -210,14 +237,14 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @NonNull
     private BaseSendMsgBean createDefaultSendBean() {
         BaseSendMsgBean sendMsgBean = new BaseSendMsgBean();
-        sendMsgBean.setSender(createDefault("","ANDROIDPHONE"));
+        sendMsgBean.setSender(createDefault("", "ANDROIDPHONE"));
         List<BaseUserBean> recipients = new ArrayList<>();
-        recipients.add(createDefault("INTERFACE",""));
+        recipients.add(createDefault("INTERFACE", ""));
         sendMsgBean.setRecipients(recipients);
         return sendMsgBean;
     }
 
-    private BaseUserBean createDefault(String code,String client) {
+    private BaseUserBean createDefault(String code, String client) {
         BaseUserBean userBean = new BaseUserBean();
         userBean.setClient(client);
         userBean.setClientVersion("客户端版本，发件人必须传，收件人可以不传");
@@ -245,9 +272,9 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
+        switch (view.getId()) {
             case R.id.button_test:
-                Intent intent1 =new Intent();
+                Intent intent1 = new Intent();
                 intent1.setClass(this, TestActivity.class);
                 startActivity(intent1);
                 break;
@@ -256,7 +283,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
                 password = editPassword.getText().toString().trim();
                 if (TextUtils.isEmpty(account) || TextUtils.isEmpty(password)) {
                     Toast.makeText(this, R.string.accountorpsdIsEmpty, Toast.LENGTH_SHORT).show();
-                }else {
+                } else {
                     String data = createLogingBean();
                     setUpateMessage("登陆中...");
                     sendMessage(data);
@@ -269,4 +296,28 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         stringBuffer.append(text + "\n\r");
         mTextShow.setText(stringBuffer.toString());
     }*/
+  BroadcastReceiver mwifiBroadcastReceiver = new BroadcastReceiver() {
+      @Override
+      public void onReceive(Context context, Intent intent) {
+          String action = intent.getAction();
+          if (action.equals(ConnectivityManager.CONNECTIVITY_ACTION)) {
+              ConnectivityManager localConnectivityManager = (ConnectivityManager) context
+                      .getSystemService(Context.CONNECTIVITY_SERVICE);
+              NetworkInfo localNetworkInfo = (localConnectivityManager == null ? null
+                      : localConnectivityManager.getActiveNetworkInfo());
+              if (localNetworkInfo != null) {
+                  if (localNetworkInfo.isConnected()) {
+                      //已连接
+                      wifiManager.setWifiEnabled(false);//关闭wifi
+
+                  } else {
+                      wifiManager.setWifiEnabled(false);//关闭wifi
+                  }
+              } else {
+                  //localNetworkInfo is null, NETWORK................DISCONNECT......
+              }
+          }
+      }
+
+  };
 }

@@ -1627,9 +1627,8 @@ int layout title 0x7f0a0071
 int layout tooltip 0x7f0a0072
 int layout view_bezier 0x7f0a0073
 int layout view_sinaheader 0x7f0a0074
-int layout view_sinaheader_layout 0x7f0a0075
-int layout webapp_login_dialog 0x7f0a0076
-int layout zip_list_item 0x7f0a0077
+int layout webapp_login_dialog 0x7f0a0075
+int layout zip_list_item 0x7f0a0076
 int menu float_bar 0x7f0b0000
 int mipmap empty 0x7f0c0000
 int mipmap error 0x7f0c0001

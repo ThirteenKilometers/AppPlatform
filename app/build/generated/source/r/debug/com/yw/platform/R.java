@@ -4832,9 +4832,8 @@ public final class R {
     public static final int tooltip=0x7f0a0072;
     public static final int view_bezier=0x7f0a0073;
     public static final int view_sinaheader=0x7f0a0074;
-    public static final int view_sinaheader_layout=0x7f0a0075;
-    public static final int webapp_login_dialog=0x7f0a0076;
-    public static final int zip_list_item=0x7f0a0077;
+    public static final int webapp_login_dialog=0x7f0a0075;
+    public static final int zip_list_item=0x7f0a0076;
   }
   public static final class menu {
     public static final int float_bar=0x7f0b0000;

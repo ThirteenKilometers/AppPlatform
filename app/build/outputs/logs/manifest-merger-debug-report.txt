@@ -364,24 +364,6 @@ action#android.bluetooth.adapter.action.STATE_CHANGED
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:186:17-89
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:186:25-86
-receiver#com.yw.platform.broadcastReceiver.NetworkConnectChangedReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:189:9-195:20
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:189:19-82
-intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.STATE_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:190:13-194:29
-action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:191:17-79
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:191:25-76
-action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:192:17-78
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:192:25-75
-action#android.net.wifi.STATE_CHANGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:193:17-72
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:193:25-69
 receiver#com.yw.platform.broadcastReceiver.ScreenBroadcastReceiver
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:196:9-200:20
 	android:name
@@ -445,27 +427,29 @@ ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:243:17-77
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:243:27-74
 activity#com.yw.platform.ui.activity.MainNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:246:9-65
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:246:9-247:45
+	android:launchMode
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:247:13-43
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:246:19-62
 activity#com.yw.platform.ui.activity.WebAppNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:247:9-67
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:248:9-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:247:19-64
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:248:19-64
 activity#com.yw.platform.yhtext.utils.HelloActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:248:9-252:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:249:9-252:20
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:251:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:249:13-55
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:13-55
 activity#com.yw.platform.yhtext.activity.DocumentListActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:9-256:81
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:13-44
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:255:13-43
 	android:theme
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:255:13-65
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:13-65
 activity#com.yw.platform.yhtext.activity.WebViewActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:257:9-259:81
 	android:theme
