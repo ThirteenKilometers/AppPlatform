@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 15 15:12:47 CST 2018
+#Tue May 15 17:52:10 CST 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/liblocSDK7b.so
 25.base=F\:\\Projects\\AppPlatform\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
