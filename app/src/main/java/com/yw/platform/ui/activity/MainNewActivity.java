@@ -446,11 +446,11 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         switch (event.getCode()) {
             case  Const.LONGITUDE:
               longitude= (String) event.getData();
-              LogUtils.i("精度："+longitude);
+              LogUtils.i("精度："+longitude);//这里有值
                 break;
             case  Const.LATITUDE:
                 latitude= (String) event.getData();
-                LogUtils.i("纬度："+latitude);
+                LogUtils.i("纬度："+latitude);//这里有值
 
                 break;
             //通知消息
