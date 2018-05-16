@@ -47,10 +47,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.alibaba.fastjson.JSON;
-import com.baidu.location.BDAbstractLocationListener;
-import com.baidu.location.BDLocation;
-import com.baidu.location.LocationClient;
-import com.baidu.location.LocationClientOption;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.DbException;
 import com.lidroid.xutils.exception.HttpException;
@@ -119,6 +115,7 @@ import lzhs.com.library.utils.AppUtils;
 import lzhs.com.library.utils.PhoneUtils;
 import lzhs.com.library.utils.log.LogUtils;
 
+
 /**
  * Created by panda on 15-1-12.
  */
@@ -128,8 +125,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     int Singlestrength;
     String latitude;//纬度
     String longitude; //精度
-    public LocationClient mLocationClient = null;
-    private MyLocationListener myListener = new MyLocationListener();
 
     private static int COLUMN_NUM = 4;
     private static int LINE_NUM = 4;
@@ -174,7 +169,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         context = this;
         ViewUtils.inject(this);
         EventBus.getDefault().register(this);
-        initLocation();//百度定位
+        // initLocation();//百度定位
         initView();
         initData(MyApplication.getInstance().getResList());
         updateAppList();
@@ -183,28 +178,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         sendMessage(createQueryNotice());
     }
 
-    private void initLocation() {
-        mLocationClient = new LocationClient(getApplicationContext());
-        //声明LocationClient类
-        mLocationClient.registerLocationListener(myListener);
-        //注册监听函数
-        SetOption();
-        mLocationClient.start();
-    }
-
-    private void SetOption() {
-        LocationClientOption option = new LocationClientOption();
-        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
-        option.setCoorType("bd09ll");
-        option.setScanSpan(1000);
-        option.setOpenGps(true);
-        option.setLocationNotify(true);
-        option.setIgnoreKillProcess(false);
-        option.SetIgnoreCacheException(false);
-        option.setWifiCacheTimeOut(5 * 60 * 1000);
-        option.setEnableSimulateGps(false);
-        mLocationClient.setLocOption(option);
-    }
 
     /**
      * 获取通知接口:  method=” queryNotice”
@@ -254,9 +227,9 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         userBean.setClientVersion("客户端版本，发件人必须传，收件人可以不传");
         userBean.setIct("SOCKET");//可以不传
         userBean.setUserCode(code);
-
         return userBean;
     }
+
 
     @SuppressLint("MissingPermission")
     DeviceInfoBean DeviceInfoEntith() {
@@ -289,14 +262,14 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         deviceInfoBean.setSimInfo("");//SIM卡信息
         //传经纬度
         // Log.i(TAG, "DeviceInfoEntith: ");
-        Log.i("device", "DeviceInfoEntith: "+longitude+"纬度"+latitude);
-        deviceInfoBean.setLongitude(longitude);//经度（不能传空字符串）
-        deviceInfoBean.setLatitude(latitude);//纬度
+        Log.i("device", "DeviceInfoEntith: " + longitude + "纬度" + latitude);
+        deviceInfoBean.setLongitude(MyApplication.getInstance().longitude);//经度（不能传空字符串）
+        deviceInfoBean.setLatitude(MyApplication.getInstance().latitude);//纬度
         deviceInfoBean.setStorageInfo("");//存储信息
         deviceInfoBean.setAppInfo("");//应用安装信息
         deviceInfoBean.setCertificateInfo("");//证书信息
         deviceInfoBean.setConfigInfo("");//配置信息
-       LogUtils.json("DeviceInfoEntith", JSON.toJSONString(deviceInfoBean));
+        LogUtils.json("DeviceInfoEntith", JSON.toJSONString(deviceInfoBean));
 
         return deviceInfoBean;
     }
@@ -330,7 +303,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
             }
         }
-       // LogUtils.json("arrBean", JSON.toJSONString(arrBean));
+        // LogUtils.json("arrBean", JSON.toJSONString(arrBean));
         return arrBean;
     }
 
@@ -340,16 +313,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         event.setMsg("正在向服务器发送登录消息");
         event.setData(data);
         EventBus.getDefault().post(event);
-
     }
-    public void sendMessage(String longitude, int code) {
-        MessageEvent event = new MessageEvent<String>();
-        event.setCode(code);
-        event.setData(longitude);
-        EventBus.getDefault().post(event);
-
-    }
-
 
     private void initView() {
         screenHeight = DeviceUtil.getScreenHeight(this);
@@ -444,15 +408,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void acceptMsg(MessageEvent event) {
         switch (event.getCode()) {
-            case  Const.LONGITUDE:
-              longitude= (String) event.getData();
-              LogUtils.i("精度："+longitude);//这里有值
-                break;
-            case  Const.LATITUDE:
-                latitude= (String) event.getData();
-                LogUtils.i("纬度："+latitude);//这里有值
-
-                break;
             //通知消息
             case Const.NOTICE_APP_ADD:
             case Const.NOTICE_APP_UPDATE:
@@ -496,7 +451,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             case Const.METHER_METHER_QUERYNOTIC_CODE://获取通知接口
                 AcceptQueryNoticBean acceptQueryNoticBean =
                         JSON.parseObject((String) event.getDataContent(), AcceptQueryNoticBean.class);
-               // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
+                // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
 
                 List<AcceptQueryNoticBean.Notice> notices = acceptQueryNoticBean.getNotices();
 
@@ -596,7 +551,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-       // LogUtils.i("resultCode=" + resultCode);
+        // LogUtils.i("resultCode=" + resultCode);
         switch (resultCode) {
             case Constants.ACTIVITY_RESULT_STARTINSTALLAPK:
                 break;
@@ -833,9 +788,8 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                     }
                 } else {
                     try {
-                        openAppByPackageName(appInfo.packageName);
+                        openAppByPackageName(appInfo);
                     } catch (Exception e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                         Toast.makeText(MainNewActivity.this, "配置出错，请联系管理员！", Toast.LENGTH_SHORT).show();
                     }
@@ -884,16 +838,16 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
     }
 
-    public void openAppByPackageName(String packageName) throws NameNotFoundException {
+    public void openAppByPackageName(AppInfo appInfo) throws NameNotFoundException {
         try {
             PackageManager pm = getPackageManager();
-            PackageInfo pi = pm.getPackageInfo(packageName, 0);
+            PackageInfo pi = pm.getPackageInfo(appInfo.packageName, 0);
             Intent resolveIntent = new Intent(Intent.ACTION_MAIN, null);
             resolveIntent.setPackage(pi.packageName);
             List<ResolveInfo> apps = pm.queryIntentActivities(resolveIntent, 0);
             ResolveInfo ri = apps.iterator().next();
             if (ri != null) {
-                packageName = ri.activityInfo.packageName;
+                String packageName = ri.activityInfo.packageName;
                 String className = ri.activityInfo.name;
                 Intent intent = new Intent(Intent.ACTION_MAIN);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);//重点是加这个
@@ -902,6 +856,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
                 startActivity(intent);
             }
         } catch (NameNotFoundException e) {
+            appInfo.needUpdate = true;
             e.printStackTrace();
         }
     }
@@ -1009,7 +964,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     }
 
 
-
     /**
      * 通过隐式意图调用系统安装程序安装APK
      */
@@ -1091,15 +1045,16 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         @Override
         public void onLoading(long total, long current, boolean isUploading) {
             super.onLoading(total, current, isUploading);
-            if (total > 0) {
+            if (total < 2) {
+                total = 1025 * 10;
+                progressbar.setProgress((int) (current * percent / total));
+                downloadManager.getDownloadInfo(packageName).setProgress(current);
+                Log.i("Main", "下载进度：总大小为零");
+            } else {
                 progressbar.setProgress((int) (current * percent / total));
                 downloadManager.getDownloadInfo(packageName).setProgress(current);
                 Log.i("Main", "下载进度：" + (int) (current * percent / total));
-            } else {
-                progressbar.setProgress(10);
-                downloadManager.getDownloadInfo(packageName).setProgress(current);
             }
-
         }
 
         @Override
@@ -1112,7 +1067,6 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             } catch (DbException e) {
                 e.printStackTrace();
             }
-            //info.needUpdate ==== false;
 //            installApp(localFilePath);
             install(MyApplication.getInstance(), localFilePath);
 
@@ -1152,9 +1106,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         int iResult = 0;
         // 建立vpn连接
         iResult = L4ProxyArd.getInstance().L4ProxyLoginWithPass(strIp, port, user, pw);
-
         System.out.println("iResult1:" + iResult);
-
         if (iResult != 0) {
             String errnonum = String.valueOf(iResult);
             Message msg1 = new Message();
@@ -1182,20 +1134,5 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         }
     }
 
-    public class MyLocationListener extends BDAbstractLocationListener {
-        @Override
-        public void onReceiveLocation(BDLocation location) {
-            String latitude1 = String.valueOf(location.getLatitude());    //获取纬度信息
-            String longitude1 = String.valueOf(location.getLongitude());    //获取经度信息
-            sendMessage(latitude1,Const.LATITUDE);
-            sendMessage(longitude1,Const.LONGITUDE);
 
-            float radius = location.getRadius();    //获取定位精度，默认值为0.0f
-            String coorType = location.getCoorType();
-            //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
-            //  button.setText(JSON.toJSONString(location));
-            int errorCode = location.getLocType();
-            //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
-        }
-    }
 }
