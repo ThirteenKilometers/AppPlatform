@@ -10,7 +10,6 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.alibaba.fastjson.JSON;
 import com.baidu.location.BDAbstractLocationListener;
 import com.baidu.location.BDLocation;
 import com.baidu.location.LocationClient;
@@ -28,7 +27,9 @@ import com.yw.platform.model.AppInfo;
 import com.yw.platform.notice.ReceiveNotice;
 import com.yw.platform.service.LocalHandleService;
 import com.yw.platform.utils.LockPatternUtils;
+import com.yw.platform.yhtext.beans.MessageEvent;
 import com.yw.platform.yhtext.netty.NettyService;
+import com.yw.platform.yhtext.netty.client.Const;
 
 import org.greenrobot.eventbus.EventBus;
 
@@ -53,8 +54,8 @@ public class MyApplication extends Application {
     private PolicyBean policy;
 
     private RequestModel heartPack;//心跳包
-    double latitude ;//纬度
-    double longitude ;//精度
+    String latitude ;//纬度
+    String longitude ;//精度
     public LocationClient mLocationClient = null;
     private MyLocationListener myListener = new MyLocationListener();
 
@@ -80,7 +81,9 @@ public class MyApplication extends Application {
     }
     private void init(){
         startService(new Intent(this, LocalHandleService.class));
-        EventBus.getDefault().register(ReceiveNotice.getinReceiveNotice(JSON.toJSONString(longitude),JSON.toJSONString(latitude)));
+        EventBus.getDefault().register(ReceiveNotice.getinReceiveNotice());
+
+        // EventBus.getDefault().register(ReceiveNotice.getinReceiveNotice(JSON.toJSONString(longitude),JSON.toJSONString(latitude)));
     }
     public void setResList(List<AppInfo> resList) {
         this.resList = resList;
@@ -373,8 +376,10 @@ public class MyApplication extends Application {
     public class MyLocationListener extends BDAbstractLocationListener {
         @Override
         public void onReceiveLocation(BDLocation location) {
-          MyApplication.getInstance().latitude = location.getLatitude();    //获取纬度信息
-            MyApplication.getInstance().longitude = location.getLongitude();    //获取经度信息
+        latitude = String.valueOf(location.getLatitude());    //获取纬度信息
+          longitude = String.valueOf(location.getLongitude());    //获取经度信息n
+            sendMessage(longitude,Const.LONGITUDE);
+            sendMessage(latitude,Const.LATITUDE);
             float radius = location.getRadius();    //获取定位精度，默认值为0.0f
             String coorType = location.getCoorType();
             //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
@@ -401,9 +406,17 @@ public class MyApplication extends Application {
         mLocationClient = new LocationClient(getApplicationContext());
         //声明LocationClient类
         mLocationClient.registerLocationListener(myListener);
+
         //注册监听函数
         SetOption();
         mLocationClient.start();
        // LogUtils.i("MyApplication:经纬度："+longitude+latitude);
+    }
+    public void sendMessage(String longitude, int code) {
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(code);
+        event.setData(longitude);
+        EventBus.getDefault().post(event);
+
     }
 }

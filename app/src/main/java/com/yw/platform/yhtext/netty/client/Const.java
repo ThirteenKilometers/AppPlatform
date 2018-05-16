@@ -48,6 +48,11 @@ public final class Const {
      */
     public final static int SEND_FALIE_CODE = 0x1;
     /**
+     * 精度 longitude
+     */
+    public final static int LONGITUDE = 0x111;
+    public final static int LATITUDE=0x112;
+    /**
      * 登录接口 by LZHS
      */
     public final static String METHER_LOGIN = "login";

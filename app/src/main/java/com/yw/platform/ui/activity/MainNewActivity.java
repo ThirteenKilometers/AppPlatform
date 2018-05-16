@@ -126,8 +126,8 @@ import lzhs.com.library.utils.log.LogUtils;
 public class MainNewActivity extends BaseActivity implements View.OnClickListener {
     String data = "";
     int Singlestrength;
-    double latitude;//纬度
-    double longitude; //精度
+    String latitude;//纬度
+    String longitude; //精度
     public LocationClient mLocationClient = null;
     private MyLocationListener myListener = new MyLocationListener();
 
@@ -173,8 +173,8 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         //MyApplication.getInstance().addActivity("MainActivity");
         context = this;
         ViewUtils.inject(this);
-        initLocation();//百度定位
         EventBus.getDefault().register(this);
+        initLocation();//百度定位
         initView();
         initData(MyApplication.getInstance().getResList());
         updateAppList();
@@ -290,13 +290,13 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         //传经纬度
         // Log.i(TAG, "DeviceInfoEntith: ");
         Log.i("device", "DeviceInfoEntith: "+longitude+"纬度"+latitude);
-        deviceInfoBean.setLongitude(JSON.toJSONString(longitude));//经度（不能传空字符串）
-        deviceInfoBean.setLatitude(JSON.toJSONString(latitude));//纬度
+        deviceInfoBean.setLongitude(longitude);//经度（不能传空字符串）
+        deviceInfoBean.setLatitude(latitude);//纬度
         deviceInfoBean.setStorageInfo("");//存储信息
         deviceInfoBean.setAppInfo("");//应用安装信息
         deviceInfoBean.setCertificateInfo("");//证书信息
         deviceInfoBean.setConfigInfo("");//配置信息
-       // LogUtils.json("devicehhhhhhh", JSON.toJSONString(deviceInfoBean));
+       LogUtils.json("DeviceInfoEntith", JSON.toJSONString(deviceInfoBean));
 
         return deviceInfoBean;
     }
@@ -339,6 +339,13 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         event.setCode(Const.SEND_CODE);
         event.setMsg("正在向服务器发送登录消息");
         event.setData(data);
+        EventBus.getDefault().post(event);
+
+    }
+    public void sendMessage(String longitude, int code) {
+        MessageEvent event = new MessageEvent<String>();
+        event.setCode(code);
+        event.setData(longitude);
         EventBus.getDefault().post(event);
 
     }
@@ -437,6 +444,15 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void acceptMsg(MessageEvent event) {
         switch (event.getCode()) {
+            case  Const.LONGITUDE:
+              longitude= (String) event.getData();
+              LogUtils.i("精度："+longitude);
+                break;
+            case  Const.LATITUDE:
+                latitude= (String) event.getData();
+                LogUtils.i("纬度："+latitude);
+
+                break;
             //通知消息
             case Const.NOTICE_APP_ADD:
             case Const.NOTICE_APP_UPDATE:
@@ -1169,10 +1185,11 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
     public class MyLocationListener extends BDAbstractLocationListener {
         @Override
         public void onReceiveLocation(BDLocation location) {
-            double latitude1 = location.getLatitude();    //获取纬度信息
-            double longitude1 = location.getLongitude();    //获取经度信息
-            MainNewActivity.this.latitude= latitude1;
-            MainNewActivity.this.longitude = longitude1;
+            String latitude1 = String.valueOf(location.getLatitude());    //获取纬度信息
+            String longitude1 = String.valueOf(location.getLongitude());    //获取经度信息
+            sendMessage(latitude1,Const.LATITUDE);
+            sendMessage(longitude1,Const.LONGITUDE);
+
             float radius = location.getRadius();    //获取定位精度，默认值为0.0f
             String coorType = location.getCoorType();
             //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准

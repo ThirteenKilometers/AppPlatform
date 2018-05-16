@@ -7,7 +7,6 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.util.Log;
 
-import com.alibaba.fastjson.JSON;
 import com.yw.platform.R;
 import com.yw.platform.beans.ModelManger;
 import com.yw.platform.beans.base.ResponseBean;
@@ -27,8 +26,6 @@ import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import lzhs.com.library.utils.log.LogUtils;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
 
@@ -62,8 +59,7 @@ public class ReceiveNotice {
 
         if (receiveNotice == null) {
             receiveNotice = new ReceiveNotice(longitude, latitude);
-            Log.i("info", "getinReceiveNotice: "+longitude);
-            LogUtils.i("精度:" + longitude+"纬度："+latitude);
+
         }
         return receiveNotice;
     }
@@ -71,6 +67,15 @@ public class ReceiveNotice {
     @Subscribe(threadMode = ThreadMode.MAIN)
     public void onMessageEvent(MessageEvent event) {
         switch (event.getCode()) {
+            case Const.LONGITUDE:
+              ReceiveNotice.getinReceiveNotice().longitude= String.valueOf(event.getData());
+               // LogUtils.i("evenbus精度:" + longitude);
+
+                break;
+            case Const.LATITUDE:
+                ReceiveNotice.getinReceiveNotice().latitude= String.valueOf(event.getData());
+               // LogUtils.i( longitude+"纬度："+latitude);
+                break;
             case Const.METHER_NOTICE_PATH_CODE:
                 ResponseModel responseData = event.getResponseData();
                 responseData.setContentClass(ServiceNotice.class);
@@ -96,7 +101,7 @@ public class ReceiveNotice {
                     //如果后台给的字段是要求定位的话
                     if ("equipmentPositioning".equals(notices.get(i).getNoticeType())) {
                         if (!getUserCode().equals("")) {//已经登录的话
-                            // TODO: 2018/5/10 传已经定位的信息
+                           // LogUtils.i("精度:" + longitude+"纬度："+latitude);
                             responseBean.setLongitude(longitude);
                             responseBean.setLatitude(latitude);
                         } else {
@@ -108,7 +113,7 @@ public class ReceiveNotice {
                 }
 
                 SuperSendApi.responseMsg("响应服务请求", requestId, responseBean, Const.NOTICE_PATH, responseData);
-                LogUtils.json("noticePushClientResponce", JSON.toJSONString(responseBean));
+               // LogUtils.json("noticePushClientResponce", JSON.toJSONString(responseBean));
 
                 break;
         }
