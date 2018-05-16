@@ -53,8 +53,8 @@ public class MyApplication extends Application {
     private PolicyBean policy;
 
     private RequestModel heartPack;//心跳包
-    double latitude = 0;//纬度
-    double longitude = 0;//精度
+    double latitude ;//纬度
+    double longitude ;//精度
     public LocationClient mLocationClient = null;
     private MyLocationListener myListener = new MyLocationListener();
 
@@ -373,8 +373,8 @@ public class MyApplication extends Application {
     public class MyLocationListener extends BDAbstractLocationListener {
         @Override
         public void onReceiveLocation(BDLocation location) {
-            latitude = location.getLatitude();    //获取纬度信息
-            longitude = location.getLongitude();    //获取经度信息
+          MyApplication.getInstance().latitude = location.getLatitude();    //获取纬度信息
+            MyApplication.getInstance().longitude = location.getLongitude();    //获取经度信息
             float radius = location.getRadius();    //获取定位精度，默认值为0.0f
             String coorType = location.getCoorType();
             //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
@@ -404,5 +404,6 @@ public class MyApplication extends Application {
         //注册监听函数
         SetOption();
         mLocationClient.start();
+       // LogUtils.i("MyApplication:经纬度："+longitude+latitude);
     }
 }

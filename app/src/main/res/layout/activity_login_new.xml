@@ -39,7 +39,7 @@
             android:background="@drawable/edit_text_background"
             android:drawableLeft="@drawable/ic_phone_login"
             android:drawablePadding="18dp"
-            android:text="test002"
+            android:text="yh0001"
             android:hint="@string/login_hint_phone"
 
             android:maxLines="1"

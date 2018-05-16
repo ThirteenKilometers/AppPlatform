@@ -296,7 +296,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
         deviceInfoBean.setAppInfo("");//应用安装信息
         deviceInfoBean.setCertificateInfo("");//证书信息
         deviceInfoBean.setConfigInfo("");//配置信息
-        LogUtils.json("devicehhhhhhh", JSON.toJSONString(deviceInfoBean));
+       // LogUtils.json("devicehhhhhhh", JSON.toJSONString(deviceInfoBean));
 
         return deviceInfoBean;
     }
@@ -330,7 +330,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
             }
         }
-        LogUtils.json("arrBean", JSON.toJSONString(arrBean));
+       // LogUtils.json("arrBean", JSON.toJSONString(arrBean));
         return arrBean;
     }
 
@@ -480,7 +480,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
             case Const.METHER_METHER_QUERYNOTIC_CODE://获取通知接口
                 AcceptQueryNoticBean acceptQueryNoticBean =
                         JSON.parseObject((String) event.getDataContent(), AcceptQueryNoticBean.class);
-                LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
+               // LogUtils.json("querynotic", JSON.toJSONString(acceptQueryNoticBean));
 
                 List<AcceptQueryNoticBean.Notice> notices = acceptQueryNoticBean.getNotices();
 
@@ -580,7 +580,7 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        LogUtils.i("resultCode=" + resultCode);
+       // LogUtils.i("resultCode=" + resultCode);
         switch (resultCode) {
             case Constants.ACTIVITY_RESULT_STARTINSTALLAPK:
                 break;

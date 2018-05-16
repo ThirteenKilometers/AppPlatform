@@ -62,6 +62,8 @@ public class ReceiveNotice {
 
         if (receiveNotice == null) {
             receiveNotice = new ReceiveNotice(longitude, latitude);
+            Log.i("info", "getinReceiveNotice: "+longitude);
+            LogUtils.i("精度:" + longitude+"纬度："+latitude);
         }
         return receiveNotice;
     }
