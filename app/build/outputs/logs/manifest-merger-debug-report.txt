@@ -356,16 +356,34 @@ action#android.app.action.DEVICE_ADMIN_ENABLED
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:194:17-82
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:194:25-79
-receiver#com.yw.platform.broadcastReceiver.BluetoothBroadcastReceiver
+receiver#com.yw.platform.broadcastReceiver.manger.BluetoothBroadcastReceiver
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:9-201:20
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:19-79
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:19-86
 intent-filter#action:name:android.bluetooth.adapter.action.STATE_CHANGED
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:198:13-200:29
 action#android.bluetooth.adapter.action.STATE_CHANGED
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:199:17-89
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:199:25-86
+receiver#com.yw.platform.broadcastReceiver.manger.NetworkConnectChangedReceiver
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:202:9-208:20
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:202:19-89
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.STATE_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:203:13-207:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:204:17-79
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:204:25-76
+action#android.net.wifi.WIFI_STATE_CHANGED
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:17-78
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:25-75
+action#android.net.wifi.STATE_CHANGE
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:206:17-72
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:206:25-69
 receiver#com.yw.platform.broadcastReceiver.ScreenBroadcastReceiver
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:209:9-213:20
 	android:name

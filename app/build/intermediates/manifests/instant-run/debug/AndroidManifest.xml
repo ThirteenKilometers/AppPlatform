@@ -197,20 +197,18 @@
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>
         </receiver>
-        <receiver android:name="com.yw.platform.broadcastReceiver.BluetoothBroadcastReceiver" >
+        <receiver android:name="com.yw.platform.broadcastReceiver.manger.BluetoothBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
             </intent-filter>
         </receiver>
-        <!--
-        <receiver android:name=".broadcastReceiver.NetworkConnectChangedReceiver">
+        <receiver android:name="com.yw.platform.broadcastReceiver.manger.NetworkConnectChangedReceiver" >
             <intent-filter>
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
                 <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
                 <action android:name="android.net.wifi.STATE_CHANGE" />
             </intent-filter>
         </receiver>
-        -->
         <receiver android:name="com.yw.platform.broadcastReceiver.ScreenBroadcastReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.SCREEN_OFF" />
