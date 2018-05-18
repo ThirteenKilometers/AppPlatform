@@ -204,7 +204,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         SendLoginBean loginBean = new SendLoginBean();
         loginBean.setDeviceCode(PhoneUtils.getDeviceId() + "");
         loginBean.setNotification("REQUEST");
-        loginBean.setDeviceType("mi");
+        loginBean.setDeviceType(PhoneMessage.devicetype + "");
         loginBean.setDeviceSystem("android");//操作系统
         loginBean.setPassword(MD5Util.encrypt(password));//"登录密码，传MD5加密后的值"
         loginBean.setUserCode(account);//"登录账号"

@@ -251,6 +251,7 @@
         <!-- 登录界面 -->
         <activity
             android:name="com.yw.platform.yhtext.activity.LoginActivity"
+            android:launchMode="singleTop"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

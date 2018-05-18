@@ -18,6 +18,7 @@ import com.yw.platform.global.MyApplication;
 import com.yw.platform.netApi.SuperSendApi;
 import com.yw.platform.ui.activity.MainNewActivity;
 import com.yw.platform.yhtext.activity.DocumentListActivity;
+import com.yw.platform.yhtext.activity.LoginActivity;
 import com.yw.platform.yhtext.beans.MessageEvent;
 import com.yw.platform.yhtext.netty.client.Const;
 
@@ -28,9 +29,11 @@ import org.greenrobot.eventbus.ThreadMode;
 import java.util.ArrayList;
 import java.util.List;
 
+import lzhs.com.library.utils.ToastUtils;
 import lzhs.com.library.utils.log.LogUtils;
 
 import static android.content.Context.NOTIFICATION_SERVICE;
+import static com.yw.platform.global.MyApplication.getInstance;
 
 /**
  * Created by cxb on 2018/4/25.
@@ -76,8 +79,8 @@ public class ReceiveNotice {
                     if ("equipmentPositioning".equals(notices.get(i).getNoticeType())) {
                         if (!getUserCode().equals("")) {//已经登录的话
                            // LogUtils.i("精度:" + longitude+"纬度："+latitude);
-                            responseBean.setLongitude(MyApplication.getInstance().longitude);
-                            responseBean.setLatitude(MyApplication.getInstance().latitude);
+                            responseBean.setLongitude(getInstance().longitude);
+                            responseBean.setLatitude(getInstance().latitude);
                         } else {
                             responseBean.setLongitude("0");
                             responseBean.setLatitude("0");
@@ -101,29 +104,41 @@ public class ReceiveNotice {
             sendMsg.setCode(Const.NOTICE_POLICY_CHANGE);
             sendMsg.setMsg("策略");
             responsemsg = "策略更新消息已收到";
-        } else if ("appAdd".equals(noticeType)) {//应用新增
+        }
+        else if ("deviceFreeze".equals(noticeType)) {
+            ToastUtils.showShort("设备已冻结");
+            Intent intent=new Intent( MyApplication.getInstance(),LoginActivity.class);
+            MyApplication.getInstance().startActivity(intent);
+        showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
+        } else if ("deviceUnBind".equals(noticeType)) {
+            responsemsg = "设备解绑消息已收到";
+            ToastUtils.showShort("设备已解绑");
+            Intent intent=new Intent( MyApplication.getInstance(),LoginActivity.class);
+            MyApplication.getInstance().startActivity(intent);
+          // showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
+        }else if ("appAdd".equals(noticeType)) {//应用新增
             sendMsg.setCode(Const.NOTICE_APP_ADD);
             sendMsg.setMsg("应用新增");
             Log.i("info", "=================应用增新");
             responsemsg = "应用新增消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), MainNewActivity.class));
+            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
         } else if ("appRemove".equals(noticeType)) {//应用移除
             sendMsg.setCode(Const.NOTICE_APP_REMOVE);
             sendMsg.setMsg("应用移除");
             responsemsg = "应用移除消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), MainNewActivity.class));
+            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
 
         } else if ("appUpdate".equals(noticeType)) {//应用更新
             sendMsg.setCode(Const.NOTICE_APP_UPDATE);
             sendMsg.setMsg("应用更新");
             responsemsg = "应用更新消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), MainNewActivity.class));
+            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
         }
         else if ("appDistribution".equals(noticeType)) {//应用分发
             sendMsg.setCode(Const.NOTICE_APP_UPDATE);
             sendMsg.setMsg("应用分发");
             responsemsg = "应用分发消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), MainNewActivity.class));
+            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
 
         }else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
             sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
@@ -145,20 +160,19 @@ public class ReceiveNotice {
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档分发");
             responsemsg = "文档分发消息已收到";
-            showNotic(responsemsg, new Intent(MyApplication.getInstance(), DocumentListActivity.class));
+           showNotic(responsemsg, new Intent(getInstance(), DocumentListActivity.class));
             Log.i("info", "noticePushServerRequest " + "接收到文档分发消息");
-        } /*else if ("fileRemove".equals(noticeType)) {
+        } else if ("fileRemove".equals(noticeType)) {
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档移除");
             responsemsg = "文档移除消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), DocumentListActivity.class));
-
-        } else if ("fileUpdate".equals(noticeType)) {
+            showNotic(responsemsg,new Intent(getInstance(), DocumentListActivity.class));
+        } else if ("fileUpdate".equals(noticeType)) {//文档更新
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档更新");
             responsemsg = "文档更新消息已收到";
-            showNotic(responsemsg,new Intent(MyApplication.getInstance(), DocumentListActivity.class));
-        }*/
+            showNotic(responsemsg,new Intent(getInstance(), DocumentListActivity.class));
+        }
         if (sendMsg.getCode() > 0) {
             EventBus.getDefault().post(sendMsg);
         }
@@ -167,15 +181,15 @@ public class ReceiveNotice {
     //显示通知
     @SuppressLint("NewApi")
     private void showNotic(String ContentText, Intent intent) {
-        NotificationManager myManager = (NotificationManager) MyApplication.getInstance().getSystemService(NOTIFICATION_SERVICE);
+        NotificationManager myManager = (NotificationManager) getInstance().getSystemService(NOTIFICATION_SERVICE);
         //3.定义一个PendingIntent，点击Notification后启动一个Activity
         PendingIntent pi = PendingIntent.getActivity(
-                MyApplication.getInstance(),
+                getInstance(),
                 100,
                 intent,
                 PendingIntent.FLAG_CANCEL_CURRENT
         );
-        Notification.Builder myBuilder = new Notification.Builder(MyApplication.getInstance());
+        Notification.Builder myBuilder = new Notification.Builder(getInstance());
         myBuilder.setContentTitle("移动安全平台系统通知")
                 .setContentText(ContentText)
                 .setTicker("您收到新的消息")
@@ -203,7 +217,7 @@ public class ReceiveNotice {
      * 登录账号
      */
     public static String getUserCode() {
-        AppUser appUser = MyApplication.getInstance().getAppUser();
+        AppUser appUser = getInstance().getAppUser();
         if (appUser == null) {
             return "";
         } else {

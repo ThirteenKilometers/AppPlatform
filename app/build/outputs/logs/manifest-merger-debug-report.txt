@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:design:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\5d8afb385a886ccf008462f9e50ee0de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\521c8b527a775da086af990afba24999\AndroidManifest.xml:17:1-22:12
@@ -20,9 +20,9 @@ MERGED from [com.android.support:transition:27.0.2] C:\Users\lenovo\.gradle\cach
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\946959fa1ea31c4a5600b278c649c166\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\231a46c588598872cb84a7c271a09963\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\c6ea18666a55f959ee8e8ee17c9304b9\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-278:12
 	package
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml
@@ -126,7 +126,7 @@ ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:69:5-71:47
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:70:9-62
 application
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:73:5-275:19
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:73:5-276:19
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:11:5-27:19
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:11:5-27:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f48c2458ee7c73f064d8824d6465f5a2\AndroidManifest.xml:9:5-20
@@ -431,51 +431,53 @@ ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:244:9-248:20
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:245:13-48
 activity#com.yw.platform.yhtext.activity.LoginActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:9-258:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:9-259:20
+	android:launchMode
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:252:13-43
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:252:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:13-69
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:251:13-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:13-257:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:13-258:29
 action#android.intent.action.MAIN
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:17-69
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:255:17-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:25-66
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:255:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:17-77
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:257:17-77
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:27-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:257:27-74
 activity#com.yw.platform.ui.activity.MainNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:259:9-260:45
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:9-261:45
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:13-43
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:261:13-43
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:259:19-62
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:19-62
 activity#com.yw.platform.ui.activity.WebAppNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:261:9-67
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:262:9-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:261:19-64
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:262:19-64
 activity#com.yw.platform.yhtext.utils.HelloActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:262:9-265:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:263:9-266:20
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:264:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:265:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:263:13-55
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:264:13-55
 activity#com.yw.platform.yhtext.activity.DocumentListActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:267:9-270:81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:268:9-271:81
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:269:13-43
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:270:13-43
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:270:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:271:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:268:13-65
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:269:13-65
 activity#com.yw.platform.yhtext.activity.WebViewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:271:9-273:81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:272:9-274:81
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:273:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:274:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:272:13-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:273:13-60
 uses-sdk
 INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml

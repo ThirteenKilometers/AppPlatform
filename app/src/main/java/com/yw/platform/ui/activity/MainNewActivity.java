@@ -21,6 +21,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
@@ -967,8 +968,9 @@ public class MainNewActivity extends BaseActivity implements View.OnClickListene
      */
     public static void install(Context mContext, String apkPath) {
 
-        LogUtils.d("通过隐式意图调用系统安装程序安装APK"+apkPath);
-
+        LogUtils.d("通过隐式意图调用系统安装程序安装APK"+apkPath);// storage/emulated/0/emap_platform/download/_1.apk
+        LogUtils.d( "系统目录"+Environment.getExternalStorageDirectory());//   /storage/emulated/0
+        LogUtils.d("file_path 里面的路径");
      //   File file = new File(Environment.getExternalStorageDirectory(), apkPath);
         File file = new File(apkPath);
 
