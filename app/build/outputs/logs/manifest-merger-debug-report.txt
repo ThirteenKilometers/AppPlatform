@@ -433,7 +433,7 @@ ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:244:9-248:20
 activity#com.yw.platform.yhtext.activity.LoginActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:9-259:20
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:252:13-43
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:252:13-44
 	android:theme
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:13-69
 	android:name

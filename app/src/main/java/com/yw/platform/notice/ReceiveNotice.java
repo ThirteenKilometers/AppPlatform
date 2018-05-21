@@ -21,6 +21,7 @@ import com.yw.platform.yhtext.activity.DocumentListActivity;
 import com.yw.platform.yhtext.activity.LoginActivity;
 import com.yw.platform.yhtext.beans.MessageEvent;
 import com.yw.platform.yhtext.netty.client.Const;
+import com.yw.platform.yhtext.utils.LocationUtils;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -43,7 +44,8 @@ public class ReceiveNotice {
 
     private static ReceiveNotice receiveNotice;
 
-    private ReceiveNotice() {}
+    private ReceiveNotice() {
+    }
 
     public static synchronized ReceiveNotice getinReceiveNotice() {
         if (receiveNotice == null) {
@@ -56,11 +58,12 @@ public class ReceiveNotice {
     public void onMessageEvent(MessageEvent event) {
         switch (event.getCode()) {
             case Const.METHER_NOTICE_PATH_CODE:
+                LocationUtils.initLocation(MyApplication.getInstance());
                 ResponseModel responseData = event.getResponseData();
                 responseData.setContentClass(ServiceNotice.class);
                 String requestId = responseData.getRequestId();
                 ServiceNotice contentData = (ServiceNotice) responseData.getContentData();
-              LogUtils.json("noticePushServerRequest", JSON.toJSONString(contentData));
+                LogUtils.json("noticePushServerRequest", JSON.toJSONString(contentData));
                 List<ServiceNotice.Notice> notices = contentData.getNotices();
                 for (ServiceNotice.Notice notice : notices) {
                     handeItem(responseData, notice);
@@ -78,9 +81,12 @@ public class ReceiveNotice {
                     //如果后台给的字段是要求定位的话
                     if ("equipmentPositioning".equals(notices.get(i).getNoticeType())) {
                         if (!getUserCode().equals("")) {//已经登录的话
-                           // LogUtils.i("精度:" + longitude+"纬度："+latitude);
-                            responseBean.setLongitude(getInstance().longitude);
-                            responseBean.setLatitude(getInstance().latitude);
+                            //responseBean.setLongitude(getInstance().longitude);
+                            // responseBean.setLatitude(getInstance().latitude);
+                            responseBean.setLongitude(LocationUtils.longitude);
+                            responseBean.setLatitude(LocationUtils.latitude);
+                            LogUtils.i("精度:" + LocationUtils.longitude + "纬度：" + LocationUtils.latitude);
+
                         } else {
                             responseBean.setLongitude("0");
                             responseBean.setLatitude("0");
@@ -104,43 +110,41 @@ public class ReceiveNotice {
             sendMsg.setCode(Const.NOTICE_POLICY_CHANGE);
             sendMsg.setMsg("策略");
             responsemsg = "策略更新消息已收到";
-        }
-        else if ("deviceFreeze".equals(noticeType)) {
+        } else if ("deviceFreeze".equals(noticeType)) {
             ToastUtils.showShort("设备已冻结");
-            Intent intent=new Intent( MyApplication.getInstance(),LoginActivity.class);
+            Intent intent = new Intent(MyApplication.getInstance(), LoginActivity.class);
             MyApplication.getInstance().startActivity(intent);
-        showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
         } else if ("deviceUnBind".equals(noticeType)) {
             responsemsg = "设备解绑消息已收到";
             ToastUtils.showShort("设备已解绑");
-            Intent intent=new Intent( MyApplication.getInstance(),LoginActivity.class);
+            Intent intent = new Intent(MyApplication.getInstance(), LoginActivity.class);
             MyApplication.getInstance().startActivity(intent);
-          // showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
-        }else if ("appAdd".equals(noticeType)) {//应用新增
+            // showNotic(responsemsg, new Intent(getInstance(), LoginActivity.class));
+        } else if ("appAdd".equals(noticeType)) {//应用新增
             sendMsg.setCode(Const.NOTICE_APP_ADD);
             sendMsg.setMsg("应用新增");
             Log.i("info", "=================应用增新");
             responsemsg = "应用新增消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), MainNewActivity.class));
         } else if ("appRemove".equals(noticeType)) {//应用移除
             sendMsg.setCode(Const.NOTICE_APP_REMOVE);
             sendMsg.setMsg("应用移除");
             responsemsg = "应用移除消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), MainNewActivity.class));
 
         } else if ("appUpdate".equals(noticeType)) {//应用更新
             sendMsg.setCode(Const.NOTICE_APP_UPDATE);
             sendMsg.setMsg("应用更新");
             responsemsg = "应用更新消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
-        }
-        else if ("appDistribution".equals(noticeType)) {//应用分发
+            showNotic(responsemsg, new Intent(getInstance(), MainNewActivity.class));
+        } else if ("appDistribution".equals(noticeType)) {//应用分发
             sendMsg.setCode(Const.NOTICE_APP_UPDATE);
             sendMsg.setMsg("应用分发");
             responsemsg = "应用分发消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), MainNewActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), MainNewActivity.class));
 
-        }else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
+        } else if ("companyDataErasure".equals(noticeType)) {//企业应用数据擦除
             sendMsg.setCode(Const.CONTROL_COMPANYDATA_DCREAL);
             sendMsg.setMsg("应用清除");
             responsemsg = "应用清除消息已收到";
@@ -156,22 +160,22 @@ public class ReceiveNotice {
             sendMsg.setCode(Const.CONTROL_SCREEN_UNLOCK);
             sendMsg.setMsg("屏幕解锁");
             responsemsg = "解锁屏幕消息已收到";
-        }else if ("fileDistribution".equals(noticeType)) {//文档新增
+        } else if ("fileDistribution".equals(noticeType)) {//文档新增
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档分发");
             responsemsg = "文档分发消息已收到";
-           showNotic(responsemsg, new Intent(getInstance(), DocumentListActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), DocumentListActivity.class));
             Log.i("info", "noticePushServerRequest " + "接收到文档分发消息");
         } else if ("fileRemove".equals(noticeType)) {
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档移除");
             responsemsg = "文档移除消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), DocumentListActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), DocumentListActivity.class));
         } else if ("fileUpdate".equals(noticeType)) {//文档更新
             sendMsg.setCode(Const.METHER_PUSH_QUERYDOCUMENTLIST_CODE);
             sendMsg.setMsg("文档更新");
             responsemsg = "文档更新消息已收到";
-            showNotic(responsemsg,new Intent(getInstance(), DocumentListActivity.class));
+            showNotic(responsemsg, new Intent(getInstance(), DocumentListActivity.class));
         }
         if (sendMsg.getCode() > 0) {
             EventBus.getDefault().post(sendMsg);

@@ -1,0 +1,61 @@
+package com.yw.platform.yhtext.utils;
+
+
+import android.content.Context;
+
+import com.baidu.location.BDAbstractLocationListener;
+import com.baidu.location.BDLocation;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+
+public abstract class LocationUtils {
+    public static String latitude;//纬度
+    public static String longitude;//精度
+    public static LocationClient mLocationClient = null;
+    public static MyLocationListener myListener = new MyLocationListener();
+
+    public static void initLocation(Context context) {
+        mLocationClient = new LocationClient(context);
+        //声明LocationClient类
+        mLocationClient.registerLocationListener(myListener);
+
+        //注册监听函数
+        SetOption();
+        mLocationClient.start();
+    }
+
+    public static void SetOption() {
+        LocationClientOption option = new LocationClientOption();
+        option.setLocationMode(LocationClientOption.LocationMode.Hight_Accuracy);
+        option.setCoorType("bd09ll");
+        option.setScanSpan(1000);
+        option.setOpenGps(true);
+        option.setLocationNotify(true);
+        option.setIgnoreKillProcess(false);
+        option.SetIgnoreCacheException(false);
+        option.setWifiCacheTimeOut(5 * 60 * 1000);
+        option.setEnableSimulateGps(false);
+        mLocationClient.setLocOption(option);
+    }
+
+
+    /**
+     * 百度地图 MyLocationListener
+     */
+    public static class MyLocationListener extends BDAbstractLocationListener {
+        @Override
+        public void onReceiveLocation(BDLocation location) {
+            latitude = String.valueOf(location.getLatitude());    //获取纬度信息
+            longitude = String.valueOf(location.getLongitude());    //获取经度信息n
+            lzhs.com.library.utils.log.LogUtils.i("LocationUtils中的精度:" + LocationUtils.longitude + "纬度：" + LocationUtils.latitude);
+
+            float radius = location.getRadius();    //获取定位精度，默认值为0.0f
+            String coorType = location.getCoorType();
+            //获取经纬度坐标类型，以LocationClientOption中设置过的坐标类型为准
+            //  button.setText(JSON.toJSONString(location));
+            int errorCode = location.getLocType();
+            //获取定位类型、定位错误返回码，具体信息可参照类参考中BDLocation类中的说明
+        }
+    }
+
+}

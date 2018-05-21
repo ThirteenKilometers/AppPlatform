@@ -249,7 +249,7 @@
         <!-- 登录界面 -->
         <activity
             android:name=".yhtext.activity.LoginActivity"
-            android:launchMode="singleTop"
+            android:launchMode="singleTask"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
