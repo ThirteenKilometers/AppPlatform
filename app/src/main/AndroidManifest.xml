@@ -109,7 +109,7 @@
             android:name=".activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustPan|stateHidden" />
-        -->
+        -->cu
         <activity
             android:name=".activity.SettingActivity"
             android:screenOrientation="portrait"
@@ -189,7 +189,6 @@
             <meta-data
                 android:name="android.app.device_admin"
                 android:resource="@xml/adminpolicy" />
-
             <intent-filter>
                 <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
             </intent-filter>

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Fri May 18 16:14:40 CST 2018
+#Mon May 21 16:55:15 CST 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/liblocSDK7b.so
 25.base=F\:\\Projects\\AppPlatform\\app\\build\\intermediates\\transforms\\mergeJniLibs\\debug\\0
@@ -103,5 +103,5 @@ count=26
 19.path=trustStore18.bks
 15.baseType=DIRECTORY
 3.set=NATIVE_RESOURCE
-5.base=F\:\\Projects\\AppPlatform\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+5.base=F\:\\Projects\\AppPlatform\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 12.path=trustStore31.bks
