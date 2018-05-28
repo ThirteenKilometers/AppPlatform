@@ -624,6 +624,10 @@
         "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\521c8b527a775da086af990afba24999\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
+        "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout_viewpager_item_grid.xml.flat",
+        "source": "F:\\Projects\\AppPlatform\\app\\src\\main\\res\\layout\\viewpager_item_grid.xml"
+    },
+    {
         "merged": "F:\\Projects\\AppPlatform\\app\\build\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
         "source": "C:\\Users\\lenovo\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\231a46c588598872cb84a7c271a09963\\res\\layout-v16\\notification_template_custom_big.xml"
     },

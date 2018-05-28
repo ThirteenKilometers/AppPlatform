@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:design:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\design-27.0.2.aar\5d8afb385a886ccf008462f9e50ee0de\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.0.2.aar\521c8b527a775da086af990afba24999\AndroidManifest.xml:17:1-22:12
@@ -20,9 +20,9 @@ MERGED from [com.android.support:transition:27.0.2] C:\Users\lenovo\.gradle\cach
 MERGED from [com.android.support:support-media-compat:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.0.2.aar\946959fa1ea31c4a5600b278c649c166\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\support-compat-27.0.2.aar\231a46c588598872cb84a7c271a09963\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\runtime-1.0.3.aar\c6ea18666a55f959ee8e8ee17c9304b9\AndroidManifest.xml:17:1-24:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
-INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
+INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-282:12
 	package
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:4:5-30
 		INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml
@@ -40,93 +40,105 @@ INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:2:1-277:1
 		INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml
 		INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:10:5-67
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:11:5-84
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:10:5-84
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:11:22-81
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:10:22-81
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:11:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:13:5-71
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:12:5-71
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:13:22-68
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:12:22-68
 uses-permission#android.permission.CALL_PHONE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:14:5-69
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:13:5-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:14:22-66
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:13:22-66
 uses-permission#android.permission.READ_PROFILE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:15:5-71
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:14:5-71
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:15:22-68
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:14:22-68
 uses-permission#android.permission.READ_CONTACTS
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:16:5-72
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:15:5-72
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:16:22-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:15:22-69
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:17:5-75
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:16:5-75
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:17:22-72
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:16:22-72
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:18:5-79
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:18:22-76
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:17:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:19:5-76
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:19:22-73
-uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:20:5-76
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:20:22-73
 uses-permission#android.permission.VIBRATE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:21:5-66
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:20:5-66
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:21:22-63
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:20:22-63
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:22:5-79
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:21:5-79
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:22:22-76
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:21:22-76
 uses-permission#android.permission.WAKE_LOCK
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:23:5-68
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:22:5-68
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:23:22-65
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:22:22-65
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:24:5-80
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:23:5-80
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:24:22-77
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:23:22-77
 uses-permission#android.permission.BLUETOOTH
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:26:5-68
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:26:22-65
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:25:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:27:5-74
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:26:5-74
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:27:22-71
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:26:22-71
 uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:33:5-79
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:33:22-76
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:32:22-76
 uses-permission#android.permission.CAMERA
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:35:5-65
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:34:5-65
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:35:22-62
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:34:22-62
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:37:5-81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:36:5-81
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:37:22-78
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:36:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:45:5-77
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:45:22-75
+uses-permission#android.permission.GET_TASKS
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:46:5-67
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:46:22-65
+uses-permission#android.permission.READ_FRAME_BUFFER
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:47:5-75
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:47:22-73
 uses-permission#android.permission.PACKAGE_USAGE_STATS
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:69:5-71:47
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:73:5-75:47
 	tools:ignore
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:71:9-44
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:75:9-44
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:70:9-62
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:74:9-62
 application
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:73:5-275:19
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:77:5-280:19
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:11:5-27:19
 MERGED from [com.github.LZHS:LZHSLibary:lzhs_1.0.6] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\LZHSLibary-lzhs_1.0.6.aar\71e4b58876fae0b0e69d8a64e3e2aada\AndroidManifest.xml:11:5-27:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f48c2458ee7c73f064d8824d6465f5a2\AndroidManifest.xml:9:5-20
@@ -136,348 +148,348 @@ MERGED from [com.lcodecorex:tkrefreshlayout:1.0.7] C:\Users\lenovo\.gradle\cache
 	android:supportsRtl
 		ADDED from [com.lcodecorex:tkrefreshlayout:1.0.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\tkrefreshlayout-1.0.7.aar\1cc04e059dcc4d5cd94f0f2850f22d74\AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:77:9-41
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:81:9-41
 	android:icon
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:76:9-38
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:80:9-38
 	android:allowBackup
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:75:9-36
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:79:9-36
 		REJECTED from [com.lcodecorex:tkrefreshlayout:1.0.7] C:\Users\lenovo\.gradle\caches\transforms-1\files-1.1\tkrefreshlayout-1.0.7.aar\1cc04e059dcc4d5cd94f0f2850f22d74\AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:78:9-62
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:82:9-62
 	tools:replace
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:79:9-44
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:83:9-44
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:74:9-45
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:78:9-45
 provider#android.support.v4.content.FileProvider
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:80:9-88:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:84:9-92:20
 	android:grantUriPermissions
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:83:13-47
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:87:13-47
 	android:authorities
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:81:13-59
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:85:13-59
 	android:exported
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:84:13-37
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:88:13-37
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:82:13-67
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:86:13-67
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:85:13-87:53
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:89:13-91:53
 	android:resource
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:87:17-51
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:91:17-51
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:86:17-67
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:90:17-67
 meta-data#com.baidu.lbsapi.API_KEY
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:90:9-92:74
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:94:9-96:74
 	android:value
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:92:13-61
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:96:13-61
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:91:13-52
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:95:13-52
 service#com.baidu.location.f
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:93:9-96:49
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:97:9-100:49
 	android:process
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:96:13-38
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:100:13-38
 	android:enabled
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:95:13-35
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:99:13-35
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:94:13-48
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:98:13-48
 meta-data#com.amap.api.v2.apikey
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:99:9-101:63
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:103:9-105:63
 	android:value
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:101:13-61
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:105:13-61
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:100:13-50
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:104:13-50
 activity#com.yw.platform.activity.WelcomeActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:103:9-106:74
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:107:9-110:74
 	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:105:13-49
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:109:13-49
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:106:13-71
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:110:13-71
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:104:13-53
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:108:13-53
 activity#com.yw.platform.activity.SettingActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:113:9-116:70
-	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:115:13-49
-	android:windowSoftInputMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:116:13-67
-	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:114:13-53
-activity#com.yw.platform.activity.SetActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:117:9-120:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:119:13-49
 	android:windowSoftInputMode
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:120:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:118:13-49
-activity#com.yw.platform.activity.ValidateActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:121:9-125:68
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:118:13-53
+activity#com.yw.platform.activity.SetActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:121:9-124:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:123:13-49
 	android:windowSoftInputMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:125:13-65
-	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:124:13-72
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:124:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:122:13-54
-activity#com.yw.platform.activity.ChangePwActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:126:9-129:70
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:122:13-49
+activity#com.yw.platform.activity.ValidateActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:125:9-129:68
 	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:128:13-49
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:127:13-49
 	android:windowSoftInputMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:129:13-67
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:129:13-65
+	android:theme
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:128:13-72
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:127:13-54
-activity#com.yw.platform.activity.VpnUserSetActivity
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:126:13-54
+activity#com.yw.platform.activity.ChangePwActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:130:9-133:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:132:13-49
 	android:windowSoftInputMode
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:133:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:131:13-56
-activity#com.yw.platform.activity.MainActivity
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:131:13-54
+activity#com.yw.platform.activity.VpnUserSetActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:134:9-137:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:136:13-49
 	android:windowSoftInputMode
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:137:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:135:13-50
-activity#com.yw.platform.activity.UCAppActivity
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:135:13-56
+activity#com.yw.platform.activity.MainActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:138:9-141:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:140:13-49
 	android:windowSoftInputMode
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:141:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:139:13-51
-activity#com.yw.platform.activity.WebAppActivity
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:139:13-50
+activity#com.yw.platform.activity.UCAppActivity
 ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:142:9-145:70
 	android:screenOrientation
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:144:13-49
 	android:windowSoftInputMode
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:145:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:143:13-52
-activity#com.yw.platform.activity.ShowPicActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:146:9-149:48
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:143:13-51
+activity#com.yw.platform.activity.WebAppActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:146:9-149:70
 	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:149:13-45
-	android:configChanges
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:148:13-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:148:13-49
+	android:windowSoftInputMode
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:149:13-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:147:13-53
-activity#com.yw.platform.activity.ShowZipActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:150:9-153:52
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:147:13-52
+activity#com.yw.platform.activity.ShowPicActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:150:9-153:48
 	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:153:13-49
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:153:13-45
 	android:configChanges
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:152:13-74
 	android:name
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:151:13-53
-activity#com.yw.platform.activity.NewShowTxtActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:154:9-156:77
+activity#com.yw.platform.activity.ShowZipActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:154:9-157:52
+	android:screenOrientation
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:157:13-49
 	android:configChanges
 		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:156:13-74
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:155:13-56
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:155:13-53
+activity#com.yw.platform.activity.NewShowTxtActivity
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:158:9-160:77
+	android:configChanges
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:160:13-74
+	android:name
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:159:13-56
 activity#com.artifex.mupdf.MuPDFActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:157:9-159:77
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:161:9-163:77
 	android:configChanges
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:159:13-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:163:13-74
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:158:13-59
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:162:13-59
 activity#com.ec.avirtualapp.controller.VpassSessionActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:160:9-164:58
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:164:9-168:58
 	android:windowSoftInputMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:164:13-55
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:168:13-55
 	android:configChanges
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:162:13-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:166:13-74
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:163:13-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:167:13-60
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:161:13-78
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:165:13-78
 activity#com.yw.platform.activity.SetLockActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:165:9-167:52
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:169:9-171:52
 	android:screenOrientation
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:167:13-49
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:171:13-49
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:166:13-53
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:170:13-53
 service#com.yw.platform.download.DownloadService
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:169:9-173:19
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:173:9-177:19
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:169:18-58
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:173:18-58
 intent-filter#action:name:download.service.action
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:170:13-172:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:174:13-176:29
 action#download.service.action
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:171:17-66
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:175:17-66
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:171:25-63
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:175:25-63
 service#com.yw.platform.test.AppLockerService
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:174:9-58
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:178:9-58
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:174:18-55
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:178:18-55
 receiver#com.yw.platform.broadcastReceiver.InstallOrUninstallReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:176:9-183:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:180:9-187:20
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:176:19-79
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:180:19-79
 intent-filter#action:name:android.intent.action.PACKAGE_ADDED+action:name:android.intent.action.PACKAGE_REMOVED+data:scheme:package
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:177:13-182:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:181:13-186:29
 action#android.intent.action.PACKAGE_ADDED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:178:17-78
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:182:17-78
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:178:25-75
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:182:25-75
 action#android.intent.action.PACKAGE_REMOVED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:179:17-80
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:183:17-80
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:179:25-77
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:183:25-77
 data
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:181:17-50
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:185:17-50
 	android:scheme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:181:23-47
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:185:23-47
 receiver#com.yw.platform.broadcastReceiver.AdminReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:184:9-195:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:188:9-199:20
 	android:label
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:187:13-35
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:191:13-35
 	android:permission
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:188:13-70
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:192:13-70
 	android:description
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:186:13-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:190:13-74
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:185:13-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:189:13-60
 meta-data#android.app.device_admin
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:189:13-191:55
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:193:13-195:55
 	android:resource
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:191:17-52
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:195:17-52
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:190:17-56
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:194:17-56
 intent-filter#action:name:android.app.action.DEVICE_ADMIN_ENABLED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:192:13-194:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:196:13-198:29
 action#android.app.action.DEVICE_ADMIN_ENABLED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:193:17-82
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:17-82
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:193:25-79
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:25-79
 receiver#com.yw.platform.broadcastReceiver.manger.BluetoothBroadcastReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:196:9-200:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:200:9-204:20
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:196:19-86
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:200:19-86
 intent-filter#action:name:android.bluetooth.adapter.action.STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:197:13-199:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:201:13-203:29
 action#android.bluetooth.adapter.action.STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:198:17-89
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:202:17-89
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:198:25-86
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:202:25-86
 receiver#com.yw.platform.broadcastReceiver.manger.NetworkConnectChangedReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:201:9-207:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:9-211:20
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:201:19-89
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:19-89
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+action:name:android.net.wifi.STATE_CHANGE+action:name:android.net.wifi.WIFI_STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:202:13-206:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:206:13-210:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:203:17-79
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:207:17-79
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:203:25-76
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:207:25-76
 action#android.net.wifi.WIFI_STATE_CHANGED
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:204:17-78
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:208:17-78
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:204:25-75
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:208:25-75
 action#android.net.wifi.STATE_CHANGE
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:17-72
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:209:17-72
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:205:25-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:209:25-69
 receiver#com.yw.platform.broadcastReceiver.ScreenBroadcastReceiver
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:208:9-212:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:212:9-216:20
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:208:19-76
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:212:19-76
 intent-filter#action:name:android.intent.action.SCREEN_OFF
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:209:13-211:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:213:13-215:29
 action#android.intent.action.SCREEN_OFF
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:210:17-75
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:214:17-75
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:210:25-72
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:214:25-72
 activity#com.yw.platform.activity.RegisterActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:220:9-63
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:224:9-63
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:220:19-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:224:19-60
 activity#com.yw.platform.test.TestActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:221:9-55
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:225:9-55
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:221:19-52
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:225:19-52
 activity#com.yw.platform.test.AppsetActvitiy
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:222:9-57
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:226:9-57
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:222:19-54
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:226:19-54
 activity#com.yw.platform.ui.activity.AppLockerActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:225:9-229:49
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:229:9-233:49
 	android:excludeFromRecents
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:227:13-46
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:231:13-46
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:228:13-42
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:232:13-42
 	android:taskAffinity
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:229:13-46
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:233:13-46
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:226:13-58
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:230:13-58
 service#com.yw.platform.yhtext.netty.NettyService
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:240:9-62
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:244:9-62
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:240:18-59
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:244:18-59
 service#com.yw.platform.service.LocalHandleService
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:241:9-63
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:245:9-63
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:241:18-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:245:18-60
 activity#com.yw.platform.yhtext.TextActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:243:9-247:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:247:9-251:20
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:245:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:249:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:244:13-48
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:248:13-48
 activity#com.yw.platform.yhtext.activity.LoginActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:249:9-258:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:9-262:20
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:251:13-44
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:255:13-44
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:252:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:250:13-58
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:13-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:253:13-257:29
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:257:13-261:29
 action#android.intent.action.MAIN
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:17-69
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:258:17-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:254:25-66
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:258:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:17-77
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:17-77
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:256:27-74
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:27-74
 activity#com.yw.platform.ui.activity.MainNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:259:9-260:45
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:263:9-264:45
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:260:13-43
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:264:13-43
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:259:19-62
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:263:19-62
 activity#com.yw.platform.ui.activity.WebAppNewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:261:9-67
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:265:9-67
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:261:19-64
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:265:19-64
 activity#com.yw.platform.yhtext.utils.HelloActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:262:9-265:20
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:266:9-270:20
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:264:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:268:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:263:13-55
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:267:13-55
 activity#com.yw.platform.yhtext.activity.DocumentListActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:267:9-270:81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:272:9-275:81
 	android:launchMode
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:269:13-43
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:274:13-43
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:270:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:275:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:268:13-65
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:273:13-65
 activity#com.yw.platform.yhtext.activity.WebViewActivity
-ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:271:9-273:81
+ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:276:9-278:81
 	android:theme
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:273:13-69
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:278:13-69
 	android:name
-		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:272:13-60
+		ADDED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml:277:13-60
 uses-sdk
 INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\Projects\AppPlatform\app\src\main\AndroidManifest.xml
